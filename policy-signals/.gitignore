@@ -1,0 +1,11 @@
+/data/
+/venv/
+.env
+__pycache__/
+*.pyc
+.DS_Store
+
+# Astronomer
+.astro/
+airflow_settings.yaml
+logs/
