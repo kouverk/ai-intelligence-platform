@@ -32,9 +32,9 @@ A dual-module analytics platform that combines job market intelligence with poli
 
 ```
 ┌─────────────────────────────────────────────────────────────────────────────┐
-│                      AI INTELLIGENCE PLATFORM                                │
+│                      AI INTELLIGENCE PLATFORM                               │
 ├─────────────────────────────────────────────────────────────────────────────┤
-│                                                                              │
+│                                                                             │
 │  ┌─────────────────────────────┐    ┌─────────────────────────────┐         │
 │  │     MARKET SIGNALS          │    │     POLICY SIGNALS          │         │
 │  │                             │    │                             │         │
@@ -53,20 +53,20 @@ A dual-module analytics platform that combines job market intelligence with poli
 │  │  • Role evolution           │    │  • Say-vs-do gap scores     │         │
 │  │  • LLM vs regex comparison  │    │  • Quiet lobbying detection │         │
 │  └─────────────┬───────────────┘    └───────────────┬─────────────┘         │
-│                │                                    │                        │
-│                └────────────────┬───────────────────┘                        │
-│                                 │                                            │
-│                                 ▼                                            │
+│                │                                    │                       │
+│                └────────────────┬───────────────────┘                       │
+│                                 │                                           │
+│                                 ▼                                           │
 │  ┌─────────────────────────────────────────────────────────────────┐        │
-│  │                    SHARED INFRASTRUCTURE                         │        │
-│  │                                                                  │        │
+│  │                    SHARED INFRASTRUCTURE                        │        │
+│  │                                                                 │        │
 │  │   Orchestration: Airflow (Astronomer)                           │        │
 │  │   Transformation: dbt (staging → intermediate → marts)          │        │
 │  │   Warehouse: Snowflake                                          │        │
 │  │   LLM: Claude API (Anthropic)                                   │        │
 │  │   Presentation: Streamlit (unified dashboard)                   │        │
 │  └─────────────────────────────────────────────────────────────────┘        │
-│                                                                              │
+│                                                                             │
 └─────────────────────────────────────────────────────────────────────────────┘
 ```
 
