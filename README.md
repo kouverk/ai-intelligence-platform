@@ -9,7 +9,15 @@ This platform contains **two separate analytics pipelines**, each with its own d
 | **Market Signals** | What's hot, growing, or dying in data/AI hiring? | 1.3M+ job posts |
 | **Policy Signals** | Do AI companies practice what they preach? | 10K+ policy documents |
 
-**[Live Demo](https://ai-intelligence-platform-kouverk.streamlit.app/)** - Try the unified dashboard
+---
+
+## Live Demo
+
+**[AI Intelligence Platform Dashboard](https://ai-intelligence-platform-kouverk.streamlit.app/)**
+
+Instead of looking at screenshots, you can see a live demo of the dashboard analytics here. The unified dashboard combines both pipelines with sidebar navigation.
+
+For static screenshots, see the [screenshots/](screenshots/) folder.
 
 ---
 
@@ -101,9 +109,12 @@ This diagram shows how the two pipelines share infrastructure while remaining in
 └─────────────────────────────────────────────────────────────────────────────┘
 ```
 
-**For detailed architecture of each pipeline, see:**
-- [Market Signals ARCHITECTURE.md](market-signals/docs/ARCHITECTURE.md)
-- [Policy Signals ARCHITECTURE.md](policy-signals/docs/ARCHITECTURE.md)
+### For detailed architecture of each pipeline, see:
+
+| Pipeline | Architecture Doc |
+|----------|------------------|
+| **Market Signals** | [ARCHITECTURE.md](market-signals/docs/ARCHITECTURE.md) |
+| **Policy Signals** | [ARCHITECTURE.md](policy-signals/docs/ARCHITECTURE.md) |
 
 ---
 
