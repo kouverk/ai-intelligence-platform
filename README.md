@@ -2,7 +2,7 @@
 
 **Comprehensive visibility into the AI industry through two independent data pipelines**
 
-This platform contains **two separate analytics pipelines**, each with its own data sources, extraction logic, dbt models, and Airflow DAGs. They share infrastructure (Snowflake, Astronomer, Streamlit) but are architecturally independent.
+This platform contains **two separate analytics pipelines**, each with its own data sources, extraction logic, dbt models, and Airflow DAGs. They share infrastructure (Snowflake, Astronomer, Streamlit) but are architecturally independent. Both pipelines transform **unstructured text** (job posts, policy documents) into **structured analytics** using Claude (Anthropic) for taxonomy-based extraction and scoring.
 
 | Pipeline | Question It Answers | Data Scale |
 |----------|---------------------|------------|
@@ -49,6 +49,8 @@ For static screenshots, see the [screenshots/](screenshots/) folder.
 | **dbt Models** | 21 models, 77 tests |
 | **Airflow DAGs** | 4 DAGs |
 
+**Why These Sources:** HN provides authentic, unfiltered job posts from tech companies with 14 years of history (2011-present) for trend analysis. LinkedIn adds scale (1.3M posts) with pre-extracted skills for cross-validation. GitHub repo metrics offer direct signals of technology adoption independent of job market sentiment.
+
 ### Pipeline 2: Policy Signals
 
 **Question:** Do AI companies' public policy positions match their lobbying activity?
@@ -60,6 +62,8 @@ For static screenshots, see the [screenshots/](screenshots/) folder.
 | **Key Outputs** | Say-vs-do gap scores, quiet lobbying detection, cross-company comparisons |
 | **dbt Models** | 16 models, 35 tests |
 | **Airflow DAGs** | 6 DAGs |
+
+**Why These Sources:** AI Action Plan submissions are first-party policy statements—what companies publicly claim to support. Senate LDA filings are legally mandated lobbying disclosures—what companies actually lobby for. Comparing these two reveals say-vs-do gaps.
 
 ---
 
@@ -237,6 +241,28 @@ This combined platform was developed as two parallel projects, later unified:
 - **Policy Signals:** [github.com/kouverk/ai-influence-monitor](https://github.com/kouverk/ai-influence-monitor)
 
 Full git history for each module is preserved in their respective original repositories.
+
+---
+
+## Implementation Journey
+
+Both pipelines followed the same pattern: **Extract → Transform → Analyze → Visualize**.
+
+### Market Signals
+
+1. **Data acquisition** — Downloaded HN dataset (HuggingFace), LinkedIn snapshot (Kaggle), set up GitHub API
+2. **Raw loading** — Built extraction scripts to load into Snowflake raw layer
+3. **dbt modeling** — Created staging → intermediate → mart layers with 77 tests
+4. **LLM integration** — Added Claude-powered skill extraction on 10K sample, validated against regex
+5. **Dashboard** — Built Streamlit app with 7 pages covering trends, comparisons, methodology
+
+### Policy Signals
+
+1. **PDF extraction** — Downloaded 10K AI policy submissions, built PyMuPDF chunking pipeline
+2. **LDA integration** — Connected Senate lobbying API, normalized 970 filings across 30 companies
+3. **LLM position extraction** — Extracted 878 policy positions with 30+ taxonomy codes
+4. **Agentic analysis** — Built 5 Claude-powered scoring scripts (discrepancy, impact, China rhetoric, cross-company, bill-level)
+5. **Dashboard** — Built 6-page Streamlit app with company deep-dives and cross-company comparison
 
 ---
 

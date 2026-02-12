@@ -12,39 +12,39 @@ Capstone Submission Checklist
 NOTE: First PR was merged by mistake. Created new PR #89 with schedule updates.
 
 === CRITERIA 1: PROJECT SPEC ===
-[ ] Schemas documented
-[ ] Screenshots: ETL runs, quality checks, dashboards
-[ ] DAG diagrams
-[ ] Data model diagrams
-[ ] Metrics documented
-[ ] Data quality checks documented
+[x] Schemas documented
+[x] Screenshots: ETL runs, quality checks, dashboards
+[x] DAG diagrams
+[x] Data model diagrams
+[x] Metrics documented
+[x] Data quality checks documented
 
 === CRITERIA 2: WRITE UP ===
-[ ] Purpose of project and expected outputs
-[ ] Dataset choices with justifications
-[ ] Technology choices with justifications
-[ ] Steps followed
-[ ] Challenges faced and solutions
-[ ] Future enhancements
+[x] Purpose of project and expected outputs
+[x] Dataset choices with justifications
+[x] Technology choices with justifications
+[x] Steps followed
+[x] Challenges faced and solutions
+[x] Future enhancements
 
 === CRITERIA 3: DATA QUALITY CHECKS ===
-[ ] At least 2 data quality checks per data source (need minimum 4 total)
+[x] At least 2 data quality checks per data source (need minimum 4 total)
 
 === CRITERIA 4: ETL CODE ===
-[ ] Code is linted (PEP8)
-[ ] Code is error-free
-[ ] Uses required tools (Snowflake, Airflow, dbt)
+[x] Code is linted (PEP8)
+[x] Code is error-free
+[x] Uses required tools (Snowflake, Airflow, dbt)
 
 === CRITERIA 5: PROJECT SCOPING ===
-[ ] Real, non-trivial use case
-[ ] End-to-end implementation
-[ ] At least 2 data sources
-[ ] At least 1 million rows
+[x] Real, non-trivial use case
+[x] End-to-end implementation
+[x] At least 2 data sources
+[x] At least 1 million rows
 
 === FINAL SUBMISSION ===
 [ ] Zip file of project
-[ ] Link to PR included
-[ ] Group member names/emails in README (if applicable)
+[x] Link to PR included
+[x] Group member names/emails in README (if applicable) - N/A solo project
 
 === CURRENT STATUS ===
 Working through checklist item by item.
