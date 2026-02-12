@@ -12632,3 +12632,2998 @@ parsing.
 [0m18:27:11.200666 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x11453bee0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x11062e8f0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x11062dbd0>]}
 [0m18:27:11.201178 [debug] [MainThread]: Flushing usage events
 [0m18:27:11.440772 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m09:10:28.665805 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1111ec980>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1122ff9d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1122ff750>]}
+
+
+============================== 09:10:28.673308 | 4e85a1fb-f389-480d-ac44-63e1b4c736ba ==============================
+[0m09:10:28.673308 [info ] [MainThread]: Running with dbt=1.11.2
+[0m09:10:28.674427 [debug] [MainThread]: running dbt with arguments {'indirect_selection': 'eager', 'use_colors': 'True', 'cache_selected_only': 'False', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'profiles_dir': '.', 'invocation_command': 'dbt test --profiles-dir .', 'no_print': 'None', 'log_path': '/Users/kouverbingham/development/data-expert-analytics/ai-intelligence-platform/market-signals/dbt/logs', 'printer_width': '80', 'version_check': 'True', 'log_format': 'default', 'partial_parse': 'True', 'use_experimental_parser': 'False', 'empty': 'None', 'warn_error': 'None', 'send_anonymous_usage_stats': 'True', 'introspect': 'True', 'target_path': 'None', 'fail_fast': 'False', 'quiet': 'False', 'static_parser': 'True', 'log_cache_events': 'False', 'debug': 'False', 'write_json': 'True'}
+[0m09:10:30.046360 [debug] [MainThread]: Snowflake adapter: Setting snowflake.connector to ERROR (file logging only)
+[0m09:10:30.046964 [debug] [MainThread]: Snowflake adapter: Setting botocore to ERROR (file logging only)
+[0m09:10:30.047380 [debug] [MainThread]: Snowflake adapter: Setting boto3 to ERROR (file logging only)
+[0m09:10:30.270481 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '4e85a1fb-f389-480d-ac44-63e1b4c736ba', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x11162ce90>]}
+[0m09:10:30.355622 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '4e85a1fb-f389-480d-ac44-63e1b4c736ba', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x11c1379b0>]}
+[0m09:10:30.357410 [info ] [MainThread]: Registered adapter: snowflake=1.11.1
+[0m09:10:30.538322 [debug] [MainThread]: checksum: 3d40d8bbe1bef07db1c24822f2dbfff8bc07f2a48ed4fe2658a40653aec0b54b, vars: {}, profile: , target: , version: 1.11.2
+[0m09:10:30.805968 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m09:10:30.806530 [debug] [MainThread]: Nothing changed, skipping partial parsing.
+[0m09:10:30.806914 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m09:10:30.879325 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '4e85a1fb-f389-480d-ac44-63e1b4c736ba', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x11c13f450>]}
+[0m09:10:31.003451 [debug] [MainThread]: Wrote artifact WritableManifest to /Users/kouverbingham/development/data-expert-analytics/ai-intelligence-platform/market-signals/dbt/target/manifest.json
+[0m09:10:31.008179 [debug] [MainThread]: Wrote artifact SemanticManifest to /Users/kouverbingham/development/data-expert-analytics/ai-intelligence-platform/market-signals/dbt/target/semantic_manifest.json
+[0m09:10:31.062503 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '4e85a1fb-f389-480d-ac44-63e1b4c736ba', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1205d2120>]}
+[0m09:10:31.063181 [info ] [MainThread]: Found 21 models, 3 seeds, 77 data tests, 6 sources, 638 macros
+[0m09:10:31.063718 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '4e85a1fb-f389-480d-ac44-63e1b4c736ba', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x120544750>]}
+[0m09:10:31.071158 [info ] [MainThread]: 
+[0m09:10:31.071891 [info ] [MainThread]: Concurrency: 4 threads (target='dev')
+[0m09:10:31.072366 [info ] [MainThread]: 
+[0m09:10:31.073143 [debug] [MainThread]: Acquiring new snowflake connection 'master'
+[0m09:10:31.081294 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_DATAEXPERT_STUDENT_KOUVERK_DATA_INDUSTRY_marts'
+[0m09:10:31.082139 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_DATAEXPERT_STUDENT_KOUVERK_DATA_INDUSTRY_intermediate'
+[0m09:10:31.089459 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_DATAEXPERT_STUDENT_KOUVERK_DATA_INDUSTRY_staging'
+[0m09:10:31.106914 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_DATAEXPERT_STUDENT_KOUVERK_DATA_INDUSTRY'
+[0m09:10:31.173367 [debug] [ThreadPool]: Using snowflake connection "list_DATAEXPERT_STUDENT_KOUVERK_DATA_INDUSTRY_marts"
+[0m09:10:31.173916 [debug] [ThreadPool]: On list_DATAEXPERT_STUDENT_KOUVERK_DATA_INDUSTRY_marts: show objects in DATAEXPERT_STUDENT.KOUVERK_DATA_INDUSTRY_marts
+    limit 10000
+    
+
+/* {"app": "dbt", "dbt_version": "1.11.2", "profile_name": "data_ai_index", "target_name": "dev", "connection_name": "list_DATAEXPERT_STUDENT_KOUVERK_DATA_INDUSTRY_marts"} */;
+[0m09:10:31.174302 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m09:10:31.176089 [debug] [ThreadPool]: Using snowflake connection "list_DATAEXPERT_STUDENT_KOUVERK_DATA_INDUSTRY_intermediate"
+[0m09:10:31.176599 [debug] [ThreadPool]: On list_DATAEXPERT_STUDENT_KOUVERK_DATA_INDUSTRY_intermediate: show objects in DATAEXPERT_STUDENT.KOUVERK_DATA_INDUSTRY_intermediate
+    limit 10000
+    
+
+/* {"app": "dbt", "dbt_version": "1.11.2", "profile_name": "data_ai_index", "target_name": "dev", "connection_name": "list_DATAEXPERT_STUDENT_KOUVERK_DATA_INDUSTRY_intermediate"} */;
+[0m09:10:31.177060 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m09:10:31.178331 [debug] [ThreadPool]: Using snowflake connection "list_DATAEXPERT_STUDENT_KOUVERK_DATA_INDUSTRY_staging"
+[0m09:10:31.178953 [debug] [ThreadPool]: Using snowflake connection "list_DATAEXPERT_STUDENT_KOUVERK_DATA_INDUSTRY"
+[0m09:10:31.179519 [debug] [ThreadPool]: On list_DATAEXPERT_STUDENT_KOUVERK_DATA_INDUSTRY_staging: show objects in DATAEXPERT_STUDENT.KOUVERK_DATA_INDUSTRY_staging
+    limit 10000
+    
+
+/* {"app": "dbt", "dbt_version": "1.11.2", "profile_name": "data_ai_index", "target_name": "dev", "connection_name": "list_DATAEXPERT_STUDENT_KOUVERK_DATA_INDUSTRY_staging"} */;
+[0m09:10:31.180259 [debug] [ThreadPool]: On list_DATAEXPERT_STUDENT_KOUVERK_DATA_INDUSTRY: show objects in DATAEXPERT_STUDENT.KOUVERK_DATA_INDUSTRY
+    limit 10000
+    
+
+/* {"app": "dbt", "dbt_version": "1.11.2", "profile_name": "data_ai_index", "target_name": "dev", "connection_name": "list_DATAEXPERT_STUDENT_KOUVERK_DATA_INDUSTRY"} */;
+[0m09:10:31.180738 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m09:10:31.181642 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m09:10:32.346858 [debug] [ThreadPool]: SQL status: SUCCESS 6 in 1.166 seconds
+[0m09:10:32.348579 [debug] [ThreadPool]: SQL status: SUCCESS 10 in 1.167 seconds
+[0m09:10:32.357812 [debug] [ThreadPool]: SQL status: SUCCESS 4 in 1.181 seconds
+[0m09:10:32.366245 [debug] [ThreadPool]: SQL status: SUCCESS 11 in 1.192 seconds
+[0m09:10:32.375483 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '4e85a1fb-f389-480d-ac44-63e1b4c736ba', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x11c6961a0>]}
+[0m09:10:32.380627 [debug] [Thread-4 (]: Began running node test.data_ai_index.accepted_values_stg_github__repo_stats_category__orchestration__transformation__warehouse__streaming__table_format__etl_elt__bi__ml_framework__llm__mlops__vector_db__data_quality__database__infrastructure.c4ab66ca85
+[0m09:10:32.381318 [debug] [Thread-3 (]: Began running node test.data_ai_index.accepted_values_fct_llm_technology_mentions_extraction_method__llm.79e16bd16a
+[0m09:10:32.381858 [debug] [Thread-2 (]: Began running node test.data_ai_index.accepted_values_dim_roles_tier__1__2__3__4__5.cee9b4d79c
+[0m09:10:32.382405 [info ] [Thread-4 (]: 3 of 77 START test accepted_values_stg_github__repo_stats_category__orchestration__transformation__warehouse__streaming__table_format__etl_elt__bi__ml_framework__llm__mlops__vector_db__data_quality__database__infrastructure  [RUN]
+[0m09:10:32.383115 [info ] [Thread-3 (]: 2 of 77 START test accepted_values_fct_llm_technology_mentions_extraction_method__llm  [RUN]
+[0m09:10:32.383735 [debug] [Thread-5 (]: Began running node test.data_ai_index.accepted_values_stg_linkedin__postings_job_level__Entry_level__Mid_Senior_level__Director__Executive__Associate__Internship__Not_Applicable.6688856bec
+[0m09:10:32.384237 [info ] [Thread-2 (]: 1 of 77 START test accepted_values_dim_roles_tier__1__2__3__4__5 ............... [RUN]
+[0m09:10:32.384877 [debug] [Thread-4 (]: Re-using an available connection from the pool (formerly list_DATAEXPERT_STUDENT_KOUVERK_DATA_INDUSTRY_staging, now test.data_ai_index.accepted_values_stg_github__repo_stats_category__orchestration__transformation__warehouse__streaming__table_format__etl_elt__bi__ml_framework__llm__mlops__vector_db__data_quality__database__infrastructure.c4ab66ca85)
+[0m09:10:32.385428 [debug] [Thread-3 (]: Re-using an available connection from the pool (formerly list_DATAEXPERT_STUDENT_KOUVERK_DATA_INDUSTRY_intermediate, now test.data_ai_index.accepted_values_fct_llm_technology_mentions_extraction_method__llm.79e16bd16a)
+[0m09:10:32.385935 [info ] [Thread-5 (]: 4 of 77 START test accepted_values_stg_linkedin__postings_job_level__Entry_level__Mid_Senior_level__Director__Executive__Associate__Internship__Not_Applicable  [RUN]
+[0m09:10:32.386503 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly list_DATAEXPERT_STUDENT_KOUVERK_DATA_INDUSTRY_marts, now test.data_ai_index.accepted_values_dim_roles_tier__1__2__3__4__5.cee9b4d79c)
+[0m09:10:32.387017 [debug] [Thread-4 (]: Began compiling node test.data_ai_index.accepted_values_stg_github__repo_stats_category__orchestration__transformation__warehouse__streaming__table_format__etl_elt__bi__ml_framework__llm__mlops__vector_db__data_quality__database__infrastructure.c4ab66ca85
+[0m09:10:32.387507 [debug] [Thread-3 (]: Began compiling node test.data_ai_index.accepted_values_fct_llm_technology_mentions_extraction_method__llm.79e16bd16a
+[0m09:10:32.388160 [debug] [Thread-5 (]: Re-using an available connection from the pool (formerly list_DATAEXPERT_STUDENT_KOUVERK_DATA_INDUSTRY, now test.data_ai_index.accepted_values_stg_linkedin__postings_job_level__Entry_level__Mid_Senior_level__Director__Executive__Associate__Internship__Not_Applicable.6688856bec)
+[0m09:10:32.388602 [debug] [Thread-2 (]: Began compiling node test.data_ai_index.accepted_values_dim_roles_tier__1__2__3__4__5.cee9b4d79c
+[0m09:10:32.418453 [debug] [Thread-5 (]: Began compiling node test.data_ai_index.accepted_values_stg_linkedin__postings_job_level__Entry_level__Mid_Senior_level__Director__Executive__Associate__Internship__Not_Applicable.6688856bec
+[0m09:10:32.427230 [debug] [Thread-3 (]: Writing injected SQL for node "test.data_ai_index.accepted_values_fct_llm_technology_mentions_extraction_method__llm.79e16bd16a"
+[0m09:10:32.431514 [debug] [Thread-4 (]: Writing injected SQL for node "test.data_ai_index.accepted_values_stg_github__repo_stats_category__orchestration__transformation__warehouse__streaming__table_format__etl_elt__bi__ml_framework__llm__mlops__vector_db__data_quality__database__infrastructure.c4ab66ca85"
+[0m09:10:32.436336 [debug] [Thread-2 (]: Writing injected SQL for node "test.data_ai_index.accepted_values_dim_roles_tier__1__2__3__4__5.cee9b4d79c"
+[0m09:10:32.446323 [debug] [Thread-5 (]: Writing injected SQL for node "test.data_ai_index.accepted_values_stg_linkedin__postings_job_level__Entry_level__Mid_Senior_level__Director__Executive__Associate__Internship__Not_Applicable.6688856bec"
+[0m09:10:32.448397 [debug] [Thread-3 (]: Began executing node test.data_ai_index.accepted_values_fct_llm_technology_mentions_extraction_method__llm.79e16bd16a
+[0m09:10:32.466655 [debug] [Thread-2 (]: Began executing node test.data_ai_index.accepted_values_dim_roles_tier__1__2__3__4__5.cee9b4d79c
+[0m09:10:32.477780 [debug] [Thread-5 (]: Began executing node test.data_ai_index.accepted_values_stg_linkedin__postings_job_level__Entry_level__Mid_Senior_level__Director__Executive__Associate__Internship__Not_Applicable.6688856bec
+[0m09:10:32.478484 [debug] [Thread-4 (]: Began executing node test.data_ai_index.accepted_values_stg_github__repo_stats_category__orchestration__transformation__warehouse__streaming__table_format__etl_elt__bi__ml_framework__llm__mlops__vector_db__data_quality__database__infrastructure.c4ab66ca85
+[0m09:10:32.494621 [debug] [Thread-5 (]: Writing runtime sql for node "test.data_ai_index.accepted_values_stg_linkedin__postings_job_level__Entry_level__Mid_Senior_level__Director__Executive__Associate__Internship__Not_Applicable.6688856bec"
+[0m09:10:32.495297 [debug] [Thread-3 (]: Writing runtime sql for node "test.data_ai_index.accepted_values_fct_llm_technology_mentions_extraction_method__llm.79e16bd16a"
+[0m09:10:32.507336 [debug] [Thread-2 (]: Writing runtime sql for node "test.data_ai_index.accepted_values_dim_roles_tier__1__2__3__4__5.cee9b4d79c"
+[0m09:10:32.511359 [debug] [Thread-4 (]: Writing runtime sql for node "test.data_ai_index.accepted_values_stg_github__repo_stats_category__orchestration__transformation__warehouse__streaming__table_format__etl_elt__bi__ml_framework__llm__mlops__vector_db__data_quality__database__infrastructure.c4ab66ca85"
+[0m09:10:32.513446 [debug] [Thread-5 (]: Using snowflake connection "test.data_ai_index.accepted_values_stg_linkedin__postings_job_level__Entry_level__Mid_Senior_level__Director__Executive__Associate__Internship__Not_Applicable.6688856bec"
+[0m09:10:32.514187 [debug] [Thread-5 (]: On test.data_ai_index.accepted_values_stg_linkedin__postings_job_level__Entry_level__Mid_Senior_level__Director__Executive__Associate__Internship__Not_Applicable.6688856bec: select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+with all_values as (
+
+    select
+        job_level as value_field,
+        count(*) as n_records
+
+    from DATAEXPERT_STUDENT.KOUVERK_DATA_INDUSTRY_staging.stg_linkedin__postings
+    group by job_level
+
+)
+
+select *
+from all_values
+where value_field not in (
+    'Entry level','Mid-Senior level','Director','Executive','Associate','Internship','Not Applicable'
+)
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+/* {"app": "dbt", "dbt_version": "1.11.2", "profile_name": "data_ai_index", "target_name": "dev", "node_id": "test.data_ai_index.accepted_values_stg_linkedin__postings_job_level__Entry_level__Mid_Senior_level__Director__Executive__Associate__Internship__Not_Applicable.6688856bec"} */
+[0m09:10:32.515305 [debug] [Thread-2 (]: Using snowflake connection "test.data_ai_index.accepted_values_dim_roles_tier__1__2__3__4__5.cee9b4d79c"
+[0m09:10:32.516698 [debug] [Thread-4 (]: Using snowflake connection "test.data_ai_index.accepted_values_stg_github__repo_stats_category__orchestration__transformation__warehouse__streaming__table_format__etl_elt__bi__ml_framework__llm__mlops__vector_db__data_quality__database__infrastructure.c4ab66ca85"
+[0m09:10:32.517321 [debug] [Thread-2 (]: On test.data_ai_index.accepted_values_dim_roles_tier__1__2__3__4__5.cee9b4d79c: select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+with all_values as (
+
+    select
+        tier as value_field,
+        count(*) as n_records
+
+    from DATAEXPERT_STUDENT.KOUVERK_DATA_INDUSTRY_marts.dim_roles
+    group by tier
+
+)
+
+select *
+from all_values
+where value_field not in (
+    '1','2','3','4','5'
+)
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+/* {"app": "dbt", "dbt_version": "1.11.2", "profile_name": "data_ai_index", "target_name": "dev", "node_id": "test.data_ai_index.accepted_values_dim_roles_tier__1__2__3__4__5.cee9b4d79c"} */
+[0m09:10:32.518551 [debug] [Thread-3 (]: Using snowflake connection "test.data_ai_index.accepted_values_fct_llm_technology_mentions_extraction_method__llm.79e16bd16a"
+[0m09:10:32.520151 [debug] [Thread-4 (]: On test.data_ai_index.accepted_values_stg_github__repo_stats_category__orchestration__transformation__warehouse__streaming__table_format__etl_elt__bi__ml_framework__llm__mlops__vector_db__data_quality__database__infrastructure.c4ab66ca85: select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+with all_values as (
+
+    select
+        category as value_field,
+        count(*) as n_records
+
+    from DATAEXPERT_STUDENT.KOUVERK_DATA_INDUSTRY_staging.stg_github__repo_stats
+    group by category
+
+)
+
+select *
+from all_values
+where value_field not in (
+    'orchestration','transformation','warehouse','streaming','table_format','etl_elt','bi','ml_framework','llm','mlops','vector_db','data_quality','database','infrastructure'
+)
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+/* {"app": "dbt", "dbt_version": "1.11.2", "profile_name": "data_ai_index", "target_name": "dev", "node_id": "test.data_ai_index.accepted_values_stg_github__repo_stats_category__orchestration__transformation__warehouse__streaming__table_format__etl_elt__bi__ml_framework__llm__mlops__vector_db__data_quality__database__infrastructure.c4ab66ca85"} */
+[0m09:10:32.521803 [debug] [Thread-3 (]: On test.data_ai_index.accepted_values_fct_llm_technology_mentions_extraction_method__llm.79e16bd16a: select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+with all_values as (
+
+    select
+        extraction_method as value_field,
+        count(*) as n_records
+
+    from DATAEXPERT_STUDENT.KOUVERK_DATA_INDUSTRY_marts.fct_llm_technology_mentions
+    group by extraction_method
+
+)
+
+select *
+from all_values
+where value_field not in (
+    'llm'
+)
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+/* {"app": "dbt", "dbt_version": "1.11.2", "profile_name": "data_ai_index", "target_name": "dev", "node_id": "test.data_ai_index.accepted_values_fct_llm_technology_mentions_extraction_method__llm.79e16bd16a"} */
+[0m09:10:32.852523 [debug] [Thread-3 (]: SQL status: SUCCESS 1 in 0.329 seconds
+[0m09:10:32.855096 [debug] [Thread-2 (]: SQL status: SUCCESS 1 in 0.334 seconds
+[0m09:10:32.883539 [info ] [Thread-3 (]: 2 of 77 PASS accepted_values_fct_llm_technology_mentions_extraction_method__llm  [[32mPASS[0m in 0.50s]
+[0m09:10:32.884599 [info ] [Thread-2 (]: 1 of 77 PASS accepted_values_dim_roles_tier__1__2__3__4__5 ..................... [[32mPASS[0m in 0.50s]
+[0m09:10:32.885536 [debug] [Thread-3 (]: Finished running node test.data_ai_index.accepted_values_fct_llm_technology_mentions_extraction_method__llm.79e16bd16a
+[0m09:10:32.886308 [debug] [Thread-2 (]: Finished running node test.data_ai_index.accepted_values_dim_roles_tier__1__2__3__4__5.cee9b4d79c
+[0m09:10:32.886957 [debug] [Thread-3 (]: Began running node test.data_ai_index.accepted_values_stg_llm__skill_extractions_is_successful__True__False.0b02d8e251
+[0m09:10:32.887696 [debug] [Thread-2 (]: Began running node test.data_ai_index.dbt_utils_accepted_range_stg_github__repo_stats_forks__0.78b3b59c81
+[0m09:10:32.888332 [info ] [Thread-3 (]: 5 of 77 START test accepted_values_stg_llm__skill_extractions_is_successful__True__False  [RUN]
+[0m09:10:32.888931 [info ] [Thread-2 (]: 6 of 77 START test dbt_utils_accepted_range_stg_github__repo_stats_forks__0 .... [RUN]
+[0m09:10:32.890480 [debug] [Thread-3 (]: Re-using an available connection from the pool (formerly test.data_ai_index.accepted_values_fct_llm_technology_mentions_extraction_method__llm.79e16bd16a, now test.data_ai_index.accepted_values_stg_llm__skill_extractions_is_successful__True__False.0b02d8e251)
+[0m09:10:32.891374 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly test.data_ai_index.accepted_values_dim_roles_tier__1__2__3__4__5.cee9b4d79c, now test.data_ai_index.dbt_utils_accepted_range_stg_github__repo_stats_forks__0.78b3b59c81)
+[0m09:10:32.892162 [debug] [Thread-3 (]: Began compiling node test.data_ai_index.accepted_values_stg_llm__skill_extractions_is_successful__True__False.0b02d8e251
+[0m09:10:32.892824 [debug] [Thread-2 (]: Began compiling node test.data_ai_index.dbt_utils_accepted_range_stg_github__repo_stats_forks__0.78b3b59c81
+[0m09:10:32.899613 [debug] [Thread-3 (]: Writing injected SQL for node "test.data_ai_index.accepted_values_stg_llm__skill_extractions_is_successful__True__False.0b02d8e251"
+[0m09:10:32.911153 [debug] [Thread-2 (]: Writing injected SQL for node "test.data_ai_index.dbt_utils_accepted_range_stg_github__repo_stats_forks__0.78b3b59c81"
+[0m09:10:32.912241 [debug] [Thread-3 (]: Began executing node test.data_ai_index.accepted_values_stg_llm__skill_extractions_is_successful__True__False.0b02d8e251
+[0m09:10:32.915392 [debug] [Thread-3 (]: Writing runtime sql for node "test.data_ai_index.accepted_values_stg_llm__skill_extractions_is_successful__True__False.0b02d8e251"
+[0m09:10:32.916230 [debug] [Thread-2 (]: Began executing node test.data_ai_index.dbt_utils_accepted_range_stg_github__repo_stats_forks__0.78b3b59c81
+[0m09:10:32.918969 [debug] [Thread-2 (]: Writing runtime sql for node "test.data_ai_index.dbt_utils_accepted_range_stg_github__repo_stats_forks__0.78b3b59c81"
+[0m09:10:32.920014 [debug] [Thread-3 (]: Using snowflake connection "test.data_ai_index.accepted_values_stg_llm__skill_extractions_is_successful__True__False.0b02d8e251"
+[0m09:10:32.920750 [debug] [Thread-3 (]: On test.data_ai_index.accepted_values_stg_llm__skill_extractions_is_successful__True__False.0b02d8e251: select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+with all_values as (
+
+    select
+        is_successful as value_field,
+        count(*) as n_records
+
+    from DATAEXPERT_STUDENT.KOUVERK_DATA_INDUSTRY_staging.stg_llm__skill_extractions
+    group by is_successful
+
+)
+
+select *
+from all_values
+where value_field not in (
+    'True','False'
+)
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+/* {"app": "dbt", "dbt_version": "1.11.2", "profile_name": "data_ai_index", "target_name": "dev", "node_id": "test.data_ai_index.accepted_values_stg_llm__skill_extractions_is_successful__True__False.0b02d8e251"} */
+[0m09:10:32.922822 [debug] [Thread-2 (]: Using snowflake connection "test.data_ai_index.dbt_utils_accepted_range_stg_github__repo_stats_forks__0.78b3b59c81"
+[0m09:10:32.923536 [debug] [Thread-2 (]: On test.data_ai_index.dbt_utils_accepted_range_stg_github__repo_stats_forks__0.78b3b59c81: select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+
+with meet_condition as(
+  select *
+  from DATAEXPERT_STUDENT.KOUVERK_DATA_INDUSTRY_staging.stg_github__repo_stats
+),
+
+validation_errors as (
+  select *
+  from meet_condition
+  where
+    -- never true, defaults to an empty result set. Exists to ensure any combo of the `or` clauses below succeeds
+    1 = 2
+    -- records with a value >= min_value are permitted. The `not` flips this to find records that don't meet the rule.
+    or not forks >= 0
+)
+
+select *
+from validation_errors
+
+
+  
+  
+      
+    ) dbt_internal_test
+/* {"app": "dbt", "dbt_version": "1.11.2", "profile_name": "data_ai_index", "target_name": "dev", "node_id": "test.data_ai_index.dbt_utils_accepted_range_stg_github__repo_stats_forks__0.78b3b59c81"} */
+[0m09:10:33.061255 [debug] [Thread-5 (]: SQL status: SUCCESS 1 in 0.546 seconds
+[0m09:10:33.066677 [warn ] [Thread-5 (]: 4 of 77 WARN 1 accepted_values_stg_linkedin__postings_job_level__Entry_level__Mid_Senior_level__Director__Executive__Associate__Internship__Not_Applicable  [[33mWARN 1[0m in 0.68s]
+[0m09:10:33.068457 [debug] [Thread-5 (]: Finished running node test.data_ai_index.accepted_values_stg_linkedin__postings_job_level__Entry_level__Mid_Senior_level__Director__Executive__Associate__Internship__Not_Applicable.6688856bec
+[0m09:10:33.070437 [debug] [Thread-5 (]: Began running node test.data_ai_index.dbt_utils_accepted_range_stg_github__repo_stats_open_issues__0.0861104ead
+[0m09:10:33.071662 [info ] [Thread-5 (]: 7 of 77 START test dbt_utils_accepted_range_stg_github__repo_stats_open_issues__0  [RUN]
+[0m09:10:33.073734 [debug] [Thread-4 (]: SQL status: SUCCESS 1 in 0.550 seconds
+[0m09:10:33.074902 [debug] [Thread-5 (]: Re-using an available connection from the pool (formerly test.data_ai_index.accepted_values_stg_linkedin__postings_job_level__Entry_level__Mid_Senior_level__Director__Executive__Associate__Internship__Not_Applicable.6688856bec, now test.data_ai_index.dbt_utils_accepted_range_stg_github__repo_stats_open_issues__0.0861104ead)
+[0m09:10:33.080251 [info ] [Thread-4 (]: 3 of 77 PASS accepted_values_stg_github__repo_stats_category__orchestration__transformation__warehouse__streaming__table_format__etl_elt__bi__ml_framework__llm__mlops__vector_db__data_quality__database__infrastructure  [[32mPASS[0m in 0.70s]
+[0m09:10:33.082689 [debug] [Thread-5 (]: Began compiling node test.data_ai_index.dbt_utils_accepted_range_stg_github__repo_stats_open_issues__0.0861104ead
+[0m09:10:33.084125 [debug] [Thread-4 (]: Finished running node test.data_ai_index.accepted_values_stg_github__repo_stats_category__orchestration__transformation__warehouse__streaming__table_format__etl_elt__bi__ml_framework__llm__mlops__vector_db__data_quality__database__infrastructure.c4ab66ca85
+[0m09:10:33.091309 [debug] [Thread-5 (]: Writing injected SQL for node "test.data_ai_index.dbt_utils_accepted_range_stg_github__repo_stats_open_issues__0.0861104ead"
+[0m09:10:33.091959 [debug] [Thread-4 (]: Began running node test.data_ai_index.dbt_utils_accepted_range_stg_github__repo_stats_stars__0.08c1ae2ad0
+[0m09:10:33.092783 [info ] [Thread-4 (]: 8 of 77 START test dbt_utils_accepted_range_stg_github__repo_stats_stars__0 .... [RUN]
+[0m09:10:33.094085 [debug] [Thread-4 (]: Re-using an available connection from the pool (formerly test.data_ai_index.accepted_values_stg_github__repo_stats_category__orchestration__transformation__warehouse__streaming__table_format__etl_elt__bi__ml_framework__llm__mlops__vector_db__data_quality__database__infrastructure.c4ab66ca85, now test.data_ai_index.dbt_utils_accepted_range_stg_github__repo_stats_stars__0.08c1ae2ad0)
+[0m09:10:33.094855 [debug] [Thread-4 (]: Began compiling node test.data_ai_index.dbt_utils_accepted_range_stg_github__repo_stats_stars__0.08c1ae2ad0
+[0m09:10:33.095722 [debug] [Thread-5 (]: Began executing node test.data_ai_index.dbt_utils_accepted_range_stg_github__repo_stats_open_issues__0.0861104ead
+[0m09:10:33.101102 [debug] [Thread-4 (]: Writing injected SQL for node "test.data_ai_index.dbt_utils_accepted_range_stg_github__repo_stats_stars__0.08c1ae2ad0"
+[0m09:10:33.104729 [debug] [Thread-5 (]: Writing runtime sql for node "test.data_ai_index.dbt_utils_accepted_range_stg_github__repo_stats_open_issues__0.0861104ead"
+[0m09:10:33.105963 [debug] [Thread-4 (]: Began executing node test.data_ai_index.dbt_utils_accepted_range_stg_github__repo_stats_stars__0.08c1ae2ad0
+[0m09:10:33.107066 [debug] [Thread-5 (]: Using snowflake connection "test.data_ai_index.dbt_utils_accepted_range_stg_github__repo_stats_open_issues__0.0861104ead"
+[0m09:10:33.111167 [debug] [Thread-4 (]: Writing runtime sql for node "test.data_ai_index.dbt_utils_accepted_range_stg_github__repo_stats_stars__0.08c1ae2ad0"
+[0m09:10:33.111986 [debug] [Thread-5 (]: On test.data_ai_index.dbt_utils_accepted_range_stg_github__repo_stats_open_issues__0.0861104ead: select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+
+with meet_condition as(
+  select *
+  from DATAEXPERT_STUDENT.KOUVERK_DATA_INDUSTRY_staging.stg_github__repo_stats
+),
+
+validation_errors as (
+  select *
+  from meet_condition
+  where
+    -- never true, defaults to an empty result set. Exists to ensure any combo of the `or` clauses below succeeds
+    1 = 2
+    -- records with a value >= min_value are permitted. The `not` flips this to find records that don't meet the rule.
+    or not open_issues >= 0
+)
+
+select *
+from validation_errors
+
+
+  
+  
+      
+    ) dbt_internal_test
+/* {"app": "dbt", "dbt_version": "1.11.2", "profile_name": "data_ai_index", "target_name": "dev", "node_id": "test.data_ai_index.dbt_utils_accepted_range_stg_github__repo_stats_open_issues__0.0861104ead"} */
+[0m09:10:33.115098 [debug] [Thread-4 (]: Using snowflake connection "test.data_ai_index.dbt_utils_accepted_range_stg_github__repo_stats_stars__0.08c1ae2ad0"
+[0m09:10:33.115668 [debug] [Thread-4 (]: On test.data_ai_index.dbt_utils_accepted_range_stg_github__repo_stats_stars__0.08c1ae2ad0: select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+
+with meet_condition as(
+  select *
+  from DATAEXPERT_STUDENT.KOUVERK_DATA_INDUSTRY_staging.stg_github__repo_stats
+),
+
+validation_errors as (
+  select *
+  from meet_condition
+  where
+    -- never true, defaults to an empty result set. Exists to ensure any combo of the `or` clauses below succeeds
+    1 = 2
+    -- records with a value >= min_value are permitted. The `not` flips this to find records that don't meet the rule.
+    or not stars >= 0
+)
+
+select *
+from validation_errors
+
+
+  
+  
+      
+    ) dbt_internal_test
+/* {"app": "dbt", "dbt_version": "1.11.2", "profile_name": "data_ai_index", "target_name": "dev", "node_id": "test.data_ai_index.dbt_utils_accepted_range_stg_github__repo_stats_stars__0.08c1ae2ad0"} */
+[0m09:10:33.118873 [debug] [Thread-2 (]: SQL status: SUCCESS 1 in 0.195 seconds
+[0m09:10:33.121738 [info ] [Thread-2 (]: 6 of 77 PASS dbt_utils_accepted_range_stg_github__repo_stats_forks__0 .......... [[32mPASS[0m in 0.23s]
+[0m09:10:33.123433 [debug] [Thread-2 (]: Finished running node test.data_ai_index.dbt_utils_accepted_range_stg_github__repo_stats_forks__0.78b3b59c81
+[0m09:10:33.123957 [debug] [Thread-2 (]: Began running node test.data_ai_index.dbt_utils_accepted_range_stg_hn__job_postings_posting_year__2030__2011.d68220e449
+[0m09:10:33.124451 [info ] [Thread-2 (]: 9 of 77 START test dbt_utils_accepted_range_stg_hn__job_postings_posting_year__2030__2011  [RUN]
+[0m09:10:33.125119 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly test.data_ai_index.dbt_utils_accepted_range_stg_github__repo_stats_forks__0.78b3b59c81, now test.data_ai_index.dbt_utils_accepted_range_stg_hn__job_postings_posting_year__2030__2011.d68220e449)
+[0m09:10:33.125615 [debug] [Thread-2 (]: Began compiling node test.data_ai_index.dbt_utils_accepted_range_stg_hn__job_postings_posting_year__2030__2011.d68220e449
+[0m09:10:33.131912 [debug] [Thread-2 (]: Writing injected SQL for node "test.data_ai_index.dbt_utils_accepted_range_stg_hn__job_postings_posting_year__2030__2011.d68220e449"
+[0m09:10:33.133823 [debug] [Thread-2 (]: Began executing node test.data_ai_index.dbt_utils_accepted_range_stg_hn__job_postings_posting_year__2030__2011.d68220e449
+[0m09:10:33.138006 [debug] [Thread-2 (]: Writing runtime sql for node "test.data_ai_index.dbt_utils_accepted_range_stg_hn__job_postings_posting_year__2030__2011.d68220e449"
+[0m09:10:33.140015 [debug] [Thread-2 (]: Using snowflake connection "test.data_ai_index.dbt_utils_accepted_range_stg_hn__job_postings_posting_year__2030__2011.d68220e449"
+[0m09:10:33.140609 [debug] [Thread-2 (]: On test.data_ai_index.dbt_utils_accepted_range_stg_hn__job_postings_posting_year__2030__2011.d68220e449: select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+
+with meet_condition as(
+  select *
+  from DATAEXPERT_STUDENT.KOUVERK_DATA_INDUSTRY_staging.stg_hn__job_postings
+),
+
+validation_errors as (
+  select *
+  from meet_condition
+  where
+    -- never true, defaults to an empty result set. Exists to ensure any combo of the `or` clauses below succeeds
+    1 = 2
+    -- records with a value >= min_value are permitted. The `not` flips this to find records that don't meet the rule.
+    or not posting_year >= 2011
+    -- records with a value <= max_value are permitted. The `not` flips this to find records that don't meet the rule.
+    or not posting_year <= 2030
+)
+
+select *
+from validation_errors
+
+
+  
+  
+      
+    ) dbt_internal_test
+/* {"app": "dbt", "dbt_version": "1.11.2", "profile_name": "data_ai_index", "target_name": "dev", "node_id": "test.data_ai_index.dbt_utils_accepted_range_stg_hn__job_postings_posting_year__2030__2011.d68220e449"} */
+[0m09:10:33.466454 [debug] [Thread-5 (]: SQL status: SUCCESS 1 in 0.353 seconds
+[0m09:10:33.468781 [debug] [Thread-4 (]: SQL status: SUCCESS 1 in 0.352 seconds
+[0m09:10:33.474036 [info ] [Thread-5 (]: 7 of 77 PASS dbt_utils_accepted_range_stg_github__repo_stats_open_issues__0 .... [[32mPASS[0m in 0.40s]
+[0m09:10:33.478767 [info ] [Thread-4 (]: 8 of 77 PASS dbt_utils_accepted_range_stg_github__repo_stats_stars__0 .......... [[32mPASS[0m in 0.38s]
+[0m09:10:33.480295 [debug] [Thread-5 (]: Finished running node test.data_ai_index.dbt_utils_accepted_range_stg_github__repo_stats_open_issues__0.0861104ead
+[0m09:10:33.483376 [debug] [Thread-4 (]: Finished running node test.data_ai_index.dbt_utils_accepted_range_stg_github__repo_stats_stars__0.08c1ae2ad0
+[0m09:10:33.485219 [debug] [Thread-5 (]: Began running node test.data_ai_index.dbt_utils_accepted_range_stg_llm__skill_extractions_role_count__0.489d2b23fa
+[0m09:10:33.486493 [debug] [Thread-4 (]: Began running node test.data_ai_index.dbt_utils_accepted_range_stg_llm__skill_extractions_technology_count__0.090c6986da
+[0m09:10:33.488809 [info ] [Thread-5 (]: 10 of 77 START test dbt_utils_accepted_range_stg_llm__skill_extractions_role_count__0  [RUN]
+[0m09:10:33.490006 [info ] [Thread-4 (]: 11 of 77 START test dbt_utils_accepted_range_stg_llm__skill_extractions_technology_count__0  [RUN]
+[0m09:10:33.491254 [debug] [Thread-5 (]: Re-using an available connection from the pool (formerly test.data_ai_index.dbt_utils_accepted_range_stg_github__repo_stats_open_issues__0.0861104ead, now test.data_ai_index.dbt_utils_accepted_range_stg_llm__skill_extractions_role_count__0.489d2b23fa)
+[0m09:10:33.492013 [debug] [Thread-4 (]: Re-using an available connection from the pool (formerly test.data_ai_index.dbt_utils_accepted_range_stg_github__repo_stats_stars__0.08c1ae2ad0, now test.data_ai_index.dbt_utils_accepted_range_stg_llm__skill_extractions_technology_count__0.090c6986da)
+[0m09:10:33.492800 [debug] [Thread-5 (]: Began compiling node test.data_ai_index.dbt_utils_accepted_range_stg_llm__skill_extractions_role_count__0.489d2b23fa
+[0m09:10:33.493659 [debug] [Thread-4 (]: Began compiling node test.data_ai_index.dbt_utils_accepted_range_stg_llm__skill_extractions_technology_count__0.090c6986da
+[0m09:10:33.499822 [debug] [Thread-5 (]: Writing injected SQL for node "test.data_ai_index.dbt_utils_accepted_range_stg_llm__skill_extractions_role_count__0.489d2b23fa"
+[0m09:10:33.507434 [debug] [Thread-3 (]: SQL status: SUCCESS 1 in 0.586 seconds
+[0m09:10:33.508141 [debug] [Thread-4 (]: Writing injected SQL for node "test.data_ai_index.dbt_utils_accepted_range_stg_llm__skill_extractions_technology_count__0.090c6986da"
+[0m09:10:33.511201 [info ] [Thread-3 (]: 5 of 77 PASS accepted_values_stg_llm__skill_extractions_is_successful__True__False  [[32mPASS[0m in 0.62s]
+[0m09:10:33.512668 [debug] [Thread-3 (]: Finished running node test.data_ai_index.accepted_values_stg_llm__skill_extractions_is_successful__True__False.0b02d8e251
+[0m09:10:33.513564 [debug] [Thread-3 (]: Began running node test.data_ai_index.not_null_dim_date_date_key.881d0a31b6
+[0m09:10:33.514118 [info ] [Thread-3 (]: 12 of 77 START test not_null_dim_date_date_key ................................. [RUN]
+[0m09:10:33.514667 [debug] [Thread-5 (]: Began executing node test.data_ai_index.dbt_utils_accepted_range_stg_llm__skill_extractions_role_count__0.489d2b23fa
+[0m09:10:33.515341 [debug] [Thread-3 (]: Re-using an available connection from the pool (formerly test.data_ai_index.accepted_values_stg_llm__skill_extractions_is_successful__True__False.0b02d8e251, now test.data_ai_index.not_null_dim_date_date_key.881d0a31b6)
+[0m09:10:33.519055 [debug] [Thread-5 (]: Writing runtime sql for node "test.data_ai_index.dbt_utils_accepted_range_stg_llm__skill_extractions_role_count__0.489d2b23fa"
+[0m09:10:33.520379 [debug] [Thread-4 (]: Began executing node test.data_ai_index.dbt_utils_accepted_range_stg_llm__skill_extractions_technology_count__0.090c6986da
+[0m09:10:33.521571 [debug] [Thread-3 (]: Began compiling node test.data_ai_index.not_null_dim_date_date_key.881d0a31b6
+[0m09:10:33.526496 [debug] [Thread-4 (]: Writing runtime sql for node "test.data_ai_index.dbt_utils_accepted_range_stg_llm__skill_extractions_technology_count__0.090c6986da"
+[0m09:10:33.535224 [debug] [Thread-3 (]: Writing injected SQL for node "test.data_ai_index.not_null_dim_date_date_key.881d0a31b6"
+[0m09:10:33.536859 [debug] [Thread-5 (]: Using snowflake connection "test.data_ai_index.dbt_utils_accepted_range_stg_llm__skill_extractions_role_count__0.489d2b23fa"
+[0m09:10:33.538518 [debug] [Thread-5 (]: On test.data_ai_index.dbt_utils_accepted_range_stg_llm__skill_extractions_role_count__0.489d2b23fa: select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+
+with meet_condition as(
+  select *
+  from DATAEXPERT_STUDENT.KOUVERK_DATA_INDUSTRY_staging.stg_llm__skill_extractions
+),
+
+validation_errors as (
+  select *
+  from meet_condition
+  where
+    -- never true, defaults to an empty result set. Exists to ensure any combo of the `or` clauses below succeeds
+    1 = 2
+    -- records with a value >= min_value are permitted. The `not` flips this to find records that don't meet the rule.
+    or not role_count >= 0
+)
+
+select *
+from validation_errors
+
+
+  
+  
+      
+    ) dbt_internal_test
+/* {"app": "dbt", "dbt_version": "1.11.2", "profile_name": "data_ai_index", "target_name": "dev", "node_id": "test.data_ai_index.dbt_utils_accepted_range_stg_llm__skill_extractions_role_count__0.489d2b23fa"} */
+[0m09:10:33.540507 [debug] [Thread-4 (]: Using snowflake connection "test.data_ai_index.dbt_utils_accepted_range_stg_llm__skill_extractions_technology_count__0.090c6986da"
+[0m09:10:33.542181 [debug] [Thread-4 (]: On test.data_ai_index.dbt_utils_accepted_range_stg_llm__skill_extractions_technology_count__0.090c6986da: select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+
+with meet_condition as(
+  select *
+  from DATAEXPERT_STUDENT.KOUVERK_DATA_INDUSTRY_staging.stg_llm__skill_extractions
+),
+
+validation_errors as (
+  select *
+  from meet_condition
+  where
+    -- never true, defaults to an empty result set. Exists to ensure any combo of the `or` clauses below succeeds
+    1 = 2
+    -- records with a value >= min_value are permitted. The `not` flips this to find records that don't meet the rule.
+    or not technology_count >= 0
+)
+
+select *
+from validation_errors
+
+
+  
+  
+      
+    ) dbt_internal_test
+/* {"app": "dbt", "dbt_version": "1.11.2", "profile_name": "data_ai_index", "target_name": "dev", "node_id": "test.data_ai_index.dbt_utils_accepted_range_stg_llm__skill_extractions_technology_count__0.090c6986da"} */
+[0m09:10:33.543582 [debug] [Thread-3 (]: Began executing node test.data_ai_index.not_null_dim_date_date_key.881d0a31b6
+[0m09:10:33.554962 [debug] [Thread-3 (]: Writing runtime sql for node "test.data_ai_index.not_null_dim_date_date_key.881d0a31b6"
+[0m09:10:33.559034 [debug] [Thread-3 (]: Using snowflake connection "test.data_ai_index.not_null_dim_date_date_key.881d0a31b6"
+[0m09:10:33.559944 [debug] [Thread-3 (]: On test.data_ai_index.not_null_dim_date_date_key.881d0a31b6: select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select date_key
+from DATAEXPERT_STUDENT.KOUVERK_DATA_INDUSTRY_marts.dim_date
+where date_key is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+/* {"app": "dbt", "dbt_version": "1.11.2", "profile_name": "data_ai_index", "target_name": "dev", "node_id": "test.data_ai_index.not_null_dim_date_date_key.881d0a31b6"} */
+[0m09:10:33.802903 [debug] [Thread-3 (]: SQL status: SUCCESS 1 in 0.241 seconds
+[0m09:10:33.808251 [info ] [Thread-3 (]: 12 of 77 PASS not_null_dim_date_date_key ....................................... [[32mPASS[0m in 0.29s]
+[0m09:10:33.810199 [debug] [Thread-3 (]: Finished running node test.data_ai_index.not_null_dim_date_date_key.881d0a31b6
+[0m09:10:33.811330 [debug] [Thread-3 (]: Began running node test.data_ai_index.not_null_dim_roles_role_id.4c31620634
+[0m09:10:33.813065 [info ] [Thread-3 (]: 13 of 77 START test not_null_dim_roles_role_id ................................. [RUN]
+[0m09:10:33.815448 [debug] [Thread-4 (]: SQL status: SUCCESS 1 in 0.272 seconds
+[0m09:10:33.817006 [debug] [Thread-3 (]: Re-using an available connection from the pool (formerly test.data_ai_index.not_null_dim_date_date_key.881d0a31b6, now test.data_ai_index.not_null_dim_roles_role_id.4c31620634)
+[0m09:10:33.823668 [debug] [Thread-3 (]: Began compiling node test.data_ai_index.not_null_dim_roles_role_id.4c31620634
+[0m09:10:33.824437 [info ] [Thread-4 (]: 11 of 77 PASS dbt_utils_accepted_range_stg_llm__skill_extractions_technology_count__0  [[32mPASS[0m in 0.33s]
+[0m09:10:33.830593 [debug] [Thread-3 (]: Writing injected SQL for node "test.data_ai_index.not_null_dim_roles_role_id.4c31620634"
+[0m09:10:33.832002 [debug] [Thread-4 (]: Finished running node test.data_ai_index.dbt_utils_accepted_range_stg_llm__skill_extractions_technology_count__0.090c6986da
+[0m09:10:33.833155 [debug] [Thread-4 (]: Began running node test.data_ai_index.not_null_dim_roles_role_name.aafac91aed
+[0m09:10:33.833857 [info ] [Thread-4 (]: 14 of 77 START test not_null_dim_roles_role_name ............................... [RUN]
+[0m09:10:33.834821 [debug] [Thread-4 (]: Re-using an available connection from the pool (formerly test.data_ai_index.dbt_utils_accepted_range_stg_llm__skill_extractions_technology_count__0.090c6986da, now test.data_ai_index.not_null_dim_roles_role_name.aafac91aed)
+[0m09:10:33.835402 [debug] [Thread-4 (]: Began compiling node test.data_ai_index.not_null_dim_roles_role_name.aafac91aed
+[0m09:10:33.844523 [debug] [Thread-4 (]: Writing injected SQL for node "test.data_ai_index.not_null_dim_roles_role_name.aafac91aed"
+[0m09:10:33.845360 [debug] [Thread-3 (]: Began executing node test.data_ai_index.not_null_dim_roles_role_id.4c31620634
+[0m09:10:33.848401 [debug] [Thread-3 (]: Writing runtime sql for node "test.data_ai_index.not_null_dim_roles_role_id.4c31620634"
+[0m09:10:33.849348 [debug] [Thread-4 (]: Began executing node test.data_ai_index.not_null_dim_roles_role_name.aafac91aed
+[0m09:10:33.852519 [debug] [Thread-4 (]: Writing runtime sql for node "test.data_ai_index.not_null_dim_roles_role_name.aafac91aed"
+[0m09:10:33.854684 [debug] [Thread-3 (]: Using snowflake connection "test.data_ai_index.not_null_dim_roles_role_id.4c31620634"
+[0m09:10:33.855967 [debug] [Thread-4 (]: Using snowflake connection "test.data_ai_index.not_null_dim_roles_role_name.aafac91aed"
+[0m09:10:33.857064 [debug] [Thread-3 (]: On test.data_ai_index.not_null_dim_roles_role_id.4c31620634: select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select role_id
+from DATAEXPERT_STUDENT.KOUVERK_DATA_INDUSTRY_marts.dim_roles
+where role_id is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+/* {"app": "dbt", "dbt_version": "1.11.2", "profile_name": "data_ai_index", "target_name": "dev", "node_id": "test.data_ai_index.not_null_dim_roles_role_id.4c31620634"} */
+[0m09:10:33.858353 [debug] [Thread-4 (]: On test.data_ai_index.not_null_dim_roles_role_name.aafac91aed: select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select role_name
+from DATAEXPERT_STUDENT.KOUVERK_DATA_INDUSTRY_marts.dim_roles
+where role_name is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+/* {"app": "dbt", "dbt_version": "1.11.2", "profile_name": "data_ai_index", "target_name": "dev", "node_id": "test.data_ai_index.not_null_dim_roles_role_name.aafac91aed"} */
+[0m09:10:33.950506 [debug] [Thread-2 (]: SQL status: SUCCESS 1 in 0.809 seconds
+[0m09:10:33.953152 [info ] [Thread-2 (]: 9 of 77 PASS dbt_utils_accepted_range_stg_hn__job_postings_posting_year__2030__2011  [[32mPASS[0m in 0.83s]
+[0m09:10:33.954512 [debug] [Thread-2 (]: Finished running node test.data_ai_index.dbt_utils_accepted_range_stg_hn__job_postings_posting_year__2030__2011.d68220e449
+[0m09:10:33.955450 [debug] [Thread-2 (]: Began running node test.data_ai_index.not_null_dim_technologies_technology_id.29429ee493
+[0m09:10:33.956080 [info ] [Thread-2 (]: 15 of 77 START test not_null_dim_technologies_technology_id .................... [RUN]
+[0m09:10:33.956772 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly test.data_ai_index.dbt_utils_accepted_range_stg_hn__job_postings_posting_year__2030__2011.d68220e449, now test.data_ai_index.not_null_dim_technologies_technology_id.29429ee493)
+[0m09:10:33.957251 [debug] [Thread-2 (]: Began compiling node test.data_ai_index.not_null_dim_technologies_technology_id.29429ee493
+[0m09:10:33.963059 [debug] [Thread-2 (]: Writing injected SQL for node "test.data_ai_index.not_null_dim_technologies_technology_id.29429ee493"
+[0m09:10:33.964052 [debug] [Thread-2 (]: Began executing node test.data_ai_index.not_null_dim_technologies_technology_id.29429ee493
+[0m09:10:33.967651 [debug] [Thread-2 (]: Writing runtime sql for node "test.data_ai_index.not_null_dim_technologies_technology_id.29429ee493"
+[0m09:10:33.968982 [debug] [Thread-2 (]: Using snowflake connection "test.data_ai_index.not_null_dim_technologies_technology_id.29429ee493"
+[0m09:10:33.969457 [debug] [Thread-2 (]: On test.data_ai_index.not_null_dim_technologies_technology_id.29429ee493: select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select technology_id
+from DATAEXPERT_STUDENT.KOUVERK_DATA_INDUSTRY_marts.dim_technologies
+where technology_id is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+/* {"app": "dbt", "dbt_version": "1.11.2", "profile_name": "data_ai_index", "target_name": "dev", "node_id": "test.data_ai_index.not_null_dim_technologies_technology_id.29429ee493"} */
+[0m09:10:33.981550 [debug] [Thread-3 (]: SQL status: SUCCESS 1 in 0.122 seconds
+[0m09:10:33.984068 [info ] [Thread-3 (]: 13 of 77 PASS not_null_dim_roles_role_id ....................................... [[32mPASS[0m in 0.17s]
+[0m09:10:33.984928 [debug] [Thread-3 (]: Finished running node test.data_ai_index.not_null_dim_roles_role_id.4c31620634
+[0m09:10:33.985439 [debug] [Thread-3 (]: Began running node test.data_ai_index.not_null_dim_technologies_technology_name.7e8d31ebe5
+[0m09:10:33.985914 [info ] [Thread-3 (]: 16 of 77 START test not_null_dim_technologies_technology_name .................. [RUN]
+[0m09:10:33.986850 [debug] [Thread-3 (]: Re-using an available connection from the pool (formerly test.data_ai_index.not_null_dim_roles_role_id.4c31620634, now test.data_ai_index.not_null_dim_technologies_technology_name.7e8d31ebe5)
+[0m09:10:33.988121 [debug] [Thread-3 (]: Began compiling node test.data_ai_index.not_null_dim_technologies_technology_name.7e8d31ebe5
+[0m09:10:33.994223 [debug] [Thread-3 (]: Writing injected SQL for node "test.data_ai_index.not_null_dim_technologies_technology_name.7e8d31ebe5"
+[0m09:10:33.995815 [debug] [Thread-5 (]: SQL status: SUCCESS 1 in 0.455 seconds
+[0m09:10:33.998260 [info ] [Thread-5 (]: 10 of 77 PASS dbt_utils_accepted_range_stg_llm__skill_extractions_role_count__0  [[32mPASS[0m in 0.51s]
+[0m09:10:33.999236 [debug] [Thread-5 (]: Finished running node test.data_ai_index.dbt_utils_accepted_range_stg_llm__skill_extractions_role_count__0.489d2b23fa
+[0m09:10:33.999737 [debug] [Thread-5 (]: Began running node test.data_ai_index.not_null_fct_github_repo_stats_category.a938b3c1b3
+[0m09:10:34.000192 [info ] [Thread-5 (]: 17 of 77 START test not_null_fct_github_repo_stats_category .................... [RUN]
+[0m09:10:34.000880 [debug] [Thread-5 (]: Re-using an available connection from the pool (formerly test.data_ai_index.dbt_utils_accepted_range_stg_llm__skill_extractions_role_count__0.489d2b23fa, now test.data_ai_index.not_null_fct_github_repo_stats_category.a938b3c1b3)
+[0m09:10:34.001385 [debug] [Thread-5 (]: Began compiling node test.data_ai_index.not_null_fct_github_repo_stats_category.a938b3c1b3
+[0m09:10:34.009076 [debug] [Thread-5 (]: Writing injected SQL for node "test.data_ai_index.not_null_fct_github_repo_stats_category.a938b3c1b3"
+[0m09:10:34.010531 [debug] [Thread-3 (]: Began executing node test.data_ai_index.not_null_dim_technologies_technology_name.7e8d31ebe5
+[0m09:10:34.015020 [debug] [Thread-3 (]: Writing runtime sql for node "test.data_ai_index.not_null_dim_technologies_technology_name.7e8d31ebe5"
+[0m09:10:34.016277 [debug] [Thread-4 (]: SQL status: SUCCESS 1 in 0.156 seconds
+[0m09:10:34.019943 [debug] [Thread-5 (]: Began executing node test.data_ai_index.not_null_fct_github_repo_stats_category.a938b3c1b3
+[0m09:10:34.019290 [info ] [Thread-4 (]: 14 of 77 PASS not_null_dim_roles_role_name ..................................... [[32mPASS[0m in 0.18s]
+[0m09:10:34.026905 [debug] [Thread-5 (]: Writing runtime sql for node "test.data_ai_index.not_null_fct_github_repo_stats_category.a938b3c1b3"
+[0m09:10:34.029925 [debug] [Thread-4 (]: Finished running node test.data_ai_index.not_null_dim_roles_role_name.aafac91aed
+[0m09:10:34.031302 [debug] [Thread-3 (]: Using snowflake connection "test.data_ai_index.not_null_dim_technologies_technology_name.7e8d31ebe5"
+[0m09:10:34.032312 [debug] [Thread-4 (]: Began running node test.data_ai_index.not_null_fct_github_repo_stats_repo_id.c1b60ad944
+[0m09:10:34.033440 [debug] [Thread-3 (]: On test.data_ai_index.not_null_dim_technologies_technology_name.7e8d31ebe5: select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select technology_name
+from DATAEXPERT_STUDENT.KOUVERK_DATA_INDUSTRY_marts.dim_technologies
+where technology_name is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+/* {"app": "dbt", "dbt_version": "1.11.2", "profile_name": "data_ai_index", "target_name": "dev", "node_id": "test.data_ai_index.not_null_dim_technologies_technology_name.7e8d31ebe5"} */
+[0m09:10:34.034099 [info ] [Thread-4 (]: 18 of 77 START test not_null_fct_github_repo_stats_repo_id ..................... [RUN]
+[0m09:10:34.035012 [debug] [Thread-5 (]: Using snowflake connection "test.data_ai_index.not_null_fct_github_repo_stats_category.a938b3c1b3"
+[0m09:10:34.036401 [debug] [Thread-4 (]: Re-using an available connection from the pool (formerly test.data_ai_index.not_null_dim_roles_role_name.aafac91aed, now test.data_ai_index.not_null_fct_github_repo_stats_repo_id.c1b60ad944)
+[0m09:10:34.038385 [debug] [Thread-5 (]: On test.data_ai_index.not_null_fct_github_repo_stats_category.a938b3c1b3: select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select category
+from DATAEXPERT_STUDENT.KOUVERK_DATA_INDUSTRY_marts.fct_github_repo_stats
+where category is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+/* {"app": "dbt", "dbt_version": "1.11.2", "profile_name": "data_ai_index", "target_name": "dev", "node_id": "test.data_ai_index.not_null_fct_github_repo_stats_category.a938b3c1b3"} */
+[0m09:10:34.039723 [debug] [Thread-4 (]: Began compiling node test.data_ai_index.not_null_fct_github_repo_stats_repo_id.c1b60ad944
+[0m09:10:34.050234 [debug] [Thread-4 (]: Writing injected SQL for node "test.data_ai_index.not_null_fct_github_repo_stats_repo_id.c1b60ad944"
+[0m09:10:34.052496 [debug] [Thread-4 (]: Began executing node test.data_ai_index.not_null_fct_github_repo_stats_repo_id.c1b60ad944
+[0m09:10:34.058302 [debug] [Thread-4 (]: Writing runtime sql for node "test.data_ai_index.not_null_fct_github_repo_stats_repo_id.c1b60ad944"
+[0m09:10:34.061465 [debug] [Thread-4 (]: Using snowflake connection "test.data_ai_index.not_null_fct_github_repo_stats_repo_id.c1b60ad944"
+[0m09:10:34.062478 [debug] [Thread-4 (]: On test.data_ai_index.not_null_fct_github_repo_stats_repo_id.c1b60ad944: select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select repo_id
+from DATAEXPERT_STUDENT.KOUVERK_DATA_INDUSTRY_marts.fct_github_repo_stats
+where repo_id is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+/* {"app": "dbt", "dbt_version": "1.11.2", "profile_name": "data_ai_index", "target_name": "dev", "node_id": "test.data_ai_index.not_null_fct_github_repo_stats_repo_id.c1b60ad944"} */
+[0m09:10:34.112427 [debug] [Thread-2 (]: SQL status: SUCCESS 1 in 0.142 seconds
+[0m09:10:34.115020 [info ] [Thread-2 (]: 15 of 77 PASS not_null_dim_technologies_technology_id .......................... [[32mPASS[0m in 0.16s]
+[0m09:10:34.116000 [debug] [Thread-2 (]: Finished running node test.data_ai_index.not_null_dim_technologies_technology_id.29429ee493
+[0m09:10:34.116557 [debug] [Thread-2 (]: Began running node test.data_ai_index.not_null_fct_hn_role_mentions_mention_id.26534bf507
+[0m09:10:34.117175 [info ] [Thread-2 (]: 19 of 77 START test not_null_fct_hn_role_mentions_mention_id ................... [RUN]
+[0m09:10:34.117925 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly test.data_ai_index.not_null_dim_technologies_technology_id.29429ee493, now test.data_ai_index.not_null_fct_hn_role_mentions_mention_id.26534bf507)
+[0m09:10:34.118548 [debug] [Thread-2 (]: Began compiling node test.data_ai_index.not_null_fct_hn_role_mentions_mention_id.26534bf507
+[0m09:10:34.124412 [debug] [Thread-2 (]: Writing injected SQL for node "test.data_ai_index.not_null_fct_hn_role_mentions_mention_id.26534bf507"
+[0m09:10:34.125298 [debug] [Thread-2 (]: Began executing node test.data_ai_index.not_null_fct_hn_role_mentions_mention_id.26534bf507
+[0m09:10:34.128906 [debug] [Thread-2 (]: Writing runtime sql for node "test.data_ai_index.not_null_fct_hn_role_mentions_mention_id.26534bf507"
+[0m09:10:34.130149 [debug] [Thread-2 (]: Using snowflake connection "test.data_ai_index.not_null_fct_hn_role_mentions_mention_id.26534bf507"
+[0m09:10:34.130662 [debug] [Thread-2 (]: On test.data_ai_index.not_null_fct_hn_role_mentions_mention_id.26534bf507: select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select mention_id
+from DATAEXPERT_STUDENT.KOUVERK_DATA_INDUSTRY_marts.fct_hn_role_mentions
+where mention_id is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+/* {"app": "dbt", "dbt_version": "1.11.2", "profile_name": "data_ai_index", "target_name": "dev", "node_id": "test.data_ai_index.not_null_fct_hn_role_mentions_mention_id.26534bf507"} */
+[0m09:10:34.153093 [debug] [Thread-3 (]: SQL status: SUCCESS 1 in 0.117 seconds
+[0m09:10:34.157678 [info ] [Thread-3 (]: 16 of 77 PASS not_null_dim_technologies_technology_name ........................ [[32mPASS[0m in 0.17s]
+[0m09:10:34.158722 [debug] [Thread-3 (]: Finished running node test.data_ai_index.not_null_dim_technologies_technology_name.7e8d31ebe5
+[0m09:10:34.159795 [debug] [Thread-3 (]: Began running node test.data_ai_index.not_null_fct_hn_role_mentions_posting_id.3d650797ef
+[0m09:10:34.160883 [info ] [Thread-3 (]: 20 of 77 START test not_null_fct_hn_role_mentions_posting_id ................... [RUN]
+[0m09:10:34.161987 [debug] [Thread-3 (]: Re-using an available connection from the pool (formerly test.data_ai_index.not_null_dim_technologies_technology_name.7e8d31ebe5, now test.data_ai_index.not_null_fct_hn_role_mentions_posting_id.3d650797ef)
+[0m09:10:34.162933 [debug] [Thread-3 (]: Began compiling node test.data_ai_index.not_null_fct_hn_role_mentions_posting_id.3d650797ef
+[0m09:10:34.171083 [debug] [Thread-3 (]: Writing injected SQL for node "test.data_ai_index.not_null_fct_hn_role_mentions_posting_id.3d650797ef"
+[0m09:10:34.172584 [debug] [Thread-3 (]: Began executing node test.data_ai_index.not_null_fct_hn_role_mentions_posting_id.3d650797ef
+[0m09:10:34.179242 [debug] [Thread-3 (]: Writing runtime sql for node "test.data_ai_index.not_null_fct_hn_role_mentions_posting_id.3d650797ef"
+[0m09:10:34.181624 [debug] [Thread-3 (]: Using snowflake connection "test.data_ai_index.not_null_fct_hn_role_mentions_posting_id.3d650797ef"
+[0m09:10:34.182929 [debug] [Thread-3 (]: On test.data_ai_index.not_null_fct_hn_role_mentions_posting_id.3d650797ef: select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select posting_id
+from DATAEXPERT_STUDENT.KOUVERK_DATA_INDUSTRY_marts.fct_hn_role_mentions
+where posting_id is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+/* {"app": "dbt", "dbt_version": "1.11.2", "profile_name": "data_ai_index", "target_name": "dev", "node_id": "test.data_ai_index.not_null_fct_hn_role_mentions_posting_id.3d650797ef"} */
+[0m09:10:34.216662 [debug] [Thread-5 (]: SQL status: SUCCESS 1 in 0.176 seconds
+[0m09:10:34.220197 [info ] [Thread-5 (]: 17 of 77 PASS not_null_fct_github_repo_stats_category .......................... [[32mPASS[0m in 0.22s]
+[0m09:10:34.221490 [debug] [Thread-5 (]: Finished running node test.data_ai_index.not_null_fct_github_repo_stats_category.a938b3c1b3
+[0m09:10:34.222858 [debug] [Thread-5 (]: Began running node test.data_ai_index.not_null_fct_hn_technology_mentions_mention_id.f6ebed3cb8
+[0m09:10:34.224195 [debug] [Thread-4 (]: SQL status: SUCCESS 1 in 0.161 seconds
+[0m09:10:34.224944 [info ] [Thread-5 (]: 21 of 77 START test not_null_fct_hn_technology_mentions_mention_id ............. [RUN]
+[0m09:10:34.228442 [info ] [Thread-4 (]: 18 of 77 PASS not_null_fct_github_repo_stats_repo_id ........................... [[32mPASS[0m in 0.19s]
+[0m09:10:34.229497 [debug] [Thread-5 (]: Re-using an available connection from the pool (formerly test.data_ai_index.not_null_fct_github_repo_stats_category.a938b3c1b3, now test.data_ai_index.not_null_fct_hn_technology_mentions_mention_id.f6ebed3cb8)
+[0m09:10:34.230417 [debug] [Thread-4 (]: Finished running node test.data_ai_index.not_null_fct_github_repo_stats_repo_id.c1b60ad944
+[0m09:10:34.231032 [debug] [Thread-5 (]: Began compiling node test.data_ai_index.not_null_fct_hn_technology_mentions_mention_id.f6ebed3cb8
+[0m09:10:34.231963 [debug] [Thread-4 (]: Began running node test.data_ai_index.not_null_fct_hn_technology_mentions_posting_id.3398f9fdfa
+[0m09:10:34.238918 [debug] [Thread-5 (]: Writing injected SQL for node "test.data_ai_index.not_null_fct_hn_technology_mentions_mention_id.f6ebed3cb8"
+[0m09:10:34.240029 [info ] [Thread-4 (]: 22 of 77 START test not_null_fct_hn_technology_mentions_posting_id ............. [RUN]
+[0m09:10:34.241876 [debug] [Thread-4 (]: Re-using an available connection from the pool (formerly test.data_ai_index.not_null_fct_github_repo_stats_repo_id.c1b60ad944, now test.data_ai_index.not_null_fct_hn_technology_mentions_posting_id.3398f9fdfa)
+[0m09:10:34.243458 [debug] [Thread-4 (]: Began compiling node test.data_ai_index.not_null_fct_hn_technology_mentions_posting_id.3398f9fdfa
+[0m09:10:34.250857 [debug] [Thread-5 (]: Began executing node test.data_ai_index.not_null_fct_hn_technology_mentions_mention_id.f6ebed3cb8
+[0m09:10:34.253407 [debug] [Thread-4 (]: Writing injected SQL for node "test.data_ai_index.not_null_fct_hn_technology_mentions_posting_id.3398f9fdfa"
+[0m09:10:34.259942 [debug] [Thread-5 (]: Writing runtime sql for node "test.data_ai_index.not_null_fct_hn_technology_mentions_mention_id.f6ebed3cb8"
+[0m09:10:34.261844 [debug] [Thread-4 (]: Began executing node test.data_ai_index.not_null_fct_hn_technology_mentions_posting_id.3398f9fdfa
+[0m09:10:34.263284 [debug] [Thread-5 (]: Using snowflake connection "test.data_ai_index.not_null_fct_hn_technology_mentions_mention_id.f6ebed3cb8"
+[0m09:10:34.267244 [debug] [Thread-4 (]: Writing runtime sql for node "test.data_ai_index.not_null_fct_hn_technology_mentions_posting_id.3398f9fdfa"
+[0m09:10:34.268002 [debug] [Thread-5 (]: On test.data_ai_index.not_null_fct_hn_technology_mentions_mention_id.f6ebed3cb8: select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select mention_id
+from DATAEXPERT_STUDENT.KOUVERK_DATA_INDUSTRY_marts.fct_hn_technology_mentions
+where mention_id is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+/* {"app": "dbt", "dbt_version": "1.11.2", "profile_name": "data_ai_index", "target_name": "dev", "node_id": "test.data_ai_index.not_null_fct_hn_technology_mentions_mention_id.f6ebed3cb8"} */
+[0m09:10:34.271421 [debug] [Thread-4 (]: Using snowflake connection "test.data_ai_index.not_null_fct_hn_technology_mentions_posting_id.3398f9fdfa"
+[0m09:10:34.272712 [debug] [Thread-4 (]: On test.data_ai_index.not_null_fct_hn_technology_mentions_posting_id.3398f9fdfa: select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select posting_id
+from DATAEXPERT_STUDENT.KOUVERK_DATA_INDUSTRY_marts.fct_hn_technology_mentions
+where posting_id is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+/* {"app": "dbt", "dbt_version": "1.11.2", "profile_name": "data_ai_index", "target_name": "dev", "node_id": "test.data_ai_index.not_null_fct_hn_technology_mentions_posting_id.3398f9fdfa"} */
+[0m09:10:34.485091 [debug] [Thread-3 (]: SQL status: SUCCESS 1 in 0.301 seconds
+[0m09:10:34.487978 [debug] [Thread-2 (]: SQL status: SUCCESS 1 in 0.357 seconds
+[0m09:10:34.493571 [info ] [Thread-3 (]: 20 of 77 PASS not_null_fct_hn_role_mentions_posting_id ......................... [[32mPASS[0m in 0.33s]
+[0m09:10:34.498541 [info ] [Thread-2 (]: 19 of 77 PASS not_null_fct_hn_role_mentions_mention_id ......................... [[32mPASS[0m in 0.38s]
+[0m09:10:34.502424 [debug] [Thread-5 (]: SQL status: SUCCESS 1 in 0.234 seconds
+[0m09:10:34.503843 [debug] [Thread-3 (]: Finished running node test.data_ai_index.not_null_fct_hn_role_mentions_posting_id.3d650797ef
+[0m09:10:34.505522 [debug] [Thread-4 (]: SQL status: SUCCESS 1 in 0.231 seconds
+[0m09:10:34.506689 [debug] [Thread-2 (]: Finished running node test.data_ai_index.not_null_fct_hn_role_mentions_mention_id.26534bf507
+[0m09:10:34.512644 [info ] [Thread-5 (]: 21 of 77 PASS not_null_fct_hn_technology_mentions_mention_id ................... [[32mPASS[0m in 0.28s]
+[0m09:10:34.513522 [debug] [Thread-3 (]: Began running node test.data_ai_index.not_null_fct_hn_technology_mentions_technology_name.2dcbc36ce7
+[0m09:10:34.517259 [debug] [Thread-2 (]: Began running node test.data_ai_index.not_null_fct_linkedin_skill_counts_skill_name.21873086a3
+[0m09:10:34.516471 [info ] [Thread-4 (]: 22 of 77 PASS not_null_fct_hn_technology_mentions_posting_id ................... [[32mPASS[0m in 0.28s]
+[0m09:10:34.518972 [debug] [Thread-5 (]: Finished running node test.data_ai_index.not_null_fct_hn_technology_mentions_mention_id.f6ebed3cb8
+[0m09:10:34.520641 [info ] [Thread-3 (]: 23 of 77 START test not_null_fct_hn_technology_mentions_technology_name ........ [RUN]
+[0m09:10:34.521362 [info ] [Thread-2 (]: 24 of 77 START test not_null_fct_linkedin_skill_counts_skill_name .............. [RUN]
+[0m09:10:34.522239 [debug] [Thread-4 (]: Finished running node test.data_ai_index.not_null_fct_hn_technology_mentions_posting_id.3398f9fdfa
+[0m09:10:34.522844 [debug] [Thread-5 (]: Began running node test.data_ai_index.not_null_fct_llm_technology_mentions_mention_id.5c54e01721
+[0m09:10:34.523555 [debug] [Thread-3 (]: Re-using an available connection from the pool (formerly test.data_ai_index.not_null_fct_hn_role_mentions_posting_id.3d650797ef, now test.data_ai_index.not_null_fct_hn_technology_mentions_technology_name.2dcbc36ce7)
+[0m09:10:34.524160 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly test.data_ai_index.not_null_fct_hn_role_mentions_mention_id.26534bf507, now test.data_ai_index.not_null_fct_linkedin_skill_counts_skill_name.21873086a3)
+[0m09:10:34.524746 [debug] [Thread-4 (]: Began running node test.data_ai_index.not_null_fct_llm_technology_mentions_posting_id.f0caf69d33
+[0m09:10:34.526013 [info ] [Thread-5 (]: 25 of 77 START test not_null_fct_llm_technology_mentions_mention_id ............ [RUN]
+[0m09:10:34.528082 [debug] [Thread-3 (]: Began compiling node test.data_ai_index.not_null_fct_hn_technology_mentions_technology_name.2dcbc36ce7
+[0m09:10:34.529193 [debug] [Thread-2 (]: Began compiling node test.data_ai_index.not_null_fct_linkedin_skill_counts_skill_name.21873086a3
+[0m09:10:34.529993 [info ] [Thread-4 (]: 26 of 77 START test not_null_fct_llm_technology_mentions_posting_id ............ [RUN]
+[0m09:10:34.530897 [debug] [Thread-5 (]: Re-using an available connection from the pool (formerly test.data_ai_index.not_null_fct_hn_technology_mentions_mention_id.f6ebed3cb8, now test.data_ai_index.not_null_fct_llm_technology_mentions_mention_id.5c54e01721)
+[0m09:10:34.536248 [debug] [Thread-3 (]: Writing injected SQL for node "test.data_ai_index.not_null_fct_hn_technology_mentions_technology_name.2dcbc36ce7"
+[0m09:10:34.544162 [debug] [Thread-2 (]: Writing injected SQL for node "test.data_ai_index.not_null_fct_linkedin_skill_counts_skill_name.21873086a3"
+[0m09:10:34.545069 [debug] [Thread-4 (]: Re-using an available connection from the pool (formerly test.data_ai_index.not_null_fct_hn_technology_mentions_posting_id.3398f9fdfa, now test.data_ai_index.not_null_fct_llm_technology_mentions_posting_id.f0caf69d33)
+[0m09:10:34.545921 [debug] [Thread-5 (]: Began compiling node test.data_ai_index.not_null_fct_llm_technology_mentions_mention_id.5c54e01721
+[0m09:10:34.546795 [debug] [Thread-4 (]: Began compiling node test.data_ai_index.not_null_fct_llm_technology_mentions_posting_id.f0caf69d33
+[0m09:10:34.551119 [debug] [Thread-5 (]: Writing injected SQL for node "test.data_ai_index.not_null_fct_llm_technology_mentions_mention_id.5c54e01721"
+[0m09:10:34.563601 [debug] [Thread-4 (]: Writing injected SQL for node "test.data_ai_index.not_null_fct_llm_technology_mentions_posting_id.f0caf69d33"
+[0m09:10:34.564310 [debug] [Thread-2 (]: Began executing node test.data_ai_index.not_null_fct_linkedin_skill_counts_skill_name.21873086a3
+[0m09:10:34.564814 [debug] [Thread-3 (]: Began executing node test.data_ai_index.not_null_fct_hn_technology_mentions_technology_name.2dcbc36ce7
+[0m09:10:34.568429 [debug] [Thread-2 (]: Writing runtime sql for node "test.data_ai_index.not_null_fct_linkedin_skill_counts_skill_name.21873086a3"
+[0m09:10:34.569382 [debug] [Thread-4 (]: Began executing node test.data_ai_index.not_null_fct_llm_technology_mentions_posting_id.f0caf69d33
+[0m09:10:34.573106 [debug] [Thread-3 (]: Writing runtime sql for node "test.data_ai_index.not_null_fct_hn_technology_mentions_technology_name.2dcbc36ce7"
+[0m09:10:34.573846 [debug] [Thread-5 (]: Began executing node test.data_ai_index.not_null_fct_llm_technology_mentions_mention_id.5c54e01721
+[0m09:10:34.577349 [debug] [Thread-4 (]: Writing runtime sql for node "test.data_ai_index.not_null_fct_llm_technology_mentions_posting_id.f0caf69d33"
+[0m09:10:34.579225 [debug] [Thread-2 (]: Using snowflake connection "test.data_ai_index.not_null_fct_linkedin_skill_counts_skill_name.21873086a3"
+[0m09:10:34.584174 [debug] [Thread-5 (]: Writing runtime sql for node "test.data_ai_index.not_null_fct_llm_technology_mentions_mention_id.5c54e01721"
+[0m09:10:34.585688 [debug] [Thread-2 (]: On test.data_ai_index.not_null_fct_linkedin_skill_counts_skill_name.21873086a3: select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select skill_name
+from DATAEXPERT_STUDENT.KOUVERK_DATA_INDUSTRY_marts.fct_linkedin_skill_counts
+where skill_name is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+/* {"app": "dbt", "dbt_version": "1.11.2", "profile_name": "data_ai_index", "target_name": "dev", "node_id": "test.data_ai_index.not_null_fct_linkedin_skill_counts_skill_name.21873086a3"} */
+[0m09:10:34.587223 [debug] [Thread-3 (]: Using snowflake connection "test.data_ai_index.not_null_fct_hn_technology_mentions_technology_name.2dcbc36ce7"
+[0m09:10:34.590384 [debug] [Thread-4 (]: Using snowflake connection "test.data_ai_index.not_null_fct_llm_technology_mentions_posting_id.f0caf69d33"
+[0m09:10:34.592173 [debug] [Thread-3 (]: On test.data_ai_index.not_null_fct_hn_technology_mentions_technology_name.2dcbc36ce7: select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select technology_name
+from DATAEXPERT_STUDENT.KOUVERK_DATA_INDUSTRY_marts.fct_hn_technology_mentions
+where technology_name is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+/* {"app": "dbt", "dbt_version": "1.11.2", "profile_name": "data_ai_index", "target_name": "dev", "node_id": "test.data_ai_index.not_null_fct_hn_technology_mentions_technology_name.2dcbc36ce7"} */
+[0m09:10:34.593442 [debug] [Thread-4 (]: On test.data_ai_index.not_null_fct_llm_technology_mentions_posting_id.f0caf69d33: select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select posting_id
+from DATAEXPERT_STUDENT.KOUVERK_DATA_INDUSTRY_marts.fct_llm_technology_mentions
+where posting_id is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+/* {"app": "dbt", "dbt_version": "1.11.2", "profile_name": "data_ai_index", "target_name": "dev", "node_id": "test.data_ai_index.not_null_fct_llm_technology_mentions_posting_id.f0caf69d33"} */
+[0m09:10:34.595176 [debug] [Thread-5 (]: Using snowflake connection "test.data_ai_index.not_null_fct_llm_technology_mentions_mention_id.5c54e01721"
+[0m09:10:34.600487 [debug] [Thread-5 (]: On test.data_ai_index.not_null_fct_llm_technology_mentions_mention_id.5c54e01721: select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select mention_id
+from DATAEXPERT_STUDENT.KOUVERK_DATA_INDUSTRY_marts.fct_llm_technology_mentions
+where mention_id is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+/* {"app": "dbt", "dbt_version": "1.11.2", "profile_name": "data_ai_index", "target_name": "dev", "node_id": "test.data_ai_index.not_null_fct_llm_technology_mentions_mention_id.5c54e01721"} */
+[0m09:10:34.707906 [debug] [Thread-3 (]: SQL status: SUCCESS 1 in 0.112 seconds
+[0m09:10:34.710831 [info ] [Thread-3 (]: 23 of 77 PASS not_null_fct_hn_technology_mentions_technology_name .............. [[32mPASS[0m in 0.19s]
+[0m09:10:34.711934 [debug] [Thread-3 (]: Finished running node test.data_ai_index.not_null_fct_hn_technology_mentions_technology_name.2dcbc36ce7
+[0m09:10:34.712518 [debug] [Thread-3 (]: Began running node test.data_ai_index.not_null_fct_llm_technology_mentions_technology_name.e9f9b55fcf
+[0m09:10:34.713119 [info ] [Thread-3 (]: 27 of 77 START test not_null_fct_llm_technology_mentions_technology_name ....... [RUN]
+[0m09:10:34.713906 [debug] [Thread-3 (]: Re-using an available connection from the pool (formerly test.data_ai_index.not_null_fct_hn_technology_mentions_technology_name.2dcbc36ce7, now test.data_ai_index.not_null_fct_llm_technology_mentions_technology_name.e9f9b55fcf)
+[0m09:10:34.714848 [debug] [Thread-3 (]: Began compiling node test.data_ai_index.not_null_fct_llm_technology_mentions_technology_name.e9f9b55fcf
+[0m09:10:34.724921 [debug] [Thread-3 (]: Writing injected SQL for node "test.data_ai_index.not_null_fct_llm_technology_mentions_technology_name.e9f9b55fcf"
+[0m09:10:34.726885 [debug] [Thread-3 (]: Began executing node test.data_ai_index.not_null_fct_llm_technology_mentions_technology_name.e9f9b55fcf
+[0m09:10:34.733179 [debug] [Thread-3 (]: Writing runtime sql for node "test.data_ai_index.not_null_fct_llm_technology_mentions_technology_name.e9f9b55fcf"
+[0m09:10:34.734654 [debug] [Thread-3 (]: Using snowflake connection "test.data_ai_index.not_null_fct_llm_technology_mentions_technology_name.e9f9b55fcf"
+[0m09:10:34.736704 [debug] [Thread-3 (]: On test.data_ai_index.not_null_fct_llm_technology_mentions_technology_name.e9f9b55fcf: select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select technology_name
+from DATAEXPERT_STUDENT.KOUVERK_DATA_INDUSTRY_marts.fct_llm_technology_mentions
+where technology_name is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+/* {"app": "dbt", "dbt_version": "1.11.2", "profile_name": "data_ai_index", "target_name": "dev", "node_id": "test.data_ai_index.not_null_fct_llm_technology_mentions_technology_name.e9f9b55fcf"} */
+[0m09:10:34.835316 [debug] [Thread-4 (]: SQL status: SUCCESS 1 in 0.239 seconds
+[0m09:10:34.839324 [info ] [Thread-4 (]: 26 of 77 PASS not_null_fct_llm_technology_mentions_posting_id .................. [[32mPASS[0m in 0.29s]
+[0m09:10:34.840241 [debug] [Thread-4 (]: Finished running node test.data_ai_index.not_null_fct_llm_technology_mentions_posting_id.f0caf69d33
+[0m09:10:34.840861 [debug] [Thread-4 (]: Began running node test.data_ai_index.not_null_fct_llm_vs_regex_comparison_technology_name.3cbb479903
+[0m09:10:34.841613 [info ] [Thread-4 (]: 28 of 77 START test not_null_fct_llm_vs_regex_comparison_technology_name ....... [RUN]
+[0m09:10:34.842667 [debug] [Thread-4 (]: Re-using an available connection from the pool (formerly test.data_ai_index.not_null_fct_llm_technology_mentions_posting_id.f0caf69d33, now test.data_ai_index.not_null_fct_llm_vs_regex_comparison_technology_name.3cbb479903)
+[0m09:10:34.843289 [debug] [Thread-4 (]: Began compiling node test.data_ai_index.not_null_fct_llm_vs_regex_comparison_technology_name.3cbb479903
+[0m09:10:34.849083 [debug] [Thread-4 (]: Writing injected SQL for node "test.data_ai_index.not_null_fct_llm_vs_regex_comparison_technology_name.3cbb479903"
+[0m09:10:34.850840 [debug] [Thread-5 (]: SQL status: SUCCESS 1 in 0.249 seconds
+[0m09:10:34.853263 [debug] [Thread-3 (]: SQL status: SUCCESS 1 in 0.115 seconds
+[0m09:10:34.856227 [info ] [Thread-5 (]: 25 of 77 PASS not_null_fct_llm_technology_mentions_mention_id .................. [[32mPASS[0m in 0.33s]
+[0m09:10:34.861559 [info ] [Thread-3 (]: 27 of 77 PASS not_null_fct_llm_technology_mentions_technology_name ............. [[32mPASS[0m in 0.15s]
+[0m09:10:34.863105 [debug] [Thread-4 (]: Began executing node test.data_ai_index.not_null_fct_llm_vs_regex_comparison_technology_name.3cbb479903
+[0m09:10:34.864020 [debug] [Thread-5 (]: Finished running node test.data_ai_index.not_null_fct_llm_technology_mentions_mention_id.5c54e01721
+[0m09:10:34.864957 [debug] [Thread-3 (]: Finished running node test.data_ai_index.not_null_fct_llm_technology_mentions_technology_name.e9f9b55fcf
+[0m09:10:34.872685 [debug] [Thread-4 (]: Writing runtime sql for node "test.data_ai_index.not_null_fct_llm_vs_regex_comparison_technology_name.3cbb479903"
+[0m09:10:34.874888 [debug] [Thread-5 (]: Began running node test.data_ai_index.not_null_fct_monthly_role_trends_posting_month.1acae59e87
+[0m09:10:34.877596 [debug] [Thread-3 (]: Began running node test.data_ai_index.not_null_fct_monthly_role_trends_role_name.e45072c198
+[0m09:10:34.878720 [info ] [Thread-5 (]: 29 of 77 START test not_null_fct_monthly_role_trends_posting_month ............. [RUN]
+[0m09:10:34.879458 [info ] [Thread-3 (]: 30 of 77 START test not_null_fct_monthly_role_trends_role_name ................. [RUN]
+[0m09:10:34.880415 [debug] [Thread-4 (]: Using snowflake connection "test.data_ai_index.not_null_fct_llm_vs_regex_comparison_technology_name.3cbb479903"
+[0m09:10:34.881023 [debug] [Thread-5 (]: Re-using an available connection from the pool (formerly test.data_ai_index.not_null_fct_llm_technology_mentions_mention_id.5c54e01721, now test.data_ai_index.not_null_fct_monthly_role_trends_posting_month.1acae59e87)
+[0m09:10:34.881646 [debug] [Thread-3 (]: Re-using an available connection from the pool (formerly test.data_ai_index.not_null_fct_llm_technology_mentions_technology_name.e9f9b55fcf, now test.data_ai_index.not_null_fct_monthly_role_trends_role_name.e45072c198)
+[0m09:10:34.882267 [debug] [Thread-4 (]: On test.data_ai_index.not_null_fct_llm_vs_regex_comparison_technology_name.3cbb479903: select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select technology_name
+from DATAEXPERT_STUDENT.KOUVERK_DATA_INDUSTRY_marts.fct_llm_vs_regex_comparison
+where technology_name is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+/* {"app": "dbt", "dbt_version": "1.11.2", "profile_name": "data_ai_index", "target_name": "dev", "node_id": "test.data_ai_index.not_null_fct_llm_vs_regex_comparison_technology_name.3cbb479903"} */
+[0m09:10:34.883113 [debug] [Thread-5 (]: Began compiling node test.data_ai_index.not_null_fct_monthly_role_trends_posting_month.1acae59e87
+[0m09:10:34.883706 [debug] [Thread-3 (]: Began compiling node test.data_ai_index.not_null_fct_monthly_role_trends_role_name.e45072c198
+[0m09:10:34.894894 [debug] [Thread-5 (]: Writing injected SQL for node "test.data_ai_index.not_null_fct_monthly_role_trends_posting_month.1acae59e87"
+[0m09:10:34.900910 [debug] [Thread-3 (]: Writing injected SQL for node "test.data_ai_index.not_null_fct_monthly_role_trends_role_name.e45072c198"
+[0m09:10:34.904557 [debug] [Thread-5 (]: Began executing node test.data_ai_index.not_null_fct_monthly_role_trends_posting_month.1acae59e87
+[0m09:10:34.908501 [debug] [Thread-5 (]: Writing runtime sql for node "test.data_ai_index.not_null_fct_monthly_role_trends_posting_month.1acae59e87"
+[0m09:10:34.909589 [debug] [Thread-3 (]: Began executing node test.data_ai_index.not_null_fct_monthly_role_trends_role_name.e45072c198
+[0m09:10:34.913137 [debug] [Thread-3 (]: Writing runtime sql for node "test.data_ai_index.not_null_fct_monthly_role_trends_role_name.e45072c198"
+[0m09:10:34.914542 [debug] [Thread-5 (]: Using snowflake connection "test.data_ai_index.not_null_fct_monthly_role_trends_posting_month.1acae59e87"
+[0m09:10:34.915315 [debug] [Thread-5 (]: On test.data_ai_index.not_null_fct_monthly_role_trends_posting_month.1acae59e87: select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select posting_month
+from DATAEXPERT_STUDENT.KOUVERK_DATA_INDUSTRY_marts.fct_monthly_role_trends
+where posting_month is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+/* {"app": "dbt", "dbt_version": "1.11.2", "profile_name": "data_ai_index", "target_name": "dev", "node_id": "test.data_ai_index.not_null_fct_monthly_role_trends_posting_month.1acae59e87"} */
+[0m09:10:34.916490 [debug] [Thread-3 (]: Using snowflake connection "test.data_ai_index.not_null_fct_monthly_role_trends_role_name.e45072c198"
+[0m09:10:34.917863 [debug] [Thread-3 (]: On test.data_ai_index.not_null_fct_monthly_role_trends_role_name.e45072c198: select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select role_name
+from DATAEXPERT_STUDENT.KOUVERK_DATA_INDUSTRY_marts.fct_monthly_role_trends
+where role_name is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+/* {"app": "dbt", "dbt_version": "1.11.2", "profile_name": "data_ai_index", "target_name": "dev", "node_id": "test.data_ai_index.not_null_fct_monthly_role_trends_role_name.e45072c198"} */
+[0m09:10:34.953868 [debug] [Thread-2 (]: SQL status: SUCCESS 1 in 0.365 seconds
+[0m09:10:34.956380 [info ] [Thread-2 (]: 24 of 77 PASS not_null_fct_linkedin_skill_counts_skill_name .................... [[32mPASS[0m in 0.43s]
+[0m09:10:34.957304 [debug] [Thread-2 (]: Finished running node test.data_ai_index.not_null_fct_linkedin_skill_counts_skill_name.21873086a3
+[0m09:10:34.957872 [debug] [Thread-2 (]: Began running node test.data_ai_index.not_null_fct_monthly_technology_trends_posting_month.8df333d81f
+[0m09:10:34.958534 [info ] [Thread-2 (]: 31 of 77 START test not_null_fct_monthly_technology_trends_posting_month ....... [RUN]
+[0m09:10:34.959190 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly test.data_ai_index.not_null_fct_linkedin_skill_counts_skill_name.21873086a3, now test.data_ai_index.not_null_fct_monthly_technology_trends_posting_month.8df333d81f)
+[0m09:10:34.959689 [debug] [Thread-2 (]: Began compiling node test.data_ai_index.not_null_fct_monthly_technology_trends_posting_month.8df333d81f
+[0m09:10:34.965720 [debug] [Thread-2 (]: Writing injected SQL for node "test.data_ai_index.not_null_fct_monthly_technology_trends_posting_month.8df333d81f"
+[0m09:10:34.967036 [debug] [Thread-2 (]: Began executing node test.data_ai_index.not_null_fct_monthly_technology_trends_posting_month.8df333d81f
+[0m09:10:34.973321 [debug] [Thread-2 (]: Writing runtime sql for node "test.data_ai_index.not_null_fct_monthly_technology_trends_posting_month.8df333d81f"
+[0m09:10:34.974684 [debug] [Thread-2 (]: Using snowflake connection "test.data_ai_index.not_null_fct_monthly_technology_trends_posting_month.8df333d81f"
+[0m09:10:34.975240 [debug] [Thread-2 (]: On test.data_ai_index.not_null_fct_monthly_technology_trends_posting_month.8df333d81f: select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select posting_month
+from DATAEXPERT_STUDENT.KOUVERK_DATA_INDUSTRY_marts.fct_monthly_technology_trends
+where posting_month is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+/* {"app": "dbt", "dbt_version": "1.11.2", "profile_name": "data_ai_index", "target_name": "dev", "node_id": "test.data_ai_index.not_null_fct_monthly_technology_trends_posting_month.8df333d81f"} */
+[0m09:10:35.088920 [debug] [Thread-4 (]: SQL status: SUCCESS 1 in 0.204 seconds
+[0m09:10:35.095247 [info ] [Thread-4 (]: 28 of 77 PASS not_null_fct_llm_vs_regex_comparison_technology_name ............. [[32mPASS[0m in 0.25s]
+[0m09:10:35.097233 [debug] [Thread-4 (]: Finished running node test.data_ai_index.not_null_fct_llm_vs_regex_comparison_technology_name.3cbb479903
+[0m09:10:35.098387 [debug] [Thread-4 (]: Began running node test.data_ai_index.not_null_fct_monthly_technology_trends_technology_name.482912e896
+[0m09:10:35.099570 [info ] [Thread-4 (]: 32 of 77 START test not_null_fct_monthly_technology_trends_technology_name ..... [RUN]
+[0m09:10:35.100803 [debug] [Thread-4 (]: Re-using an available connection from the pool (formerly test.data_ai_index.not_null_fct_llm_vs_regex_comparison_technology_name.3cbb479903, now test.data_ai_index.not_null_fct_monthly_technology_trends_technology_name.482912e896)
+[0m09:10:35.101608 [debug] [Thread-4 (]: Began compiling node test.data_ai_index.not_null_fct_monthly_technology_trends_technology_name.482912e896
+[0m09:10:35.113659 [debug] [Thread-4 (]: Writing injected SQL for node "test.data_ai_index.not_null_fct_monthly_technology_trends_technology_name.482912e896"
+[0m09:10:35.115338 [debug] [Thread-4 (]: Began executing node test.data_ai_index.not_null_fct_monthly_technology_trends_technology_name.482912e896
+[0m09:10:35.122705 [debug] [Thread-4 (]: Writing runtime sql for node "test.data_ai_index.not_null_fct_monthly_technology_trends_technology_name.482912e896"
+[0m09:10:35.124570 [debug] [Thread-5 (]: SQL status: SUCCESS 1 in 0.209 seconds
+[0m09:10:35.125635 [debug] [Thread-4 (]: Using snowflake connection "test.data_ai_index.not_null_fct_monthly_technology_trends_technology_name.482912e896"
+[0m09:10:35.129310 [info ] [Thread-5 (]: 29 of 77 PASS not_null_fct_monthly_role_trends_posting_month ................... [[32mPASS[0m in 0.25s]
+[0m09:10:35.130110 [debug] [Thread-4 (]: On test.data_ai_index.not_null_fct_monthly_technology_trends_technology_name.482912e896: select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select technology_name
+from DATAEXPERT_STUDENT.KOUVERK_DATA_INDUSTRY_marts.fct_monthly_technology_trends
+where technology_name is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+/* {"app": "dbt", "dbt_version": "1.11.2", "profile_name": "data_ai_index", "target_name": "dev", "node_id": "test.data_ai_index.not_null_fct_monthly_technology_trends_technology_name.482912e896"} */
+[0m09:10:35.131548 [debug] [Thread-3 (]: SQL status: SUCCESS 1 in 0.213 seconds
+[0m09:10:35.132403 [debug] [Thread-5 (]: Finished running node test.data_ai_index.not_null_fct_monthly_role_trends_posting_month.1acae59e87
+[0m09:10:35.139608 [debug] [Thread-5 (]: Began running node test.data_ai_index.not_null_int_hn__databases_extracted_database_name.9c18ac0b89
+[0m09:10:35.137337 [info ] [Thread-3 (]: 30 of 77 PASS not_null_fct_monthly_role_trends_role_name ....................... [[32mPASS[0m in 0.25s]
+[0m09:10:35.141380 [info ] [Thread-5 (]: 33 of 77 START test not_null_int_hn__databases_extracted_database_name ......... [RUN]
+[0m09:10:35.146231 [debug] [Thread-3 (]: Finished running node test.data_ai_index.not_null_fct_monthly_role_trends_role_name.e45072c198
+[0m09:10:35.147193 [debug] [Thread-5 (]: Re-using an available connection from the pool (formerly test.data_ai_index.not_null_fct_monthly_role_trends_posting_month.1acae59e87, now test.data_ai_index.not_null_int_hn__databases_extracted_database_name.9c18ac0b89)
+[0m09:10:35.148016 [debug] [Thread-3 (]: Began running node test.data_ai_index.not_null_int_hn__databases_extracted_posting_id.b3a3077dc0
+[0m09:10:35.149039 [debug] [Thread-5 (]: Began compiling node test.data_ai_index.not_null_int_hn__databases_extracted_database_name.9c18ac0b89
+[0m09:10:35.149787 [info ] [Thread-3 (]: 34 of 77 START test not_null_int_hn__databases_extracted_posting_id ............ [RUN]
+[0m09:10:35.158804 [debug] [Thread-5 (]: Writing injected SQL for node "test.data_ai_index.not_null_int_hn__databases_extracted_database_name.9c18ac0b89"
+[0m09:10:35.160038 [debug] [Thread-3 (]: Re-using an available connection from the pool (formerly test.data_ai_index.not_null_fct_monthly_role_trends_role_name.e45072c198, now test.data_ai_index.not_null_int_hn__databases_extracted_posting_id.b3a3077dc0)
+[0m09:10:35.161133 [debug] [Thread-3 (]: Began compiling node test.data_ai_index.not_null_int_hn__databases_extracted_posting_id.b3a3077dc0
+[0m09:10:35.167291 [debug] [Thread-3 (]: Writing injected SQL for node "test.data_ai_index.not_null_int_hn__databases_extracted_posting_id.b3a3077dc0"
+[0m09:10:35.169391 [debug] [Thread-5 (]: Began executing node test.data_ai_index.not_null_int_hn__databases_extracted_database_name.9c18ac0b89
+[0m09:10:35.177212 [debug] [Thread-5 (]: Writing runtime sql for node "test.data_ai_index.not_null_int_hn__databases_extracted_database_name.9c18ac0b89"
+[0m09:10:35.178476 [debug] [Thread-3 (]: Began executing node test.data_ai_index.not_null_int_hn__databases_extracted_posting_id.b3a3077dc0
+[0m09:10:35.182422 [debug] [Thread-3 (]: Writing runtime sql for node "test.data_ai_index.not_null_int_hn__databases_extracted_posting_id.b3a3077dc0"
+[0m09:10:35.183563 [debug] [Thread-5 (]: Using snowflake connection "test.data_ai_index.not_null_int_hn__databases_extracted_database_name.9c18ac0b89"
+[0m09:10:35.184824 [debug] [Thread-5 (]: On test.data_ai_index.not_null_int_hn__databases_extracted_database_name.9c18ac0b89: select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select database_name
+from DATAEXPERT_STUDENT.KOUVERK_DATA_INDUSTRY_intermediate.int_hn__databases_extracted
+where database_name is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+/* {"app": "dbt", "dbt_version": "1.11.2", "profile_name": "data_ai_index", "target_name": "dev", "node_id": "test.data_ai_index.not_null_int_hn__databases_extracted_database_name.9c18ac0b89"} */
+[0m09:10:35.187210 [debug] [Thread-3 (]: Using snowflake connection "test.data_ai_index.not_null_int_hn__databases_extracted_posting_id.b3a3077dc0"
+[0m09:10:35.189203 [debug] [Thread-3 (]: On test.data_ai_index.not_null_int_hn__databases_extracted_posting_id.b3a3077dc0: select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select posting_id
+from DATAEXPERT_STUDENT.KOUVERK_DATA_INDUSTRY_intermediate.int_hn__databases_extracted
+where posting_id is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+/* {"app": "dbt", "dbt_version": "1.11.2", "profile_name": "data_ai_index", "target_name": "dev", "node_id": "test.data_ai_index.not_null_int_hn__databases_extracted_posting_id.b3a3077dc0"} */
+[0m09:10:35.223660 [debug] [Thread-2 (]: SQL status: SUCCESS 1 in 0.248 seconds
+[0m09:10:35.227163 [info ] [Thread-2 (]: 31 of 77 PASS not_null_fct_monthly_technology_trends_posting_month ............. [[32mPASS[0m in 0.27s]
+[0m09:10:35.228013 [debug] [Thread-2 (]: Finished running node test.data_ai_index.not_null_fct_monthly_technology_trends_posting_month.8df333d81f
+[0m09:10:35.228580 [debug] [Thread-2 (]: Began running node test.data_ai_index.not_null_int_hn__roles_extracted_posting_id.4e4db2cb51
+[0m09:10:35.229285 [info ] [Thread-2 (]: 35 of 77 START test not_null_int_hn__roles_extracted_posting_id ................ [RUN]
+[0m09:10:35.229869 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly test.data_ai_index.not_null_fct_monthly_technology_trends_posting_month.8df333d81f, now test.data_ai_index.not_null_int_hn__roles_extracted_posting_id.4e4db2cb51)
+[0m09:10:35.230396 [debug] [Thread-2 (]: Began compiling node test.data_ai_index.not_null_int_hn__roles_extracted_posting_id.4e4db2cb51
+[0m09:10:35.237443 [debug] [Thread-2 (]: Writing injected SQL for node "test.data_ai_index.not_null_int_hn__roles_extracted_posting_id.4e4db2cb51"
+[0m09:10:35.239028 [debug] [Thread-2 (]: Began executing node test.data_ai_index.not_null_int_hn__roles_extracted_posting_id.4e4db2cb51
+[0m09:10:35.245175 [debug] [Thread-2 (]: Writing runtime sql for node "test.data_ai_index.not_null_int_hn__roles_extracted_posting_id.4e4db2cb51"
+[0m09:10:35.246673 [debug] [Thread-2 (]: Using snowflake connection "test.data_ai_index.not_null_int_hn__roles_extracted_posting_id.4e4db2cb51"
+[0m09:10:35.247573 [debug] [Thread-2 (]: On test.data_ai_index.not_null_int_hn__roles_extracted_posting_id.4e4db2cb51: select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select posting_id
+from DATAEXPERT_STUDENT.KOUVERK_DATA_INDUSTRY_intermediate.int_hn__roles_extracted
+where posting_id is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+/* {"app": "dbt", "dbt_version": "1.11.2", "profile_name": "data_ai_index", "target_name": "dev", "node_id": "test.data_ai_index.not_null_int_hn__roles_extracted_posting_id.4e4db2cb51"} */
+[0m09:10:35.264023 [debug] [Thread-4 (]: SQL status: SUCCESS 1 in 0.131 seconds
+[0m09:10:35.266918 [info ] [Thread-4 (]: 32 of 77 PASS not_null_fct_monthly_technology_trends_technology_name ........... [[32mPASS[0m in 0.17s]
+[0m09:10:35.268138 [debug] [Thread-4 (]: Finished running node test.data_ai_index.not_null_fct_monthly_technology_trends_technology_name.482912e896
+[0m09:10:35.268930 [debug] [Thread-4 (]: Began running node test.data_ai_index.not_null_int_hn__roles_extracted_role.5b48e7b8b0
+[0m09:10:35.270067 [info ] [Thread-4 (]: 36 of 77 START test not_null_int_hn__roles_extracted_role ...................... [RUN]
+[0m09:10:35.270726 [debug] [Thread-4 (]: Re-using an available connection from the pool (formerly test.data_ai_index.not_null_fct_monthly_technology_trends_technology_name.482912e896, now test.data_ai_index.not_null_int_hn__roles_extracted_role.5b48e7b8b0)
+[0m09:10:35.271881 [debug] [Thread-4 (]: Began compiling node test.data_ai_index.not_null_int_hn__roles_extracted_role.5b48e7b8b0
+[0m09:10:35.278213 [debug] [Thread-4 (]: Writing injected SQL for node "test.data_ai_index.not_null_int_hn__roles_extracted_role.5b48e7b8b0"
+[0m09:10:35.279096 [debug] [Thread-4 (]: Began executing node test.data_ai_index.not_null_int_hn__roles_extracted_role.5b48e7b8b0
+[0m09:10:35.289654 [debug] [Thread-4 (]: Writing runtime sql for node "test.data_ai_index.not_null_int_hn__roles_extracted_role.5b48e7b8b0"
+[0m09:10:35.293617 [debug] [Thread-4 (]: Using snowflake connection "test.data_ai_index.not_null_int_hn__roles_extracted_role.5b48e7b8b0"
+[0m09:10:35.294183 [debug] [Thread-4 (]: On test.data_ai_index.not_null_int_hn__roles_extracted_role.5b48e7b8b0: select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select role
+from DATAEXPERT_STUDENT.KOUVERK_DATA_INDUSTRY_intermediate.int_hn__roles_extracted
+where role is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+/* {"app": "dbt", "dbt_version": "1.11.2", "profile_name": "data_ai_index", "target_name": "dev", "node_id": "test.data_ai_index.not_null_int_hn__roles_extracted_role.5b48e7b8b0"} */
+[0m09:10:35.490600 [debug] [Thread-2 (]: SQL status: SUCCESS 1 in 0.242 seconds
+[0m09:10:35.500074 [debug] [Thread-4 (]: SQL status: SUCCESS 1 in 0.205 seconds
+[0m09:10:35.498443 [info ] [Thread-2 (]: 35 of 77 PASS not_null_int_hn__roles_extracted_posting_id ...................... [[32mPASS[0m in 0.27s]
+[0m09:10:35.508193 [debug] [Thread-2 (]: Finished running node test.data_ai_index.not_null_int_hn__roles_extracted_posting_id.4e4db2cb51
+[0m09:10:35.509294 [debug] [Thread-2 (]: Began running node test.data_ai_index.not_null_int_hn__technologies_extracted_posting_id.47ca486602
+[0m09:10:35.505778 [info ] [Thread-4 (]: 36 of 77 PASS not_null_int_hn__roles_extracted_role ............................ [[32mPASS[0m in 0.23s]
+[0m09:10:35.510554 [info ] [Thread-2 (]: 37 of 77 START test not_null_int_hn__technologies_extracted_posting_id ......... [RUN]
+[0m09:10:35.511789 [debug] [Thread-4 (]: Finished running node test.data_ai_index.not_null_int_hn__roles_extracted_role.5b48e7b8b0
+[0m09:10:35.513122 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly test.data_ai_index.not_null_int_hn__roles_extracted_posting_id.4e4db2cb51, now test.data_ai_index.not_null_int_hn__technologies_extracted_posting_id.47ca486602)
+[0m09:10:35.514754 [debug] [Thread-4 (]: Began running node test.data_ai_index.not_null_int_hn__technologies_extracted_technology.0c38928f13
+[0m09:10:35.515654 [debug] [Thread-2 (]: Began compiling node test.data_ai_index.not_null_int_hn__technologies_extracted_posting_id.47ca486602
+[0m09:10:35.516434 [info ] [Thread-4 (]: 38 of 77 START test not_null_int_hn__technologies_extracted_technology ......... [RUN]
+[0m09:10:35.524113 [debug] [Thread-2 (]: Writing injected SQL for node "test.data_ai_index.not_null_int_hn__technologies_extracted_posting_id.47ca486602"
+[0m09:10:35.525209 [debug] [Thread-4 (]: Re-using an available connection from the pool (formerly test.data_ai_index.not_null_int_hn__roles_extracted_role.5b48e7b8b0, now test.data_ai_index.not_null_int_hn__technologies_extracted_technology.0c38928f13)
+[0m09:10:35.527249 [debug] [Thread-4 (]: Began compiling node test.data_ai_index.not_null_int_hn__technologies_extracted_technology.0c38928f13
+[0m09:10:35.533991 [debug] [Thread-2 (]: Began executing node test.data_ai_index.not_null_int_hn__technologies_extracted_posting_id.47ca486602
+[0m09:10:35.538115 [debug] [Thread-2 (]: Writing runtime sql for node "test.data_ai_index.not_null_int_hn__technologies_extracted_posting_id.47ca486602"
+[0m09:10:35.539091 [debug] [Thread-4 (]: Writing injected SQL for node "test.data_ai_index.not_null_int_hn__technologies_extracted_technology.0c38928f13"
+[0m09:10:35.540785 [debug] [Thread-2 (]: Using snowflake connection "test.data_ai_index.not_null_int_hn__technologies_extracted_posting_id.47ca486602"
+[0m09:10:35.541585 [debug] [Thread-4 (]: Began executing node test.data_ai_index.not_null_int_hn__technologies_extracted_technology.0c38928f13
+[0m09:10:35.542522 [debug] [Thread-2 (]: On test.data_ai_index.not_null_int_hn__technologies_extracted_posting_id.47ca486602: select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select posting_id
+from DATAEXPERT_STUDENT.KOUVERK_DATA_INDUSTRY_intermediate.int_hn__technologies_extracted
+where posting_id is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+/* {"app": "dbt", "dbt_version": "1.11.2", "profile_name": "data_ai_index", "target_name": "dev", "node_id": "test.data_ai_index.not_null_int_hn__technologies_extracted_posting_id.47ca486602"} */
+[0m09:10:35.547344 [debug] [Thread-4 (]: Writing runtime sql for node "test.data_ai_index.not_null_int_hn__technologies_extracted_technology.0c38928f13"
+[0m09:10:35.550165 [debug] [Thread-4 (]: Using snowflake connection "test.data_ai_index.not_null_int_hn__technologies_extracted_technology.0c38928f13"
+[0m09:10:35.550828 [debug] [Thread-4 (]: On test.data_ai_index.not_null_int_hn__technologies_extracted_technology.0c38928f13: select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select technology
+from DATAEXPERT_STUDENT.KOUVERK_DATA_INDUSTRY_intermediate.int_hn__technologies_extracted
+where technology is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+/* {"app": "dbt", "dbt_version": "1.11.2", "profile_name": "data_ai_index", "target_name": "dev", "node_id": "test.data_ai_index.not_null_int_hn__technologies_extracted_technology.0c38928f13"} */
+[0m09:10:35.796861 [debug] [Thread-5 (]: SQL status: SUCCESS 1 in 0.610 seconds
+[0m09:10:35.803262 [info ] [Thread-5 (]: 33 of 77 PASS not_null_int_hn__databases_extracted_database_name ............... [[32mPASS[0m in 0.66s]
+[0m09:10:35.804938 [debug] [Thread-5 (]: Finished running node test.data_ai_index.not_null_int_hn__databases_extracted_database_name.9c18ac0b89
+[0m09:10:35.807702 [debug] [Thread-3 (]: SQL status: SUCCESS 1 in 0.617 seconds
+[0m09:10:35.808973 [debug] [Thread-5 (]: Began running node test.data_ai_index.not_null_int_linkedin__skills_standardized_posting_id.252442d199
+[0m09:10:35.813697 [info ] [Thread-3 (]: 34 of 77 PASS not_null_int_hn__databases_extracted_posting_id .................. [[32mPASS[0m in 0.65s]
+[0m09:10:35.814989 [info ] [Thread-5 (]: 39 of 77 START test not_null_int_linkedin__skills_standardized_posting_id ...... [RUN]
+[0m09:10:35.816211 [debug] [Thread-3 (]: Finished running node test.data_ai_index.not_null_int_hn__databases_extracted_posting_id.b3a3077dc0
+[0m09:10:35.817048 [debug] [Thread-5 (]: Re-using an available connection from the pool (formerly test.data_ai_index.not_null_int_hn__databases_extracted_database_name.9c18ac0b89, now test.data_ai_index.not_null_int_linkedin__skills_standardized_posting_id.252442d199)
+[0m09:10:35.817858 [debug] [Thread-3 (]: Began running node test.data_ai_index.not_null_int_linkedin__skills_standardized_skill_name.714de4e628
+[0m09:10:35.820636 [debug] [Thread-5 (]: Began compiling node test.data_ai_index.not_null_int_linkedin__skills_standardized_posting_id.252442d199
+[0m09:10:35.822532 [info ] [Thread-3 (]: 40 of 77 START test not_null_int_linkedin__skills_standardized_skill_name ...... [RUN]
+[0m09:10:35.829071 [debug] [Thread-5 (]: Writing injected SQL for node "test.data_ai_index.not_null_int_linkedin__skills_standardized_posting_id.252442d199"
+[0m09:10:35.829952 [debug] [Thread-3 (]: Re-using an available connection from the pool (formerly test.data_ai_index.not_null_int_hn__databases_extracted_posting_id.b3a3077dc0, now test.data_ai_index.not_null_int_linkedin__skills_standardized_skill_name.714de4e628)
+[0m09:10:35.831448 [debug] [Thread-3 (]: Began compiling node test.data_ai_index.not_null_int_linkedin__skills_standardized_skill_name.714de4e628
+[0m09:10:35.837604 [debug] [Thread-3 (]: Writing injected SQL for node "test.data_ai_index.not_null_int_linkedin__skills_standardized_skill_name.714de4e628"
+[0m09:10:35.838801 [debug] [Thread-5 (]: Began executing node test.data_ai_index.not_null_int_linkedin__skills_standardized_posting_id.252442d199
+[0m09:10:35.842599 [debug] [Thread-5 (]: Writing runtime sql for node "test.data_ai_index.not_null_int_linkedin__skills_standardized_posting_id.252442d199"
+[0m09:10:35.843211 [debug] [Thread-3 (]: Began executing node test.data_ai_index.not_null_int_linkedin__skills_standardized_skill_name.714de4e628
+[0m09:10:35.847506 [debug] [Thread-3 (]: Writing runtime sql for node "test.data_ai_index.not_null_int_linkedin__skills_standardized_skill_name.714de4e628"
+[0m09:10:35.848949 [debug] [Thread-5 (]: Using snowflake connection "test.data_ai_index.not_null_int_linkedin__skills_standardized_posting_id.252442d199"
+[0m09:10:35.849520 [debug] [Thread-5 (]: On test.data_ai_index.not_null_int_linkedin__skills_standardized_posting_id.252442d199: select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select posting_id
+from DATAEXPERT_STUDENT.KOUVERK_DATA_INDUSTRY_intermediate.int_linkedin__skills_standardized
+where posting_id is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+/* {"app": "dbt", "dbt_version": "1.11.2", "profile_name": "data_ai_index", "target_name": "dev", "node_id": "test.data_ai_index.not_null_int_linkedin__skills_standardized_posting_id.252442d199"} */
+[0m09:10:35.852152 [debug] [Thread-3 (]: Using snowflake connection "test.data_ai_index.not_null_int_linkedin__skills_standardized_skill_name.714de4e628"
+[0m09:10:35.853996 [debug] [Thread-3 (]: On test.data_ai_index.not_null_int_linkedin__skills_standardized_skill_name.714de4e628: select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select skill_name
+from DATAEXPERT_STUDENT.KOUVERK_DATA_INDUSTRY_intermediate.int_linkedin__skills_standardized
+where skill_name is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+/* {"app": "dbt", "dbt_version": "1.11.2", "profile_name": "data_ai_index", "target_name": "dev", "node_id": "test.data_ai_index.not_null_int_linkedin__skills_standardized_skill_name.714de4e628"} */
+[0m09:10:35.915161 [debug] [Thread-2 (]: SQL status: SUCCESS 1 in 0.367 seconds
+[0m09:10:35.917424 [info ] [Thread-2 (]: 37 of 77 PASS not_null_int_hn__technologies_extracted_posting_id ............... [[32mPASS[0m in 0.40s]
+[0m09:10:35.918316 [debug] [Thread-2 (]: Finished running node test.data_ai_index.not_null_int_hn__technologies_extracted_posting_id.47ca486602
+[0m09:10:35.918853 [debug] [Thread-2 (]: Began running node test.data_ai_index.not_null_stg_github__repo_stats_category.0bab32271a
+[0m09:10:35.919368 [info ] [Thread-2 (]: 41 of 77 START test not_null_stg_github__repo_stats_category ................... [RUN]
+[0m09:10:35.919950 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly test.data_ai_index.not_null_int_hn__technologies_extracted_posting_id.47ca486602, now test.data_ai_index.not_null_stg_github__repo_stats_category.0bab32271a)
+[0m09:10:35.920743 [debug] [Thread-2 (]: Began compiling node test.data_ai_index.not_null_stg_github__repo_stats_category.0bab32271a
+[0m09:10:35.926958 [debug] [Thread-2 (]: Writing injected SQL for node "test.data_ai_index.not_null_stg_github__repo_stats_category.0bab32271a"
+[0m09:10:35.927918 [debug] [Thread-2 (]: Began executing node test.data_ai_index.not_null_stg_github__repo_stats_category.0bab32271a
+[0m09:10:35.932873 [debug] [Thread-2 (]: Writing runtime sql for node "test.data_ai_index.not_null_stg_github__repo_stats_category.0bab32271a"
+[0m09:10:35.934525 [debug] [Thread-2 (]: Using snowflake connection "test.data_ai_index.not_null_stg_github__repo_stats_category.0bab32271a"
+[0m09:10:35.935240 [debug] [Thread-2 (]: On test.data_ai_index.not_null_stg_github__repo_stats_category.0bab32271a: select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select category
+from DATAEXPERT_STUDENT.KOUVERK_DATA_INDUSTRY_staging.stg_github__repo_stats
+where category is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+/* {"app": "dbt", "dbt_version": "1.11.2", "profile_name": "data_ai_index", "target_name": "dev", "node_id": "test.data_ai_index.not_null_stg_github__repo_stats_category.0bab32271a"} */
+[0m09:10:35.938535 [debug] [Thread-4 (]: SQL status: SUCCESS 1 in 0.387 seconds
+[0m09:10:35.941869 [info ] [Thread-4 (]: 38 of 77 PASS not_null_int_hn__technologies_extracted_technology ............... [[32mPASS[0m in 0.42s]
+[0m09:10:35.942945 [debug] [Thread-4 (]: Finished running node test.data_ai_index.not_null_int_hn__technologies_extracted_technology.0c38928f13
+[0m09:10:35.944062 [debug] [Thread-4 (]: Began running node test.data_ai_index.not_null_stg_github__repo_stats_forks.6455b7fd1c
+[0m09:10:35.945040 [info ] [Thread-4 (]: 42 of 77 START test not_null_stg_github__repo_stats_forks ...................... [RUN]
+[0m09:10:35.946507 [debug] [Thread-4 (]: Re-using an available connection from the pool (formerly test.data_ai_index.not_null_int_hn__technologies_extracted_technology.0c38928f13, now test.data_ai_index.not_null_stg_github__repo_stats_forks.6455b7fd1c)
+[0m09:10:35.947548 [debug] [Thread-4 (]: Began compiling node test.data_ai_index.not_null_stg_github__repo_stats_forks.6455b7fd1c
+[0m09:10:35.953303 [debug] [Thread-4 (]: Writing injected SQL for node "test.data_ai_index.not_null_stg_github__repo_stats_forks.6455b7fd1c"
+[0m09:10:35.954982 [debug] [Thread-4 (]: Began executing node test.data_ai_index.not_null_stg_github__repo_stats_forks.6455b7fd1c
+[0m09:10:35.960578 [debug] [Thread-4 (]: Writing runtime sql for node "test.data_ai_index.not_null_stg_github__repo_stats_forks.6455b7fd1c"
+[0m09:10:35.962253 [debug] [Thread-4 (]: Using snowflake connection "test.data_ai_index.not_null_stg_github__repo_stats_forks.6455b7fd1c"
+[0m09:10:35.962833 [debug] [Thread-4 (]: On test.data_ai_index.not_null_stg_github__repo_stats_forks.6455b7fd1c: select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select forks
+from DATAEXPERT_STUDENT.KOUVERK_DATA_INDUSTRY_staging.stg_github__repo_stats
+where forks is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+/* {"app": "dbt", "dbt_version": "1.11.2", "profile_name": "data_ai_index", "target_name": "dev", "node_id": "test.data_ai_index.not_null_stg_github__repo_stats_forks.6455b7fd1c"} */
+[0m09:10:36.075436 [debug] [Thread-2 (]: SQL status: SUCCESS 1 in 0.138 seconds
+[0m09:10:36.077919 [debug] [Thread-5 (]: SQL status: SUCCESS 1 in 0.228 seconds
+[0m09:10:36.085276 [debug] [Thread-3 (]: SQL status: SUCCESS 1 in 0.230 seconds
+[0m09:10:36.082340 [info ] [Thread-2 (]: 41 of 77 PASS not_null_stg_github__repo_stats_category ......................... [[32mPASS[0m in 0.16s]
+[0m09:10:36.096560 [debug] [Thread-4 (]: SQL status: SUCCESS 1 in 0.133 seconds
+[0m09:10:36.090869 [info ] [Thread-5 (]: 39 of 77 PASS not_null_int_linkedin__skills_standardized_posting_id ............ [[32mPASS[0m in 0.27s]
+[0m09:10:36.095259 [info ] [Thread-3 (]: 40 of 77 PASS not_null_int_linkedin__skills_standardized_skill_name ............ [[32mPASS[0m in 0.27s]
+[0m09:10:36.098400 [debug] [Thread-2 (]: Finished running node test.data_ai_index.not_null_stg_github__repo_stats_category.0bab32271a
+[0m09:10:36.102462 [info ] [Thread-4 (]: 42 of 77 PASS not_null_stg_github__repo_stats_forks ............................ [[32mPASS[0m in 0.16s]
+[0m09:10:36.104134 [debug] [Thread-5 (]: Finished running node test.data_ai_index.not_null_int_linkedin__skills_standardized_posting_id.252442d199
+[0m09:10:36.105186 [debug] [Thread-3 (]: Finished running node test.data_ai_index.not_null_int_linkedin__skills_standardized_skill_name.714de4e628
+[0m09:10:36.106069 [debug] [Thread-2 (]: Began running node test.data_ai_index.not_null_stg_github__repo_stats_repo_id.cc3c373a4c
+[0m09:10:36.107418 [debug] [Thread-4 (]: Finished running node test.data_ai_index.not_null_stg_github__repo_stats_forks.6455b7fd1c
+[0m09:10:36.108248 [debug] [Thread-5 (]: Began running node test.data_ai_index.not_null_stg_github__repo_stats_repo_name.5f7d406d60
+[0m09:10:36.109509 [debug] [Thread-3 (]: Began running node test.data_ai_index.not_null_stg_github__repo_stats_stars.89a30f9950
+[0m09:10:36.110303 [info ] [Thread-2 (]: 43 of 77 START test not_null_stg_github__repo_stats_repo_id .................... [RUN]
+[0m09:10:36.111265 [debug] [Thread-4 (]: Began running node test.data_ai_index.not_null_stg_hn__job_postings_posting_id.490b94c4ba
+[0m09:10:36.112116 [info ] [Thread-5 (]: 44 of 77 START test not_null_stg_github__repo_stats_repo_name .................. [RUN]
+[0m09:10:36.112885 [info ] [Thread-3 (]: 45 of 77 START test not_null_stg_github__repo_stats_stars ...................... [RUN]
+[0m09:10:36.113659 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly test.data_ai_index.not_null_stg_github__repo_stats_category.0bab32271a, now test.data_ai_index.not_null_stg_github__repo_stats_repo_id.cc3c373a4c)
+[0m09:10:36.114218 [info ] [Thread-4 (]: 46 of 77 START test not_null_stg_hn__job_postings_posting_id ................... [RUN]
+[0m09:10:36.114762 [debug] [Thread-5 (]: Re-using an available connection from the pool (formerly test.data_ai_index.not_null_int_linkedin__skills_standardized_posting_id.252442d199, now test.data_ai_index.not_null_stg_github__repo_stats_repo_name.5f7d406d60)
+[0m09:10:36.115217 [debug] [Thread-3 (]: Re-using an available connection from the pool (formerly test.data_ai_index.not_null_int_linkedin__skills_standardized_skill_name.714de4e628, now test.data_ai_index.not_null_stg_github__repo_stats_stars.89a30f9950)
+[0m09:10:36.115647 [debug] [Thread-2 (]: Began compiling node test.data_ai_index.not_null_stg_github__repo_stats_repo_id.cc3c373a4c
+[0m09:10:36.116079 [debug] [Thread-4 (]: Re-using an available connection from the pool (formerly test.data_ai_index.not_null_stg_github__repo_stats_forks.6455b7fd1c, now test.data_ai_index.not_null_stg_hn__job_postings_posting_id.490b94c4ba)
+[0m09:10:36.116512 [debug] [Thread-5 (]: Began compiling node test.data_ai_index.not_null_stg_github__repo_stats_repo_name.5f7d406d60
+[0m09:10:36.116922 [debug] [Thread-3 (]: Began compiling node test.data_ai_index.not_null_stg_github__repo_stats_stars.89a30f9950
+[0m09:10:36.124154 [debug] [Thread-2 (]: Writing injected SQL for node "test.data_ai_index.not_null_stg_github__repo_stats_repo_id.cc3c373a4c"
+[0m09:10:36.125158 [debug] [Thread-4 (]: Began compiling node test.data_ai_index.not_null_stg_hn__job_postings_posting_id.490b94c4ba
+[0m09:10:36.130832 [debug] [Thread-5 (]: Writing injected SQL for node "test.data_ai_index.not_null_stg_github__repo_stats_repo_name.5f7d406d60"
+[0m09:10:36.136934 [debug] [Thread-3 (]: Writing injected SQL for node "test.data_ai_index.not_null_stg_github__repo_stats_stars.89a30f9950"
+[0m09:10:36.142824 [debug] [Thread-4 (]: Writing injected SQL for node "test.data_ai_index.not_null_stg_hn__job_postings_posting_id.490b94c4ba"
+[0m09:10:36.143901 [debug] [Thread-2 (]: Began executing node test.data_ai_index.not_null_stg_github__repo_stats_repo_id.cc3c373a4c
+[0m09:10:36.144737 [debug] [Thread-5 (]: Began executing node test.data_ai_index.not_null_stg_github__repo_stats_repo_name.5f7d406d60
+[0m09:10:36.148257 [debug] [Thread-2 (]: Writing runtime sql for node "test.data_ai_index.not_null_stg_github__repo_stats_repo_id.cc3c373a4c"
+[0m09:10:36.152613 [debug] [Thread-5 (]: Writing runtime sql for node "test.data_ai_index.not_null_stg_github__repo_stats_repo_name.5f7d406d60"
+[0m09:10:36.153988 [debug] [Thread-4 (]: Began executing node test.data_ai_index.not_null_stg_hn__job_postings_posting_id.490b94c4ba
+[0m09:10:36.154576 [debug] [Thread-3 (]: Began executing node test.data_ai_index.not_null_stg_github__repo_stats_stars.89a30f9950
+[0m09:10:36.157767 [debug] [Thread-4 (]: Writing runtime sql for node "test.data_ai_index.not_null_stg_hn__job_postings_posting_id.490b94c4ba"
+[0m09:10:36.159503 [debug] [Thread-2 (]: Using snowflake connection "test.data_ai_index.not_null_stg_github__repo_stats_repo_id.cc3c373a4c"
+[0m09:10:36.164884 [debug] [Thread-3 (]: Writing runtime sql for node "test.data_ai_index.not_null_stg_github__repo_stats_stars.89a30f9950"
+[0m09:10:36.167120 [debug] [Thread-5 (]: Using snowflake connection "test.data_ai_index.not_null_stg_github__repo_stats_repo_name.5f7d406d60"
+[0m09:10:36.168134 [debug] [Thread-2 (]: On test.data_ai_index.not_null_stg_github__repo_stats_repo_id.cc3c373a4c: select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select repo_id
+from DATAEXPERT_STUDENT.KOUVERK_DATA_INDUSTRY_staging.stg_github__repo_stats
+where repo_id is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+/* {"app": "dbt", "dbt_version": "1.11.2", "profile_name": "data_ai_index", "target_name": "dev", "node_id": "test.data_ai_index.not_null_stg_github__repo_stats_repo_id.cc3c373a4c"} */
+[0m09:10:36.169749 [debug] [Thread-5 (]: On test.data_ai_index.not_null_stg_github__repo_stats_repo_name.5f7d406d60: select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select repo_name
+from DATAEXPERT_STUDENT.KOUVERK_DATA_INDUSTRY_staging.stg_github__repo_stats
+where repo_name is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+/* {"app": "dbt", "dbt_version": "1.11.2", "profile_name": "data_ai_index", "target_name": "dev", "node_id": "test.data_ai_index.not_null_stg_github__repo_stats_repo_name.5f7d406d60"} */
+[0m09:10:36.171170 [debug] [Thread-4 (]: Using snowflake connection "test.data_ai_index.not_null_stg_hn__job_postings_posting_id.490b94c4ba"
+[0m09:10:36.173027 [debug] [Thread-3 (]: Using snowflake connection "test.data_ai_index.not_null_stg_github__repo_stats_stars.89a30f9950"
+[0m09:10:36.175642 [debug] [Thread-4 (]: On test.data_ai_index.not_null_stg_hn__job_postings_posting_id.490b94c4ba: select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select posting_id
+from DATAEXPERT_STUDENT.KOUVERK_DATA_INDUSTRY_staging.stg_hn__job_postings
+where posting_id is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+/* {"app": "dbt", "dbt_version": "1.11.2", "profile_name": "data_ai_index", "target_name": "dev", "node_id": "test.data_ai_index.not_null_stg_hn__job_postings_posting_id.490b94c4ba"} */
+[0m09:10:36.177820 [debug] [Thread-3 (]: On test.data_ai_index.not_null_stg_github__repo_stats_stars.89a30f9950: select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select stars
+from DATAEXPERT_STUDENT.KOUVERK_DATA_INDUSTRY_staging.stg_github__repo_stats
+where stars is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+/* {"app": "dbt", "dbt_version": "1.11.2", "profile_name": "data_ai_index", "target_name": "dev", "node_id": "test.data_ai_index.not_null_stg_github__repo_stats_stars.89a30f9950"} */
+[0m09:10:36.302183 [debug] [Thread-2 (]: SQL status: SUCCESS 1 in 0.130 seconds
+[0m09:10:36.458916 [info ] [Thread-2 (]: 43 of 77 PASS not_null_stg_github__repo_stats_repo_id .......................... [[32mPASS[0m in 0.34s]
+[0m09:10:36.460883 [debug] [Thread-2 (]: Finished running node test.data_ai_index.not_null_stg_github__repo_stats_repo_id.cc3c373a4c
+[0m09:10:36.462040 [debug] [Thread-2 (]: Began running node test.data_ai_index.not_null_stg_hn__job_postings_posting_month.5e303da016
+[0m09:10:36.464749 [info ] [Thread-2 (]: 47 of 77 START test not_null_stg_hn__job_postings_posting_month ................ [RUN]
+[0m09:10:36.466304 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly test.data_ai_index.not_null_stg_github__repo_stats_repo_id.cc3c373a4c, now test.data_ai_index.not_null_stg_hn__job_postings_posting_month.5e303da016)
+[0m09:10:36.473091 [debug] [Thread-4 (]: SQL status: SUCCESS 1 in 0.293 seconds
+[0m09:10:36.475145 [debug] [Thread-2 (]: Began compiling node test.data_ai_index.not_null_stg_hn__job_postings_posting_month.5e303da016
+[0m09:10:36.500654 [debug] [Thread-5 (]: SQL status: SUCCESS 1 in 0.326 seconds
+[0m09:10:36.501684 [debug] [Thread-3 (]: SQL status: SUCCESS 1 in 0.321 seconds
+[0m09:10:36.503782 [debug] [Thread-2 (]: Writing injected SQL for node "test.data_ai_index.not_null_stg_hn__job_postings_posting_month.5e303da016"
+[0m09:10:36.492016 [info ] [Thread-4 (]: 46 of 77 PASS not_null_stg_hn__job_postings_posting_id ......................... [[32mPASS[0m in 0.38s]
+[0m09:10:36.509931 [info ] [Thread-5 (]: 44 of 77 PASS not_null_stg_github__repo_stats_repo_name ........................ [[32mPASS[0m in 0.39s]
+[0m09:10:36.515230 [info ] [Thread-3 (]: 45 of 77 PASS not_null_stg_github__repo_stats_stars ............................ [[32mPASS[0m in 0.40s]
+[0m09:10:36.517443 [debug] [Thread-4 (]: Finished running node test.data_ai_index.not_null_stg_hn__job_postings_posting_id.490b94c4ba
+[0m09:10:36.519279 [debug] [Thread-5 (]: Finished running node test.data_ai_index.not_null_stg_github__repo_stats_repo_name.5f7d406d60
+[0m09:10:36.520983 [debug] [Thread-3 (]: Finished running node test.data_ai_index.not_null_stg_github__repo_stats_stars.89a30f9950
+[0m09:10:36.521931 [debug] [Thread-2 (]: Began executing node test.data_ai_index.not_null_stg_hn__job_postings_posting_month.5e303da016
+[0m09:10:36.523284 [debug] [Thread-4 (]: Began running node test.data_ai_index.not_null_stg_hn__job_postings_posting_text.79d3b4f60e
+[0m09:10:36.524431 [debug] [Thread-5 (]: Began running node test.data_ai_index.not_null_stg_hn__job_postings_posting_year.49ef412f22
+[0m09:10:36.525544 [debug] [Thread-3 (]: Began running node test.data_ai_index.not_null_stg_hn__job_postings_thread_id.d77849e3ef
+[0m09:10:36.532551 [debug] [Thread-2 (]: Writing runtime sql for node "test.data_ai_index.not_null_stg_hn__job_postings_posting_month.5e303da016"
+[0m09:10:36.533682 [info ] [Thread-4 (]: 48 of 77 START test not_null_stg_hn__job_postings_posting_text ................. [RUN]
+[0m09:10:36.535271 [info ] [Thread-5 (]: 49 of 77 START test not_null_stg_hn__job_postings_posting_year ................. [RUN]
+[0m09:10:36.536282 [info ] [Thread-3 (]: 50 of 77 START test not_null_stg_hn__job_postings_thread_id .................... [RUN]
+[0m09:10:36.537453 [debug] [Thread-4 (]: Re-using an available connection from the pool (formerly test.data_ai_index.not_null_stg_hn__job_postings_posting_id.490b94c4ba, now test.data_ai_index.not_null_stg_hn__job_postings_posting_text.79d3b4f60e)
+[0m09:10:36.538234 [debug] [Thread-5 (]: Re-using an available connection from the pool (formerly test.data_ai_index.not_null_stg_github__repo_stats_repo_name.5f7d406d60, now test.data_ai_index.not_null_stg_hn__job_postings_posting_year.49ef412f22)
+[0m09:10:36.538937 [debug] [Thread-3 (]: Re-using an available connection from the pool (formerly test.data_ai_index.not_null_stg_github__repo_stats_stars.89a30f9950, now test.data_ai_index.not_null_stg_hn__job_postings_thread_id.d77849e3ef)
+[0m09:10:36.540644 [debug] [Thread-2 (]: Using snowflake connection "test.data_ai_index.not_null_stg_hn__job_postings_posting_month.5e303da016"
+[0m09:10:36.541922 [debug] [Thread-4 (]: Began compiling node test.data_ai_index.not_null_stg_hn__job_postings_posting_text.79d3b4f60e
+[0m09:10:36.543343 [debug] [Thread-5 (]: Began compiling node test.data_ai_index.not_null_stg_hn__job_postings_posting_year.49ef412f22
+[0m09:10:36.544563 [debug] [Thread-3 (]: Began compiling node test.data_ai_index.not_null_stg_hn__job_postings_thread_id.d77849e3ef
+[0m09:10:36.545492 [debug] [Thread-2 (]: On test.data_ai_index.not_null_stg_hn__job_postings_posting_month.5e303da016: select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select posting_month
+from DATAEXPERT_STUDENT.KOUVERK_DATA_INDUSTRY_staging.stg_hn__job_postings
+where posting_month is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+/* {"app": "dbt", "dbt_version": "1.11.2", "profile_name": "data_ai_index", "target_name": "dev", "node_id": "test.data_ai_index.not_null_stg_hn__job_postings_posting_month.5e303da016"} */
+[0m09:10:36.575896 [debug] [Thread-4 (]: Writing injected SQL for node "test.data_ai_index.not_null_stg_hn__job_postings_posting_text.79d3b4f60e"
+[0m09:10:36.603707 [debug] [Thread-5 (]: Writing injected SQL for node "test.data_ai_index.not_null_stg_hn__job_postings_posting_year.49ef412f22"
+[0m09:10:36.601657 [debug] [Thread-3 (]: Writing injected SQL for node "test.data_ai_index.not_null_stg_hn__job_postings_thread_id.d77849e3ef"
+[0m09:10:36.607783 [debug] [Thread-4 (]: Began executing node test.data_ai_index.not_null_stg_hn__job_postings_posting_text.79d3b4f60e
+[0m09:10:36.740644 [debug] [Thread-3 (]: Began executing node test.data_ai_index.not_null_stg_hn__job_postings_thread_id.d77849e3ef
+[0m09:10:36.756789 [debug] [Thread-4 (]: Writing runtime sql for node "test.data_ai_index.not_null_stg_hn__job_postings_posting_text.79d3b4f60e"
+[0m09:10:36.766261 [debug] [Thread-3 (]: Writing runtime sql for node "test.data_ai_index.not_null_stg_hn__job_postings_thread_id.d77849e3ef"
+[0m09:10:36.767266 [debug] [Thread-5 (]: Began executing node test.data_ai_index.not_null_stg_hn__job_postings_posting_year.49ef412f22
+[0m09:10:36.783468 [debug] [Thread-5 (]: Writing runtime sql for node "test.data_ai_index.not_null_stg_hn__job_postings_posting_year.49ef412f22"
+[0m09:10:36.788008 [debug] [Thread-3 (]: Using snowflake connection "test.data_ai_index.not_null_stg_hn__job_postings_thread_id.d77849e3ef"
+[0m09:10:36.790094 [debug] [Thread-3 (]: On test.data_ai_index.not_null_stg_hn__job_postings_thread_id.d77849e3ef: select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select thread_id
+from DATAEXPERT_STUDENT.KOUVERK_DATA_INDUSTRY_staging.stg_hn__job_postings
+where thread_id is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+/* {"app": "dbt", "dbt_version": "1.11.2", "profile_name": "data_ai_index", "target_name": "dev", "node_id": "test.data_ai_index.not_null_stg_hn__job_postings_thread_id.d77849e3ef"} */
+[0m09:10:36.792800 [debug] [Thread-4 (]: Using snowflake connection "test.data_ai_index.not_null_stg_hn__job_postings_posting_text.79d3b4f60e"
+[0m09:10:36.800506 [debug] [Thread-4 (]: On test.data_ai_index.not_null_stg_hn__job_postings_posting_text.79d3b4f60e: select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select posting_text
+from DATAEXPERT_STUDENT.KOUVERK_DATA_INDUSTRY_staging.stg_hn__job_postings
+where posting_text is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+/* {"app": "dbt", "dbt_version": "1.11.2", "profile_name": "data_ai_index", "target_name": "dev", "node_id": "test.data_ai_index.not_null_stg_hn__job_postings_posting_text.79d3b4f60e"} */
+[0m09:10:36.802927 [debug] [Thread-5 (]: Using snowflake connection "test.data_ai_index.not_null_stg_hn__job_postings_posting_year.49ef412f22"
+[0m09:10:36.804321 [debug] [Thread-5 (]: On test.data_ai_index.not_null_stg_hn__job_postings_posting_year.49ef412f22: select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select posting_year
+from DATAEXPERT_STUDENT.KOUVERK_DATA_INDUSTRY_staging.stg_hn__job_postings
+where posting_year is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+/* {"app": "dbt", "dbt_version": "1.11.2", "profile_name": "data_ai_index", "target_name": "dev", "node_id": "test.data_ai_index.not_null_stg_hn__job_postings_posting_year.49ef412f22"} */
+[0m09:10:36.962678 [debug] [Thread-3 (]: SQL status: SUCCESS 1 in 0.164 seconds
+[0m09:10:36.967898 [info ] [Thread-3 (]: 50 of 77 PASS not_null_stg_hn__job_postings_thread_id .......................... [[32mPASS[0m in 0.43s]
+[0m09:10:36.969232 [debug] [Thread-3 (]: Finished running node test.data_ai_index.not_null_stg_hn__job_postings_thread_id.d77849e3ef
+[0m09:10:36.970152 [debug] [Thread-3 (]: Began running node test.data_ai_index.not_null_stg_linkedin__postings_company.3f1d04ad13
+[0m09:10:36.970999 [info ] [Thread-3 (]: 51 of 77 START test not_null_stg_linkedin__postings_company .................... [RUN]
+[0m09:10:36.971700 [debug] [Thread-3 (]: Re-using an available connection from the pool (formerly test.data_ai_index.not_null_stg_hn__job_postings_thread_id.d77849e3ef, now test.data_ai_index.not_null_stg_linkedin__postings_company.3f1d04ad13)
+[0m09:10:36.972256 [debug] [Thread-3 (]: Began compiling node test.data_ai_index.not_null_stg_linkedin__postings_company.3f1d04ad13
+[0m09:10:36.979714 [debug] [Thread-3 (]: Writing injected SQL for node "test.data_ai_index.not_null_stg_linkedin__postings_company.3f1d04ad13"
+[0m09:10:36.981739 [debug] [Thread-3 (]: Began executing node test.data_ai_index.not_null_stg_linkedin__postings_company.3f1d04ad13
+[0m09:10:36.987957 [debug] [Thread-3 (]: Writing runtime sql for node "test.data_ai_index.not_null_stg_linkedin__postings_company.3f1d04ad13"
+[0m09:10:36.989367 [debug] [Thread-3 (]: Using snowflake connection "test.data_ai_index.not_null_stg_linkedin__postings_company.3f1d04ad13"
+[0m09:10:36.990205 [debug] [Thread-3 (]: On test.data_ai_index.not_null_stg_linkedin__postings_company.3f1d04ad13: select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select company
+from DATAEXPERT_STUDENT.KOUVERK_DATA_INDUSTRY_staging.stg_linkedin__postings
+where company is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+/* {"app": "dbt", "dbt_version": "1.11.2", "profile_name": "data_ai_index", "target_name": "dev", "node_id": "test.data_ai_index.not_null_stg_linkedin__postings_company.3f1d04ad13"} */
+[0m09:10:37.231509 [debug] [Thread-2 (]: SQL status: SUCCESS 1 in 0.626 seconds
+[0m09:10:37.237643 [info ] [Thread-2 (]: 47 of 77 PASS not_null_stg_hn__job_postings_posting_month ...................... [[32mPASS[0m in 0.77s]
+[0m09:10:37.239987 [debug] [Thread-2 (]: Finished running node test.data_ai_index.not_null_stg_hn__job_postings_posting_month.5e303da016
+[0m09:10:37.241132 [debug] [Thread-2 (]: Began running node test.data_ai_index.not_null_stg_linkedin__postings_job_title.2bcfcdfcfd
+[0m09:10:37.242239 [info ] [Thread-2 (]: 52 of 77 START test not_null_stg_linkedin__postings_job_title .................. [RUN]
+[0m09:10:37.243435 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly test.data_ai_index.not_null_stg_hn__job_postings_posting_month.5e303da016, now test.data_ai_index.not_null_stg_linkedin__postings_job_title.2bcfcdfcfd)
+[0m09:10:37.244209 [debug] [Thread-2 (]: Began compiling node test.data_ai_index.not_null_stg_linkedin__postings_job_title.2bcfcdfcfd
+[0m09:10:37.253581 [debug] [Thread-2 (]: Writing injected SQL for node "test.data_ai_index.not_null_stg_linkedin__postings_job_title.2bcfcdfcfd"
+[0m09:10:37.257176 [debug] [Thread-2 (]: Began executing node test.data_ai_index.not_null_stg_linkedin__postings_job_title.2bcfcdfcfd
+[0m09:10:37.261649 [debug] [Thread-2 (]: Writing runtime sql for node "test.data_ai_index.not_null_stg_linkedin__postings_job_title.2bcfcdfcfd"
+[0m09:10:37.263278 [debug] [Thread-2 (]: Using snowflake connection "test.data_ai_index.not_null_stg_linkedin__postings_job_title.2bcfcdfcfd"
+[0m09:10:37.264021 [debug] [Thread-2 (]: On test.data_ai_index.not_null_stg_linkedin__postings_job_title.2bcfcdfcfd: select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select job_title
+from DATAEXPERT_STUDENT.KOUVERK_DATA_INDUSTRY_staging.stg_linkedin__postings
+where job_title is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+/* {"app": "dbt", "dbt_version": "1.11.2", "profile_name": "data_ai_index", "target_name": "dev", "node_id": "test.data_ai_index.not_null_stg_linkedin__postings_job_title.2bcfcdfcfd"} */
+[0m09:10:37.302112 [debug] [Thread-5 (]: SQL status: SUCCESS 1 in 0.496 seconds
+[0m09:10:37.307914 [info ] [Thread-5 (]: 49 of 77 PASS not_null_stg_hn__job_postings_posting_year ....................... [[32mPASS[0m in 0.77s]
+[0m09:10:37.310999 [debug] [Thread-5 (]: Finished running node test.data_ai_index.not_null_stg_hn__job_postings_posting_year.49ef412f22
+[0m09:10:37.312463 [debug] [Thread-5 (]: Began running node test.data_ai_index.not_null_stg_linkedin__postings_posting_id.7da96baf0a
+[0m09:10:37.313556 [info ] [Thread-5 (]: 53 of 77 START test not_null_stg_linkedin__postings_posting_id ................. [RUN]
+[0m09:10:37.314491 [debug] [Thread-5 (]: Re-using an available connection from the pool (formerly test.data_ai_index.not_null_stg_hn__job_postings_posting_year.49ef412f22, now test.data_ai_index.not_null_stg_linkedin__postings_posting_id.7da96baf0a)
+[0m09:10:37.315581 [debug] [Thread-5 (]: Began compiling node test.data_ai_index.not_null_stg_linkedin__postings_posting_id.7da96baf0a
+[0m09:10:37.323448 [debug] [Thread-5 (]: Writing injected SQL for node "test.data_ai_index.not_null_stg_linkedin__postings_posting_id.7da96baf0a"
+[0m09:10:37.324467 [debug] [Thread-5 (]: Began executing node test.data_ai_index.not_null_stg_linkedin__postings_posting_id.7da96baf0a
+[0m09:10:37.328018 [debug] [Thread-5 (]: Writing runtime sql for node "test.data_ai_index.not_null_stg_linkedin__postings_posting_id.7da96baf0a"
+[0m09:10:37.330198 [debug] [Thread-4 (]: SQL status: SUCCESS 1 in 0.528 seconds
+[0m09:10:37.333655 [info ] [Thread-4 (]: 48 of 77 PASS not_null_stg_hn__job_postings_posting_text ....................... [[32mPASS[0m in 0.80s]
+[0m09:10:37.335787 [debug] [Thread-5 (]: Using snowflake connection "test.data_ai_index.not_null_stg_linkedin__postings_posting_id.7da96baf0a"
+[0m09:10:37.341849 [debug] [Thread-4 (]: Finished running node test.data_ai_index.not_null_stg_hn__job_postings_posting_text.79d3b4f60e
+[0m09:10:37.344688 [debug] [Thread-5 (]: On test.data_ai_index.not_null_stg_linkedin__postings_posting_id.7da96baf0a: select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select posting_id
+from DATAEXPERT_STUDENT.KOUVERK_DATA_INDUSTRY_staging.stg_linkedin__postings
+where posting_id is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+/* {"app": "dbt", "dbt_version": "1.11.2", "profile_name": "data_ai_index", "target_name": "dev", "node_id": "test.data_ai_index.not_null_stg_linkedin__postings_posting_id.7da96baf0a"} */
+[0m09:10:37.346626 [debug] [Thread-4 (]: Began running node test.data_ai_index.not_null_stg_linkedin__skills_posting_id.94cb44b6cd
+[0m09:10:37.348847 [info ] [Thread-4 (]: 54 of 77 START test not_null_stg_linkedin__skills_posting_id ................... [RUN]
+[0m09:10:37.353574 [debug] [Thread-4 (]: Re-using an available connection from the pool (formerly test.data_ai_index.not_null_stg_hn__job_postings_posting_text.79d3b4f60e, now test.data_ai_index.not_null_stg_linkedin__skills_posting_id.94cb44b6cd)
+[0m09:10:37.357755 [debug] [Thread-4 (]: Began compiling node test.data_ai_index.not_null_stg_linkedin__skills_posting_id.94cb44b6cd
+[0m09:10:37.378603 [debug] [Thread-4 (]: Writing injected SQL for node "test.data_ai_index.not_null_stg_linkedin__skills_posting_id.94cb44b6cd"
+[0m09:10:37.382376 [debug] [Thread-4 (]: Began executing node test.data_ai_index.not_null_stg_linkedin__skills_posting_id.94cb44b6cd
+[0m09:10:37.391538 [debug] [Thread-4 (]: Writing runtime sql for node "test.data_ai_index.not_null_stg_linkedin__skills_posting_id.94cb44b6cd"
+[0m09:10:37.397098 [debug] [Thread-4 (]: Using snowflake connection "test.data_ai_index.not_null_stg_linkedin__skills_posting_id.94cb44b6cd"
+[0m09:10:37.399256 [debug] [Thread-4 (]: On test.data_ai_index.not_null_stg_linkedin__skills_posting_id.94cb44b6cd: select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select posting_id
+from DATAEXPERT_STUDENT.KOUVERK_DATA_INDUSTRY_staging.stg_linkedin__skills
+where posting_id is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+/* {"app": "dbt", "dbt_version": "1.11.2", "profile_name": "data_ai_index", "target_name": "dev", "node_id": "test.data_ai_index.not_null_stg_linkedin__skills_posting_id.94cb44b6cd"} */
+[0m09:10:37.552234 [debug] [Thread-2 (]: SQL status: SUCCESS 1 in 0.287 seconds
+[0m09:10:37.643718 [debug] [Thread-5 (]: SQL status: SUCCESS 1 in 0.296 seconds
+[0m09:10:37.641313 [info ] [Thread-2 (]: 52 of 77 PASS not_null_stg_linkedin__postings_job_title ........................ [[32mPASS[0m in 0.40s]
+[0m09:10:37.647459 [info ] [Thread-5 (]: 53 of 77 PASS not_null_stg_linkedin__postings_posting_id ....................... [[32mPASS[0m in 0.33s]
+[0m09:10:37.648813 [debug] [Thread-2 (]: Finished running node test.data_ai_index.not_null_stg_linkedin__postings_job_title.2bcfcdfcfd
+[0m09:10:37.676722 [debug] [Thread-5 (]: Finished running node test.data_ai_index.not_null_stg_linkedin__postings_posting_id.7da96baf0a
+[0m09:10:37.678578 [debug] [Thread-2 (]: Began running node test.data_ai_index.not_null_stg_linkedin__skills_skill_name.cd76332611
+[0m09:10:37.679691 [debug] [Thread-5 (]: Began running node test.data_ai_index.not_null_stg_linkedin__summaries_posting_id.cb0e83b98c
+[0m09:10:37.681327 [debug] [Thread-3 (]: SQL status: SUCCESS 1 in 0.690 seconds
+[0m09:10:37.682109 [info ] [Thread-2 (]: 55 of 77 START test not_null_stg_linkedin__skills_skill_name ................... [RUN]
+[0m09:10:37.682983 [info ] [Thread-5 (]: 56 of 77 START test not_null_stg_linkedin__summaries_posting_id ................ [RUN]
+[0m09:10:37.686856 [warn ] [Thread-3 (]: 51 of 77 WARN 11 not_null_stg_linkedin__postings_company ....................... [[33mWARN 11[0m in 0.71s]
+[0m09:10:37.688320 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly test.data_ai_index.not_null_stg_linkedin__postings_job_title.2bcfcdfcfd, now test.data_ai_index.not_null_stg_linkedin__skills_skill_name.cd76332611)
+[0m09:10:37.689014 [debug] [Thread-5 (]: Re-using an available connection from the pool (formerly test.data_ai_index.not_null_stg_linkedin__postings_posting_id.7da96baf0a, now test.data_ai_index.not_null_stg_linkedin__summaries_posting_id.cb0e83b98c)
+[0m09:10:37.689827 [debug] [Thread-3 (]: Finished running node test.data_ai_index.not_null_stg_linkedin__postings_company.3f1d04ad13
+[0m09:10:37.690359 [debug] [Thread-2 (]: Began compiling node test.data_ai_index.not_null_stg_linkedin__skills_skill_name.cd76332611
+[0m09:10:37.691256 [debug] [Thread-5 (]: Began compiling node test.data_ai_index.not_null_stg_linkedin__summaries_posting_id.cb0e83b98c
+[0m09:10:37.692439 [debug] [Thread-3 (]: Began running node test.data_ai_index.not_null_stg_llm__skill_extractions_is_successful.48e302e9d3
+[0m09:10:37.698611 [debug] [Thread-2 (]: Writing injected SQL for node "test.data_ai_index.not_null_stg_linkedin__skills_skill_name.cd76332611"
+[0m09:10:37.705726 [debug] [Thread-5 (]: Writing injected SQL for node "test.data_ai_index.not_null_stg_linkedin__summaries_posting_id.cb0e83b98c"
+[0m09:10:37.706911 [info ] [Thread-3 (]: 57 of 77 START test not_null_stg_llm__skill_extractions_is_successful .......... [RUN]
+[0m09:10:37.708725 [debug] [Thread-3 (]: Re-using an available connection from the pool (formerly test.data_ai_index.not_null_stg_linkedin__postings_company.3f1d04ad13, now test.data_ai_index.not_null_stg_llm__skill_extractions_is_successful.48e302e9d3)
+[0m09:10:37.709294 [debug] [Thread-3 (]: Began compiling node test.data_ai_index.not_null_stg_llm__skill_extractions_is_successful.48e302e9d3
+[0m09:10:37.714700 [debug] [Thread-3 (]: Writing injected SQL for node "test.data_ai_index.not_null_stg_llm__skill_extractions_is_successful.48e302e9d3"
+[0m09:10:37.715554 [debug] [Thread-2 (]: Began executing node test.data_ai_index.not_null_stg_linkedin__skills_skill_name.cd76332611
+[0m09:10:37.716323 [debug] [Thread-5 (]: Began executing node test.data_ai_index.not_null_stg_linkedin__summaries_posting_id.cb0e83b98c
+[0m09:10:37.722447 [debug] [Thread-2 (]: Writing runtime sql for node "test.data_ai_index.not_null_stg_linkedin__skills_skill_name.cd76332611"
+[0m09:10:37.728583 [debug] [Thread-5 (]: Writing runtime sql for node "test.data_ai_index.not_null_stg_linkedin__summaries_posting_id.cb0e83b98c"
+[0m09:10:37.729633 [debug] [Thread-3 (]: Began executing node test.data_ai_index.not_null_stg_llm__skill_extractions_is_successful.48e302e9d3
+[0m09:10:37.733146 [debug] [Thread-3 (]: Writing runtime sql for node "test.data_ai_index.not_null_stg_llm__skill_extractions_is_successful.48e302e9d3"
+[0m09:10:37.735713 [debug] [Thread-5 (]: Using snowflake connection "test.data_ai_index.not_null_stg_linkedin__summaries_posting_id.cb0e83b98c"
+[0m09:10:37.737294 [debug] [Thread-2 (]: Using snowflake connection "test.data_ai_index.not_null_stg_linkedin__skills_skill_name.cd76332611"
+[0m09:10:37.738096 [debug] [Thread-5 (]: On test.data_ai_index.not_null_stg_linkedin__summaries_posting_id.cb0e83b98c: select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select posting_id
+from DATAEXPERT_STUDENT.KOUVERK_DATA_INDUSTRY_staging.stg_linkedin__summaries
+where posting_id is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+/* {"app": "dbt", "dbt_version": "1.11.2", "profile_name": "data_ai_index", "target_name": "dev", "node_id": "test.data_ai_index.not_null_stg_linkedin__summaries_posting_id.cb0e83b98c"} */
+[0m09:10:37.739843 [debug] [Thread-3 (]: Using snowflake connection "test.data_ai_index.not_null_stg_llm__skill_extractions_is_successful.48e302e9d3"
+[0m09:10:37.740910 [debug] [Thread-2 (]: On test.data_ai_index.not_null_stg_linkedin__skills_skill_name.cd76332611: select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select skill_name
+from DATAEXPERT_STUDENT.KOUVERK_DATA_INDUSTRY_staging.stg_linkedin__skills
+where skill_name is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+/* {"app": "dbt", "dbt_version": "1.11.2", "profile_name": "data_ai_index", "target_name": "dev", "node_id": "test.data_ai_index.not_null_stg_linkedin__skills_skill_name.cd76332611"} */
+[0m09:10:37.742410 [debug] [Thread-3 (]: On test.data_ai_index.not_null_stg_llm__skill_extractions_is_successful.48e302e9d3: select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select is_successful
+from DATAEXPERT_STUDENT.KOUVERK_DATA_INDUSTRY_staging.stg_llm__skill_extractions
+where is_successful is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+/* {"app": "dbt", "dbt_version": "1.11.2", "profile_name": "data_ai_index", "target_name": "dev", "node_id": "test.data_ai_index.not_null_stg_llm__skill_extractions_is_successful.48e302e9d3"} */
+[0m09:10:37.839410 [debug] [Thread-4 (]: SQL status: SUCCESS 1 in 0.436 seconds
+[0m09:10:37.844836 [info ] [Thread-4 (]: 54 of 77 PASS not_null_stg_linkedin__skills_posting_id ......................... [[32mPASS[0m in 0.49s]
+[0m09:10:37.846401 [debug] [Thread-4 (]: Finished running node test.data_ai_index.not_null_stg_linkedin__skills_posting_id.94cb44b6cd
+[0m09:10:37.847275 [debug] [Thread-4 (]: Began running node test.data_ai_index.not_null_stg_llm__skill_extractions_llm_model.5d483c8dcc
+[0m09:10:37.848047 [info ] [Thread-4 (]: 58 of 77 START test not_null_stg_llm__skill_extractions_llm_model .............. [RUN]
+[0m09:10:37.849058 [debug] [Thread-4 (]: Re-using an available connection from the pool (formerly test.data_ai_index.not_null_stg_linkedin__skills_posting_id.94cb44b6cd, now test.data_ai_index.not_null_stg_llm__skill_extractions_llm_model.5d483c8dcc)
+[0m09:10:37.850356 [debug] [Thread-4 (]: Began compiling node test.data_ai_index.not_null_stg_llm__skill_extractions_llm_model.5d483c8dcc
+[0m09:10:37.858735 [debug] [Thread-4 (]: Writing injected SQL for node "test.data_ai_index.not_null_stg_llm__skill_extractions_llm_model.5d483c8dcc"
+[0m09:10:37.861549 [debug] [Thread-4 (]: Began executing node test.data_ai_index.not_null_stg_llm__skill_extractions_llm_model.5d483c8dcc
+[0m09:10:37.866149 [debug] [Thread-4 (]: Writing runtime sql for node "test.data_ai_index.not_null_stg_llm__skill_extractions_llm_model.5d483c8dcc"
+[0m09:10:37.868782 [debug] [Thread-4 (]: Using snowflake connection "test.data_ai_index.not_null_stg_llm__skill_extractions_llm_model.5d483c8dcc"
+[0m09:10:37.869442 [debug] [Thread-4 (]: On test.data_ai_index.not_null_stg_llm__skill_extractions_llm_model.5d483c8dcc: select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select llm_model
+from DATAEXPERT_STUDENT.KOUVERK_DATA_INDUSTRY_staging.stg_llm__skill_extractions
+where llm_model is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+/* {"app": "dbt", "dbt_version": "1.11.2", "profile_name": "data_ai_index", "target_name": "dev", "node_id": "test.data_ai_index.not_null_stg_llm__skill_extractions_llm_model.5d483c8dcc"} */
+[0m09:10:37.893843 [debug] [Thread-3 (]: SQL status: SUCCESS 1 in 0.148 seconds
+[0m09:10:37.896437 [info ] [Thread-3 (]: 57 of 77 PASS not_null_stg_llm__skill_extractions_is_successful ................ [[32mPASS[0m in 0.19s]
+[0m09:10:37.897224 [debug] [Thread-3 (]: Finished running node test.data_ai_index.not_null_stg_llm__skill_extractions_is_successful.48e302e9d3
+[0m09:10:37.897770 [debug] [Thread-3 (]: Began running node test.data_ai_index.not_null_stg_llm__skill_extractions_posting_id.31bf17989e
+[0m09:10:37.898213 [info ] [Thread-3 (]: 59 of 77 START test not_null_stg_llm__skill_extractions_posting_id ............. [RUN]
+[0m09:10:37.898751 [debug] [Thread-3 (]: Re-using an available connection from the pool (formerly test.data_ai_index.not_null_stg_llm__skill_extractions_is_successful.48e302e9d3, now test.data_ai_index.not_null_stg_llm__skill_extractions_posting_id.31bf17989e)
+[0m09:10:37.899418 [debug] [Thread-3 (]: Began compiling node test.data_ai_index.not_null_stg_llm__skill_extractions_posting_id.31bf17989e
+[0m09:10:37.905388 [debug] [Thread-3 (]: Writing injected SQL for node "test.data_ai_index.not_null_stg_llm__skill_extractions_posting_id.31bf17989e"
+[0m09:10:37.906394 [debug] [Thread-3 (]: Began executing node test.data_ai_index.not_null_stg_llm__skill_extractions_posting_id.31bf17989e
+[0m09:10:37.910594 [debug] [Thread-3 (]: Writing runtime sql for node "test.data_ai_index.not_null_stg_llm__skill_extractions_posting_id.31bf17989e"
+[0m09:10:37.912031 [debug] [Thread-3 (]: Using snowflake connection "test.data_ai_index.not_null_stg_llm__skill_extractions_posting_id.31bf17989e"
+[0m09:10:37.912629 [debug] [Thread-3 (]: On test.data_ai_index.not_null_stg_llm__skill_extractions_posting_id.31bf17989e: select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select posting_id
+from DATAEXPERT_STUDENT.KOUVERK_DATA_INDUSTRY_staging.stg_llm__skill_extractions
+where posting_id is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+/* {"app": "dbt", "dbt_version": "1.11.2", "profile_name": "data_ai_index", "target_name": "dev", "node_id": "test.data_ai_index.not_null_stg_llm__skill_extractions_posting_id.31bf17989e"} */
+[0m09:10:38.014348 [debug] [Thread-4 (]: SQL status: SUCCESS 1 in 0.144 seconds
+[0m09:10:38.019780 [warn ] [Thread-4 (]: 58 of 77 WARN 182 not_null_stg_llm__skill_extractions_llm_model ................ [[33mWARN 182[0m in 0.17s]
+[0m09:10:38.021282 [debug] [Thread-4 (]: Finished running node test.data_ai_index.not_null_stg_llm__skill_extractions_llm_model.5d483c8dcc
+[0m09:10:38.022736 [debug] [Thread-4 (]: Began running node test.data_ai_index.relationships_stg_linkedin__skills_posting_id__posting_id__ref_stg_linkedin__postings_.a1a93afc14
+[0m09:10:38.024258 [info ] [Thread-4 (]: 60 of 77 START test relationships_stg_linkedin__skills_posting_id__posting_id__ref_stg_linkedin__postings_  [RUN]
+[0m09:10:38.025707 [debug] [Thread-4 (]: Re-using an available connection from the pool (formerly test.data_ai_index.not_null_stg_llm__skill_extractions_llm_model.5d483c8dcc, now test.data_ai_index.relationships_stg_linkedin__skills_posting_id__posting_id__ref_stg_linkedin__postings_.a1a93afc14)
+[0m09:10:38.027142 [debug] [Thread-4 (]: Began compiling node test.data_ai_index.relationships_stg_linkedin__skills_posting_id__posting_id__ref_stg_linkedin__postings_.a1a93afc14
+[0m09:10:38.043474 [debug] [Thread-4 (]: Writing injected SQL for node "test.data_ai_index.relationships_stg_linkedin__skills_posting_id__posting_id__ref_stg_linkedin__postings_.a1a93afc14"
+[0m09:10:38.045793 [debug] [Thread-4 (]: Began executing node test.data_ai_index.relationships_stg_linkedin__skills_posting_id__posting_id__ref_stg_linkedin__postings_.a1a93afc14
+[0m09:10:38.056140 [debug] [Thread-4 (]: Writing runtime sql for node "test.data_ai_index.relationships_stg_linkedin__skills_posting_id__posting_id__ref_stg_linkedin__postings_.a1a93afc14"
+[0m09:10:38.057993 [debug] [Thread-3 (]: SQL status: SUCCESS 1 in 0.145 seconds
+[0m09:10:38.060480 [info ] [Thread-3 (]: 59 of 77 PASS not_null_stg_llm__skill_extractions_posting_id ................... [[32mPASS[0m in 0.16s]
+[0m09:10:38.061473 [debug] [Thread-3 (]: Finished running node test.data_ai_index.not_null_stg_llm__skill_extractions_posting_id.31bf17989e
+[0m09:10:38.062960 [debug] [Thread-4 (]: Using snowflake connection "test.data_ai_index.relationships_stg_linkedin__skills_posting_id__posting_id__ref_stg_linkedin__postings_.a1a93afc14"
+[0m09:10:38.063627 [debug] [Thread-3 (]: Began running node test.data_ai_index.relationships_stg_linkedin__summaries_posting_id__posting_id__ref_stg_linkedin__postings_.f5c507ed26
+[0m09:10:38.064399 [debug] [Thread-4 (]: On test.data_ai_index.relationships_stg_linkedin__skills_posting_id__posting_id__ref_stg_linkedin__postings_.a1a93afc14: select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+with child as (
+    select posting_id as from_field
+    from DATAEXPERT_STUDENT.KOUVERK_DATA_INDUSTRY_staging.stg_linkedin__skills
+    where posting_id is not null
+),
+
+parent as (
+    select posting_id as to_field
+    from DATAEXPERT_STUDENT.KOUVERK_DATA_INDUSTRY_staging.stg_linkedin__postings
+)
+
+select
+    from_field
+
+from child
+left join parent
+    on child.from_field = parent.to_field
+
+where parent.to_field is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+/* {"app": "dbt", "dbt_version": "1.11.2", "profile_name": "data_ai_index", "target_name": "dev", "node_id": "test.data_ai_index.relationships_stg_linkedin__skills_posting_id__posting_id__ref_stg_linkedin__postings_.a1a93afc14"} */
+[0m09:10:38.065173 [info ] [Thread-3 (]: 61 of 77 START test relationships_stg_linkedin__summaries_posting_id__posting_id__ref_stg_linkedin__postings_  [RUN]
+[0m09:10:38.066264 [debug] [Thread-3 (]: Re-using an available connection from the pool (formerly test.data_ai_index.not_null_stg_llm__skill_extractions_posting_id.31bf17989e, now test.data_ai_index.relationships_stg_linkedin__summaries_posting_id__posting_id__ref_stg_linkedin__postings_.f5c507ed26)
+[0m09:10:38.067191 [debug] [Thread-3 (]: Began compiling node test.data_ai_index.relationships_stg_linkedin__summaries_posting_id__posting_id__ref_stg_linkedin__postings_.f5c507ed26
+[0m09:10:38.076723 [debug] [Thread-3 (]: Writing injected SQL for node "test.data_ai_index.relationships_stg_linkedin__summaries_posting_id__posting_id__ref_stg_linkedin__postings_.f5c507ed26"
+[0m09:10:38.078857 [debug] [Thread-3 (]: Began executing node test.data_ai_index.relationships_stg_linkedin__summaries_posting_id__posting_id__ref_stg_linkedin__postings_.f5c507ed26
+[0m09:10:38.083391 [debug] [Thread-3 (]: Writing runtime sql for node "test.data_ai_index.relationships_stg_linkedin__summaries_posting_id__posting_id__ref_stg_linkedin__postings_.f5c507ed26"
+[0m09:10:38.086505 [debug] [Thread-3 (]: Using snowflake connection "test.data_ai_index.relationships_stg_linkedin__summaries_posting_id__posting_id__ref_stg_linkedin__postings_.f5c507ed26"
+[0m09:10:38.087403 [debug] [Thread-3 (]: On test.data_ai_index.relationships_stg_linkedin__summaries_posting_id__posting_id__ref_stg_linkedin__postings_.f5c507ed26: select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+with child as (
+    select posting_id as from_field
+    from DATAEXPERT_STUDENT.KOUVERK_DATA_INDUSTRY_staging.stg_linkedin__summaries
+    where posting_id is not null
+),
+
+parent as (
+    select posting_id as to_field
+    from DATAEXPERT_STUDENT.KOUVERK_DATA_INDUSTRY_staging.stg_linkedin__postings
+)
+
+select
+    from_field
+
+from child
+left join parent
+    on child.from_field = parent.to_field
+
+where parent.to_field is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+/* {"app": "dbt", "dbt_version": "1.11.2", "profile_name": "data_ai_index", "target_name": "dev", "node_id": "test.data_ai_index.relationships_stg_linkedin__summaries_posting_id__posting_id__ref_stg_linkedin__postings_.f5c507ed26"} */
+[0m09:10:38.094963 [debug] [Thread-5 (]: SQL status: SUCCESS 1 in 0.352 seconds
+[0m09:10:38.100002 [info ] [Thread-5 (]: 56 of 77 PASS not_null_stg_linkedin__summaries_posting_id ...................... [[32mPASS[0m in 0.41s]
+[0m09:10:38.102439 [debug] [Thread-5 (]: Finished running node test.data_ai_index.not_null_stg_linkedin__summaries_posting_id.cb0e83b98c
+[0m09:10:38.103807 [debug] [Thread-5 (]: Began running node test.data_ai_index.relationships_stg_llm__skill_extractions_posting_id__posting_id__ref_stg_hn__job_postings_.e1a49c6414
+[0m09:10:38.105356 [info ] [Thread-5 (]: 62 of 77 START test relationships_stg_llm__skill_extractions_posting_id__posting_id__ref_stg_hn__job_postings_  [RUN]
+[0m09:10:38.106410 [debug] [Thread-5 (]: Re-using an available connection from the pool (formerly test.data_ai_index.not_null_stg_linkedin__summaries_posting_id.cb0e83b98c, now test.data_ai_index.relationships_stg_llm__skill_extractions_posting_id__posting_id__ref_stg_hn__job_postings_.e1a49c6414)
+[0m09:10:38.107596 [debug] [Thread-5 (]: Began compiling node test.data_ai_index.relationships_stg_llm__skill_extractions_posting_id__posting_id__ref_stg_hn__job_postings_.e1a49c6414
+[0m09:10:38.115135 [debug] [Thread-5 (]: Writing injected SQL for node "test.data_ai_index.relationships_stg_llm__skill_extractions_posting_id__posting_id__ref_stg_hn__job_postings_.e1a49c6414"
+[0m09:10:38.116480 [debug] [Thread-5 (]: Began executing node test.data_ai_index.relationships_stg_llm__skill_extractions_posting_id__posting_id__ref_stg_hn__job_postings_.e1a49c6414
+[0m09:10:38.122954 [debug] [Thread-5 (]: Writing runtime sql for node "test.data_ai_index.relationships_stg_llm__skill_extractions_posting_id__posting_id__ref_stg_hn__job_postings_.e1a49c6414"
+[0m09:10:38.125673 [debug] [Thread-5 (]: Using snowflake connection "test.data_ai_index.relationships_stg_llm__skill_extractions_posting_id__posting_id__ref_stg_hn__job_postings_.e1a49c6414"
+[0m09:10:38.127011 [debug] [Thread-5 (]: On test.data_ai_index.relationships_stg_llm__skill_extractions_posting_id__posting_id__ref_stg_hn__job_postings_.e1a49c6414: select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+with child as (
+    select posting_id as from_field
+    from DATAEXPERT_STUDENT.KOUVERK_DATA_INDUSTRY_staging.stg_llm__skill_extractions
+    where posting_id is not null
+),
+
+parent as (
+    select posting_id as to_field
+    from DATAEXPERT_STUDENT.KOUVERK_DATA_INDUSTRY_staging.stg_hn__job_postings
+)
+
+select
+    from_field
+
+from child
+left join parent
+    on child.from_field = parent.to_field
+
+where parent.to_field is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+/* {"app": "dbt", "dbt_version": "1.11.2", "profile_name": "data_ai_index", "target_name": "dev", "node_id": "test.data_ai_index.relationships_stg_llm__skill_extractions_posting_id__posting_id__ref_stg_hn__job_postings_.e1a49c6414"} */
+[0m09:10:39.400866 [debug] [Thread-5 (]: SQL status: SUCCESS 1 in 1.273 seconds
+[0m09:10:39.404656 [info ] [Thread-5 (]: 62 of 77 PASS relationships_stg_llm__skill_extractions_posting_id__posting_id__ref_stg_hn__job_postings_  [[32mPASS[0m in 1.30s]
+[0m09:10:39.405985 [debug] [Thread-5 (]: Finished running node test.data_ai_index.relationships_stg_llm__skill_extractions_posting_id__posting_id__ref_stg_hn__job_postings_.e1a49c6414
+[0m09:10:39.406883 [debug] [Thread-5 (]: Began running node test.data_ai_index.unique_dim_date_date_key.0869fd48f9
+[0m09:10:39.407818 [info ] [Thread-5 (]: 63 of 77 START test unique_dim_date_date_key ................................... [RUN]
+[0m09:10:39.409243 [debug] [Thread-5 (]: Re-using an available connection from the pool (formerly test.data_ai_index.relationships_stg_llm__skill_extractions_posting_id__posting_id__ref_stg_hn__job_postings_.e1a49c6414, now test.data_ai_index.unique_dim_date_date_key.0869fd48f9)
+[0m09:10:39.410057 [debug] [Thread-5 (]: Began compiling node test.data_ai_index.unique_dim_date_date_key.0869fd48f9
+[0m09:10:39.424901 [debug] [Thread-5 (]: Writing injected SQL for node "test.data_ai_index.unique_dim_date_date_key.0869fd48f9"
+[0m09:10:39.426188 [debug] [Thread-5 (]: Began executing node test.data_ai_index.unique_dim_date_date_key.0869fd48f9
+[0m09:10:39.431873 [debug] [Thread-5 (]: Writing runtime sql for node "test.data_ai_index.unique_dim_date_date_key.0869fd48f9"
+[0m09:10:39.434122 [debug] [Thread-5 (]: Using snowflake connection "test.data_ai_index.unique_dim_date_date_key.0869fd48f9"
+[0m09:10:39.435326 [debug] [Thread-5 (]: On test.data_ai_index.unique_dim_date_date_key.0869fd48f9: select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+select
+    date_key as unique_field,
+    count(*) as n_records
+
+from DATAEXPERT_STUDENT.KOUVERK_DATA_INDUSTRY_marts.dim_date
+where date_key is not null
+group by date_key
+having count(*) > 1
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+/* {"app": "dbt", "dbt_version": "1.11.2", "profile_name": "data_ai_index", "target_name": "dev", "node_id": "test.data_ai_index.unique_dim_date_date_key.0869fd48f9"} */
+[0m09:10:39.805772 [debug] [Thread-5 (]: SQL status: SUCCESS 1 in 0.369 seconds
+[0m09:10:39.810373 [info ] [Thread-5 (]: 63 of 77 PASS unique_dim_date_date_key ......................................... [[32mPASS[0m in 0.40s]
+[0m09:10:39.812039 [debug] [Thread-5 (]: Finished running node test.data_ai_index.unique_dim_date_date_key.0869fd48f9
+[0m09:10:39.812888 [debug] [Thread-5 (]: Began running node test.data_ai_index.unique_dim_roles_role_id.4428347340
+[0m09:10:39.813825 [info ] [Thread-5 (]: 64 of 77 START test unique_dim_roles_role_id ................................... [RUN]
+[0m09:10:39.814730 [debug] [Thread-5 (]: Re-using an available connection from the pool (formerly test.data_ai_index.unique_dim_date_date_key.0869fd48f9, now test.data_ai_index.unique_dim_roles_role_id.4428347340)
+[0m09:10:39.815673 [debug] [Thread-5 (]: Began compiling node test.data_ai_index.unique_dim_roles_role_id.4428347340
+[0m09:10:39.824396 [debug] [Thread-5 (]: Writing injected SQL for node "test.data_ai_index.unique_dim_roles_role_id.4428347340"
+[0m09:10:39.827390 [debug] [Thread-5 (]: Began executing node test.data_ai_index.unique_dim_roles_role_id.4428347340
+[0m09:10:39.835137 [debug] [Thread-5 (]: Writing runtime sql for node "test.data_ai_index.unique_dim_roles_role_id.4428347340"
+[0m09:10:39.839040 [debug] [Thread-5 (]: Using snowflake connection "test.data_ai_index.unique_dim_roles_role_id.4428347340"
+[0m09:10:39.840168 [debug] [Thread-5 (]: On test.data_ai_index.unique_dim_roles_role_id.4428347340: select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+select
+    role_id as unique_field,
+    count(*) as n_records
+
+from DATAEXPERT_STUDENT.KOUVERK_DATA_INDUSTRY_marts.dim_roles
+where role_id is not null
+group by role_id
+having count(*) > 1
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+/* {"app": "dbt", "dbt_version": "1.11.2", "profile_name": "data_ai_index", "target_name": "dev", "node_id": "test.data_ai_index.unique_dim_roles_role_id.4428347340"} */
+[0m09:10:40.042019 [debug] [Thread-5 (]: SQL status: SUCCESS 1 in 0.200 seconds
+[0m09:10:40.044452 [info ] [Thread-5 (]: 64 of 77 PASS unique_dim_roles_role_id ......................................... [[32mPASS[0m in 0.23s]
+[0m09:10:40.045225 [debug] [Thread-5 (]: Finished running node test.data_ai_index.unique_dim_roles_role_id.4428347340
+[0m09:10:40.045720 [debug] [Thread-5 (]: Began running node test.data_ai_index.unique_dim_roles_role_name.afa4ccc649
+[0m09:10:40.046146 [info ] [Thread-5 (]: 65 of 77 START test unique_dim_roles_role_name ................................. [RUN]
+[0m09:10:40.047086 [debug] [Thread-5 (]: Re-using an available connection from the pool (formerly test.data_ai_index.unique_dim_roles_role_id.4428347340, now test.data_ai_index.unique_dim_roles_role_name.afa4ccc649)
+[0m09:10:40.047697 [debug] [Thread-5 (]: Began compiling node test.data_ai_index.unique_dim_roles_role_name.afa4ccc649
+[0m09:10:40.054698 [debug] [Thread-5 (]: Writing injected SQL for node "test.data_ai_index.unique_dim_roles_role_name.afa4ccc649"
+[0m09:10:40.056190 [debug] [Thread-5 (]: Began executing node test.data_ai_index.unique_dim_roles_role_name.afa4ccc649
+[0m09:10:40.062011 [debug] [Thread-5 (]: Writing runtime sql for node "test.data_ai_index.unique_dim_roles_role_name.afa4ccc649"
+[0m09:10:40.063671 [debug] [Thread-5 (]: Using snowflake connection "test.data_ai_index.unique_dim_roles_role_name.afa4ccc649"
+[0m09:10:40.064345 [debug] [Thread-5 (]: On test.data_ai_index.unique_dim_roles_role_name.afa4ccc649: select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+select
+    role_name as unique_field,
+    count(*) as n_records
+
+from DATAEXPERT_STUDENT.KOUVERK_DATA_INDUSTRY_marts.dim_roles
+where role_name is not null
+group by role_name
+having count(*) > 1
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+/* {"app": "dbt", "dbt_version": "1.11.2", "profile_name": "data_ai_index", "target_name": "dev", "node_id": "test.data_ai_index.unique_dim_roles_role_name.afa4ccc649"} */
+[0m09:10:40.261244 [debug] [Thread-5 (]: SQL status: SUCCESS 1 in 0.196 seconds
+[0m09:10:40.267420 [info ] [Thread-5 (]: 65 of 77 PASS unique_dim_roles_role_name ....................................... [[32mPASS[0m in 0.22s]
+[0m09:10:40.269109 [debug] [Thread-5 (]: Finished running node test.data_ai_index.unique_dim_roles_role_name.afa4ccc649
+[0m09:10:40.270163 [debug] [Thread-5 (]: Began running node test.data_ai_index.unique_dim_technologies_technology_id.477695a9fd
+[0m09:10:40.271109 [info ] [Thread-5 (]: 66 of 77 START test unique_dim_technologies_technology_id ...................... [RUN]
+[0m09:10:40.272480 [debug] [Thread-5 (]: Re-using an available connection from the pool (formerly test.data_ai_index.unique_dim_roles_role_name.afa4ccc649, now test.data_ai_index.unique_dim_technologies_technology_id.477695a9fd)
+[0m09:10:40.273957 [debug] [Thread-5 (]: Began compiling node test.data_ai_index.unique_dim_technologies_technology_id.477695a9fd
+[0m09:10:40.283717 [debug] [Thread-5 (]: Writing injected SQL for node "test.data_ai_index.unique_dim_technologies_technology_id.477695a9fd"
+[0m09:10:40.287657 [debug] [Thread-5 (]: Began executing node test.data_ai_index.unique_dim_technologies_technology_id.477695a9fd
+[0m09:10:40.293767 [debug] [Thread-5 (]: Writing runtime sql for node "test.data_ai_index.unique_dim_technologies_technology_id.477695a9fd"
+[0m09:10:40.295316 [debug] [Thread-5 (]: Using snowflake connection "test.data_ai_index.unique_dim_technologies_technology_id.477695a9fd"
+[0m09:10:40.295905 [debug] [Thread-5 (]: On test.data_ai_index.unique_dim_technologies_technology_id.477695a9fd: select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+select
+    technology_id as unique_field,
+    count(*) as n_records
+
+from DATAEXPERT_STUDENT.KOUVERK_DATA_INDUSTRY_marts.dim_technologies
+where technology_id is not null
+group by technology_id
+having count(*) > 1
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+/* {"app": "dbt", "dbt_version": "1.11.2", "profile_name": "data_ai_index", "target_name": "dev", "node_id": "test.data_ai_index.unique_dim_technologies_technology_id.477695a9fd"} */
+[0m09:10:40.729540 [debug] [Thread-5 (]: SQL status: SUCCESS 1 in 0.433 seconds
+[0m09:10:40.731962 [info ] [Thread-5 (]: 66 of 77 PASS unique_dim_technologies_technology_id ............................ [[32mPASS[0m in 0.46s]
+[0m09:10:40.732831 [debug] [Thread-5 (]: Finished running node test.data_ai_index.unique_dim_technologies_technology_id.477695a9fd
+[0m09:10:40.733385 [debug] [Thread-5 (]: Began running node test.data_ai_index.unique_dim_technologies_technology_name.7589c62256
+[0m09:10:40.733841 [info ] [Thread-5 (]: 67 of 77 START test unique_dim_technologies_technology_name .................... [RUN]
+[0m09:10:40.734413 [debug] [Thread-5 (]: Re-using an available connection from the pool (formerly test.data_ai_index.unique_dim_technologies_technology_id.477695a9fd, now test.data_ai_index.unique_dim_technologies_technology_name.7589c62256)
+[0m09:10:40.734891 [debug] [Thread-5 (]: Began compiling node test.data_ai_index.unique_dim_technologies_technology_name.7589c62256
+[0m09:10:40.740428 [debug] [Thread-5 (]: Writing injected SQL for node "test.data_ai_index.unique_dim_technologies_technology_name.7589c62256"
+[0m09:10:40.741568 [debug] [Thread-5 (]: Began executing node test.data_ai_index.unique_dim_technologies_technology_name.7589c62256
+[0m09:10:40.747671 [debug] [Thread-5 (]: Writing runtime sql for node "test.data_ai_index.unique_dim_technologies_technology_name.7589c62256"
+[0m09:10:40.750338 [debug] [Thread-5 (]: Using snowflake connection "test.data_ai_index.unique_dim_technologies_technology_name.7589c62256"
+[0m09:10:40.750935 [debug] [Thread-5 (]: On test.data_ai_index.unique_dim_technologies_technology_name.7589c62256: select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+select
+    technology_name as unique_field,
+    count(*) as n_records
+
+from DATAEXPERT_STUDENT.KOUVERK_DATA_INDUSTRY_marts.dim_technologies
+where technology_name is not null
+group by technology_name
+having count(*) > 1
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+/* {"app": "dbt", "dbt_version": "1.11.2", "profile_name": "data_ai_index", "target_name": "dev", "node_id": "test.data_ai_index.unique_dim_technologies_technology_name.7589c62256"} */
+[0m09:10:41.139603 [debug] [Thread-5 (]: SQL status: SUCCESS 1 in 0.388 seconds
+[0m09:10:41.142139 [info ] [Thread-5 (]: 67 of 77 PASS unique_dim_technologies_technology_name .......................... [[32mPASS[0m in 0.41s]
+[0m09:10:41.143156 [debug] [Thread-5 (]: Finished running node test.data_ai_index.unique_dim_technologies_technology_name.7589c62256
+[0m09:10:41.143777 [debug] [Thread-5 (]: Began running node test.data_ai_index.unique_fct_github_repo_stats_repo_id.af46e0c84b
+[0m09:10:41.144298 [info ] [Thread-5 (]: 68 of 77 START test unique_fct_github_repo_stats_repo_id ....................... [RUN]
+[0m09:10:41.144973 [debug] [Thread-5 (]: Re-using an available connection from the pool (formerly test.data_ai_index.unique_dim_technologies_technology_name.7589c62256, now test.data_ai_index.unique_fct_github_repo_stats_repo_id.af46e0c84b)
+[0m09:10:41.145461 [debug] [Thread-5 (]: Began compiling node test.data_ai_index.unique_fct_github_repo_stats_repo_id.af46e0c84b
+[0m09:10:41.151081 [debug] [Thread-5 (]: Writing injected SQL for node "test.data_ai_index.unique_fct_github_repo_stats_repo_id.af46e0c84b"
+[0m09:10:41.151983 [debug] [Thread-5 (]: Began executing node test.data_ai_index.unique_fct_github_repo_stats_repo_id.af46e0c84b
+[0m09:10:41.157329 [debug] [Thread-5 (]: Writing runtime sql for node "test.data_ai_index.unique_fct_github_repo_stats_repo_id.af46e0c84b"
+[0m09:10:41.159303 [debug] [Thread-5 (]: Using snowflake connection "test.data_ai_index.unique_fct_github_repo_stats_repo_id.af46e0c84b"
+[0m09:10:41.159945 [debug] [Thread-5 (]: On test.data_ai_index.unique_fct_github_repo_stats_repo_id.af46e0c84b: select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+select
+    repo_id as unique_field,
+    count(*) as n_records
+
+from DATAEXPERT_STUDENT.KOUVERK_DATA_INDUSTRY_marts.fct_github_repo_stats
+where repo_id is not null
+group by repo_id
+having count(*) > 1
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+/* {"app": "dbt", "dbt_version": "1.11.2", "profile_name": "data_ai_index", "target_name": "dev", "node_id": "test.data_ai_index.unique_fct_github_repo_stats_repo_id.af46e0c84b"} */
+[0m09:10:41.653311 [debug] [Thread-5 (]: SQL status: SUCCESS 1 in 0.493 seconds
+[0m09:10:41.655878 [info ] [Thread-5 (]: 68 of 77 PASS unique_fct_github_repo_stats_repo_id ............................. [[32mPASS[0m in 0.51s]
+[0m09:10:41.656680 [debug] [Thread-5 (]: Finished running node test.data_ai_index.unique_fct_github_repo_stats_repo_id.af46e0c84b
+[0m09:10:41.657234 [debug] [Thread-5 (]: Began running node test.data_ai_index.unique_fct_hn_role_mentions_mention_id.64ddc42167
+[0m09:10:41.657717 [info ] [Thread-5 (]: 69 of 77 START test unique_fct_hn_role_mentions_mention_id ..................... [RUN]
+[0m09:10:41.658433 [debug] [Thread-5 (]: Re-using an available connection from the pool (formerly test.data_ai_index.unique_fct_github_repo_stats_repo_id.af46e0c84b, now test.data_ai_index.unique_fct_hn_role_mentions_mention_id.64ddc42167)
+[0m09:10:41.658952 [debug] [Thread-5 (]: Began compiling node test.data_ai_index.unique_fct_hn_role_mentions_mention_id.64ddc42167
+[0m09:10:41.664752 [debug] [Thread-5 (]: Writing injected SQL for node "test.data_ai_index.unique_fct_hn_role_mentions_mention_id.64ddc42167"
+[0m09:10:41.665655 [debug] [Thread-5 (]: Began executing node test.data_ai_index.unique_fct_hn_role_mentions_mention_id.64ddc42167
+[0m09:10:41.671772 [debug] [Thread-5 (]: Writing runtime sql for node "test.data_ai_index.unique_fct_hn_role_mentions_mention_id.64ddc42167"
+[0m09:10:41.673315 [debug] [Thread-5 (]: Using snowflake connection "test.data_ai_index.unique_fct_hn_role_mentions_mention_id.64ddc42167"
+[0m09:10:41.673825 [debug] [Thread-5 (]: On test.data_ai_index.unique_fct_hn_role_mentions_mention_id.64ddc42167: select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+select
+    mention_id as unique_field,
+    count(*) as n_records
+
+from DATAEXPERT_STUDENT.KOUVERK_DATA_INDUSTRY_marts.fct_hn_role_mentions
+where mention_id is not null
+group by mention_id
+having count(*) > 1
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+/* {"app": "dbt", "dbt_version": "1.11.2", "profile_name": "data_ai_index", "target_name": "dev", "node_id": "test.data_ai_index.unique_fct_hn_role_mentions_mention_id.64ddc42167"} */
+[0m09:10:42.272218 [debug] [Thread-5 (]: SQL status: SUCCESS 1 in 0.597 seconds
+[0m09:10:42.274581 [debug] [Thread-2 (]: SQL status: SUCCESS 1 in 4.531 seconds
+[0m09:10:42.279902 [info ] [Thread-5 (]: 69 of 77 PASS unique_fct_hn_role_mentions_mention_id ........................... [[32mPASS[0m in 0.62s]
+[0m09:10:42.284735 [info ] [Thread-2 (]: 55 of 77 PASS not_null_stg_linkedin__skills_skill_name ......................... [[32mPASS[0m in 4.60s]
+[0m09:10:42.286076 [debug] [Thread-5 (]: Finished running node test.data_ai_index.unique_fct_hn_role_mentions_mention_id.64ddc42167
+[0m09:10:42.287607 [debug] [Thread-2 (]: Finished running node test.data_ai_index.not_null_stg_linkedin__skills_skill_name.cd76332611
+[0m09:10:42.288945 [debug] [Thread-5 (]: Began running node test.data_ai_index.unique_fct_hn_technology_mentions_mention_id.7395652166
+[0m09:10:42.290146 [debug] [Thread-2 (]: Began running node test.data_ai_index.unique_fct_llm_technology_mentions_mention_id.adf6d8a65c
+[0m09:10:42.291156 [info ] [Thread-5 (]: 70 of 77 START test unique_fct_hn_technology_mentions_mention_id ............... [RUN]
+[0m09:10:42.292052 [info ] [Thread-2 (]: 71 of 77 START test unique_fct_llm_technology_mentions_mention_id .............. [RUN]
+[0m09:10:42.292922 [debug] [Thread-5 (]: Re-using an available connection from the pool (formerly test.data_ai_index.unique_fct_hn_role_mentions_mention_id.64ddc42167, now test.data_ai_index.unique_fct_hn_technology_mentions_mention_id.7395652166)
+[0m09:10:42.293672 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly test.data_ai_index.not_null_stg_linkedin__skills_skill_name.cd76332611, now test.data_ai_index.unique_fct_llm_technology_mentions_mention_id.adf6d8a65c)
+[0m09:10:42.294505 [debug] [Thread-5 (]: Began compiling node test.data_ai_index.unique_fct_hn_technology_mentions_mention_id.7395652166
+[0m09:10:42.295428 [debug] [Thread-2 (]: Began compiling node test.data_ai_index.unique_fct_llm_technology_mentions_mention_id.adf6d8a65c
+[0m09:10:42.304502 [debug] [Thread-5 (]: Writing injected SQL for node "test.data_ai_index.unique_fct_hn_technology_mentions_mention_id.7395652166"
+[0m09:10:42.310610 [debug] [Thread-2 (]: Writing injected SQL for node "test.data_ai_index.unique_fct_llm_technology_mentions_mention_id.adf6d8a65c"
+[0m09:10:42.311831 [debug] [Thread-2 (]: Began executing node test.data_ai_index.unique_fct_llm_technology_mentions_mention_id.adf6d8a65c
+[0m09:10:42.315172 [debug] [Thread-2 (]: Writing runtime sql for node "test.data_ai_index.unique_fct_llm_technology_mentions_mention_id.adf6d8a65c"
+[0m09:10:42.316143 [debug] [Thread-5 (]: Began executing node test.data_ai_index.unique_fct_hn_technology_mentions_mention_id.7395652166
+[0m09:10:42.319940 [debug] [Thread-5 (]: Writing runtime sql for node "test.data_ai_index.unique_fct_hn_technology_mentions_mention_id.7395652166"
+[0m09:10:42.322456 [debug] [Thread-2 (]: Using snowflake connection "test.data_ai_index.unique_fct_llm_technology_mentions_mention_id.adf6d8a65c"
+[0m09:10:42.323415 [debug] [Thread-2 (]: On test.data_ai_index.unique_fct_llm_technology_mentions_mention_id.adf6d8a65c: select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+select
+    mention_id as unique_field,
+    count(*) as n_records
+
+from DATAEXPERT_STUDENT.KOUVERK_DATA_INDUSTRY_marts.fct_llm_technology_mentions
+where mention_id is not null
+group by mention_id
+having count(*) > 1
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+/* {"app": "dbt", "dbt_version": "1.11.2", "profile_name": "data_ai_index", "target_name": "dev", "node_id": "test.data_ai_index.unique_fct_llm_technology_mentions_mention_id.adf6d8a65c"} */
+[0m09:10:42.325739 [debug] [Thread-5 (]: Using snowflake connection "test.data_ai_index.unique_fct_hn_technology_mentions_mention_id.7395652166"
+[0m09:10:42.326511 [debug] [Thread-5 (]: On test.data_ai_index.unique_fct_hn_technology_mentions_mention_id.7395652166: select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+select
+    mention_id as unique_field,
+    count(*) as n_records
+
+from DATAEXPERT_STUDENT.KOUVERK_DATA_INDUSTRY_marts.fct_hn_technology_mentions
+where mention_id is not null
+group by mention_id
+having count(*) > 1
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+/* {"app": "dbt", "dbt_version": "1.11.2", "profile_name": "data_ai_index", "target_name": "dev", "node_id": "test.data_ai_index.unique_fct_hn_technology_mentions_mention_id.7395652166"} */
+[0m09:10:42.755661 [debug] [Thread-5 (]: SQL status: SUCCESS 1 in 0.428 seconds
+[0m09:10:42.758271 [info ] [Thread-5 (]: 70 of 77 PASS unique_fct_hn_technology_mentions_mention_id ..................... [[32mPASS[0m in 0.47s]
+[0m09:10:42.759059 [debug] [Thread-5 (]: Finished running node test.data_ai_index.unique_fct_hn_technology_mentions_mention_id.7395652166
+[0m09:10:42.759583 [debug] [Thread-5 (]: Began running node test.data_ai_index.unique_fct_llm_vs_regex_comparison_technology_name.8dc90056d3
+[0m09:10:42.760303 [info ] [Thread-5 (]: 72 of 77 START test unique_fct_llm_vs_regex_comparison_technology_name ......... [RUN]
+[0m09:10:42.761405 [debug] [Thread-5 (]: Re-using an available connection from the pool (formerly test.data_ai_index.unique_fct_hn_technology_mentions_mention_id.7395652166, now test.data_ai_index.unique_fct_llm_vs_regex_comparison_technology_name.8dc90056d3)
+[0m09:10:42.761898 [debug] [Thread-5 (]: Began compiling node test.data_ai_index.unique_fct_llm_vs_regex_comparison_technology_name.8dc90056d3
+[0m09:10:42.767255 [debug] [Thread-5 (]: Writing injected SQL for node "test.data_ai_index.unique_fct_llm_vs_regex_comparison_technology_name.8dc90056d3"
+[0m09:10:42.768467 [debug] [Thread-5 (]: Began executing node test.data_ai_index.unique_fct_llm_vs_regex_comparison_technology_name.8dc90056d3
+[0m09:10:42.779128 [debug] [Thread-5 (]: Writing runtime sql for node "test.data_ai_index.unique_fct_llm_vs_regex_comparison_technology_name.8dc90056d3"
+[0m09:10:42.780905 [debug] [Thread-5 (]: Using snowflake connection "test.data_ai_index.unique_fct_llm_vs_regex_comparison_technology_name.8dc90056d3"
+[0m09:10:42.782018 [debug] [Thread-5 (]: On test.data_ai_index.unique_fct_llm_vs_regex_comparison_technology_name.8dc90056d3: select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+select
+    technology_name as unique_field,
+    count(*) as n_records
+
+from DATAEXPERT_STUDENT.KOUVERK_DATA_INDUSTRY_marts.fct_llm_vs_regex_comparison
+where technology_name is not null
+group by technology_name
+having count(*) > 1
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+/* {"app": "dbt", "dbt_version": "1.11.2", "profile_name": "data_ai_index", "target_name": "dev", "node_id": "test.data_ai_index.unique_fct_llm_vs_regex_comparison_technology_name.8dc90056d3"} */
+[0m09:10:42.884515 [debug] [Thread-2 (]: SQL status: SUCCESS 1 in 0.560 seconds
+[0m09:10:42.890263 [info ] [Thread-2 (]: 71 of 77 PASS unique_fct_llm_technology_mentions_mention_id .................... [[32mPASS[0m in 0.60s]
+[0m09:10:42.891863 [debug] [Thread-2 (]: Finished running node test.data_ai_index.unique_fct_llm_technology_mentions_mention_id.adf6d8a65c
+[0m09:10:42.892915 [debug] [Thread-2 (]: Began running node test.data_ai_index.unique_stg_github__repo_stats_repo_id.97f7303bba
+[0m09:10:42.893852 [info ] [Thread-2 (]: 73 of 77 START test unique_stg_github__repo_stats_repo_id ...................... [RUN]
+[0m09:10:42.895134 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly test.data_ai_index.unique_fct_llm_technology_mentions_mention_id.adf6d8a65c, now test.data_ai_index.unique_stg_github__repo_stats_repo_id.97f7303bba)
+[0m09:10:42.896164 [debug] [Thread-2 (]: Began compiling node test.data_ai_index.unique_stg_github__repo_stats_repo_id.97f7303bba
+[0m09:10:42.905562 [debug] [Thread-2 (]: Writing injected SQL for node "test.data_ai_index.unique_stg_github__repo_stats_repo_id.97f7303bba"
+[0m09:10:42.907691 [debug] [Thread-2 (]: Began executing node test.data_ai_index.unique_stg_github__repo_stats_repo_id.97f7303bba
+[0m09:10:42.914124 [debug] [Thread-2 (]: Writing runtime sql for node "test.data_ai_index.unique_stg_github__repo_stats_repo_id.97f7303bba"
+[0m09:10:42.916560 [debug] [Thread-2 (]: Using snowflake connection "test.data_ai_index.unique_stg_github__repo_stats_repo_id.97f7303bba"
+[0m09:10:42.918432 [debug] [Thread-3 (]: SQL status: SUCCESS 1 in 4.830 seconds
+[0m09:10:42.919123 [debug] [Thread-2 (]: On test.data_ai_index.unique_stg_github__repo_stats_repo_id.97f7303bba: select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+select
+    repo_id as unique_field,
+    count(*) as n_records
+
+from DATAEXPERT_STUDENT.KOUVERK_DATA_INDUSTRY_staging.stg_github__repo_stats
+where repo_id is not null
+group by repo_id
+having count(*) > 1
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+/* {"app": "dbt", "dbt_version": "1.11.2", "profile_name": "data_ai_index", "target_name": "dev", "node_id": "test.data_ai_index.unique_stg_github__repo_stats_repo_id.97f7303bba"} */
+[0m09:10:42.923274 [info ] [Thread-3 (]: 61 of 77 PASS relationships_stg_linkedin__summaries_posting_id__posting_id__ref_stg_linkedin__postings_  [[32mPASS[0m in 4.86s]
+[0m09:10:42.925775 [debug] [Thread-3 (]: Finished running node test.data_ai_index.relationships_stg_linkedin__summaries_posting_id__posting_id__ref_stg_linkedin__postings_.f5c507ed26
+[0m09:10:42.926635 [debug] [Thread-3 (]: Began running node test.data_ai_index.unique_stg_hn__job_postings_posting_id.7a1f313e5d
+[0m09:10:42.927584 [info ] [Thread-3 (]: 74 of 77 START test unique_stg_hn__job_postings_posting_id ..................... [RUN]
+[0m09:10:42.928435 [debug] [Thread-3 (]: Re-using an available connection from the pool (formerly test.data_ai_index.relationships_stg_linkedin__summaries_posting_id__posting_id__ref_stg_linkedin__postings_.f5c507ed26, now test.data_ai_index.unique_stg_hn__job_postings_posting_id.7a1f313e5d)
+[0m09:10:42.928939 [debug] [Thread-3 (]: Began compiling node test.data_ai_index.unique_stg_hn__job_postings_posting_id.7a1f313e5d
+[0m09:10:42.935501 [debug] [Thread-3 (]: Writing injected SQL for node "test.data_ai_index.unique_stg_hn__job_postings_posting_id.7a1f313e5d"
+[0m09:10:42.938639 [debug] [Thread-3 (]: Began executing node test.data_ai_index.unique_stg_hn__job_postings_posting_id.7a1f313e5d
+[0m09:10:42.943030 [debug] [Thread-3 (]: Writing runtime sql for node "test.data_ai_index.unique_stg_hn__job_postings_posting_id.7a1f313e5d"
+[0m09:10:42.944368 [debug] [Thread-3 (]: Using snowflake connection "test.data_ai_index.unique_stg_hn__job_postings_posting_id.7a1f313e5d"
+[0m09:10:42.944879 [debug] [Thread-3 (]: On test.data_ai_index.unique_stg_hn__job_postings_posting_id.7a1f313e5d: select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+select
+    posting_id as unique_field,
+    count(*) as n_records
+
+from DATAEXPERT_STUDENT.KOUVERK_DATA_INDUSTRY_staging.stg_hn__job_postings
+where posting_id is not null
+group by posting_id
+having count(*) > 1
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+/* {"app": "dbt", "dbt_version": "1.11.2", "profile_name": "data_ai_index", "target_name": "dev", "node_id": "test.data_ai_index.unique_stg_hn__job_postings_posting_id.7a1f313e5d"} */
+[0m09:10:43.104244 [debug] [Thread-2 (]: SQL status: SUCCESS 1 in 0.179 seconds
+[0m09:10:43.110128 [info ] [Thread-2 (]: 73 of 77 PASS unique_stg_github__repo_stats_repo_id ............................ [[32mPASS[0m in 0.21s]
+[0m09:10:43.111836 [debug] [Thread-2 (]: Finished running node test.data_ai_index.unique_stg_github__repo_stats_repo_id.97f7303bba
+[0m09:10:43.112857 [debug] [Thread-2 (]: Began running node test.data_ai_index.unique_stg_linkedin__postings_posting_id.ce232b5882
+[0m09:10:43.113798 [info ] [Thread-2 (]: 75 of 77 START test unique_stg_linkedin__postings_posting_id ................... [RUN]
+[0m09:10:43.115293 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly test.data_ai_index.unique_stg_github__repo_stats_repo_id.97f7303bba, now test.data_ai_index.unique_stg_linkedin__postings_posting_id.ce232b5882)
+[0m09:10:43.116761 [debug] [Thread-2 (]: Began compiling node test.data_ai_index.unique_stg_linkedin__postings_posting_id.ce232b5882
+[0m09:10:43.126247 [debug] [Thread-2 (]: Writing injected SQL for node "test.data_ai_index.unique_stg_linkedin__postings_posting_id.ce232b5882"
+[0m09:10:43.127825 [debug] [Thread-2 (]: Began executing node test.data_ai_index.unique_stg_linkedin__postings_posting_id.ce232b5882
+[0m09:10:43.134530 [debug] [Thread-2 (]: Writing runtime sql for node "test.data_ai_index.unique_stg_linkedin__postings_posting_id.ce232b5882"
+[0m09:10:43.136137 [debug] [Thread-2 (]: Using snowflake connection "test.data_ai_index.unique_stg_linkedin__postings_posting_id.ce232b5882"
+[0m09:10:43.137040 [debug] [Thread-2 (]: On test.data_ai_index.unique_stg_linkedin__postings_posting_id.ce232b5882: select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+select
+    posting_id as unique_field,
+    count(*) as n_records
+
+from DATAEXPERT_STUDENT.KOUVERK_DATA_INDUSTRY_staging.stg_linkedin__postings
+where posting_id is not null
+group by posting_id
+having count(*) > 1
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+/* {"app": "dbt", "dbt_version": "1.11.2", "profile_name": "data_ai_index", "target_name": "dev", "node_id": "test.data_ai_index.unique_stg_linkedin__postings_posting_id.ce232b5882"} */
+[0m09:10:43.291463 [debug] [Thread-5 (]: SQL status: SUCCESS 1 in 0.508 seconds
+[0m09:10:43.297631 [info ] [Thread-5 (]: 72 of 77 PASS unique_fct_llm_vs_regex_comparison_technology_name ............... [[32mPASS[0m in 0.54s]
+[0m09:10:43.299303 [debug] [Thread-5 (]: Finished running node test.data_ai_index.unique_fct_llm_vs_regex_comparison_technology_name.8dc90056d3
+[0m09:10:43.300340 [debug] [Thread-5 (]: Began running node test.data_ai_index.unique_stg_linkedin__summaries_posting_id.2f250e809e
+[0m09:10:43.301280 [info ] [Thread-5 (]: 76 of 77 START test unique_stg_linkedin__summaries_posting_id .................. [RUN]
+[0m09:10:43.302366 [debug] [Thread-5 (]: Re-using an available connection from the pool (formerly test.data_ai_index.unique_fct_llm_vs_regex_comparison_technology_name.8dc90056d3, now test.data_ai_index.unique_stg_linkedin__summaries_posting_id.2f250e809e)
+[0m09:10:43.303558 [debug] [Thread-5 (]: Began compiling node test.data_ai_index.unique_stg_linkedin__summaries_posting_id.2f250e809e
+[0m09:10:43.312566 [debug] [Thread-5 (]: Writing injected SQL for node "test.data_ai_index.unique_stg_linkedin__summaries_posting_id.2f250e809e"
+[0m09:10:43.314485 [debug] [Thread-5 (]: Began executing node test.data_ai_index.unique_stg_linkedin__summaries_posting_id.2f250e809e
+[0m09:10:43.322242 [debug] [Thread-5 (]: Writing runtime sql for node "test.data_ai_index.unique_stg_linkedin__summaries_posting_id.2f250e809e"
+[0m09:10:43.324732 [debug] [Thread-4 (]: SQL status: SUCCESS 1 in 5.259 seconds
+[0m09:10:43.327877 [info ] [Thread-4 (]: 60 of 77 PASS relationships_stg_linkedin__skills_posting_id__posting_id__ref_stg_linkedin__postings_  [[32mPASS[0m in 5.30s]
+[0m09:10:43.329057 [debug] [Thread-4 (]: Finished running node test.data_ai_index.relationships_stg_linkedin__skills_posting_id__posting_id__ref_stg_linkedin__postings_.a1a93afc14
+[0m09:10:43.331036 [debug] [Thread-5 (]: Using snowflake connection "test.data_ai_index.unique_stg_linkedin__summaries_posting_id.2f250e809e"
+[0m09:10:43.331714 [debug] [Thread-4 (]: Began running node test.data_ai_index.unique_stg_llm__skill_extractions_posting_id.d54ad98118
+[0m09:10:43.332409 [debug] [Thread-5 (]: On test.data_ai_index.unique_stg_linkedin__summaries_posting_id.2f250e809e: select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+select
+    posting_id as unique_field,
+    count(*) as n_records
+
+from DATAEXPERT_STUDENT.KOUVERK_DATA_INDUSTRY_staging.stg_linkedin__summaries
+where posting_id is not null
+group by posting_id
+having count(*) > 1
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+/* {"app": "dbt", "dbt_version": "1.11.2", "profile_name": "data_ai_index", "target_name": "dev", "node_id": "test.data_ai_index.unique_stg_linkedin__summaries_posting_id.2f250e809e"} */
+[0m09:10:43.333214 [info ] [Thread-4 (]: 77 of 77 START test unique_stg_llm__skill_extractions_posting_id ............... [RUN]
+[0m09:10:43.335124 [debug] [Thread-4 (]: Re-using an available connection from the pool (formerly test.data_ai_index.relationships_stg_linkedin__skills_posting_id__posting_id__ref_stg_linkedin__postings_.a1a93afc14, now test.data_ai_index.unique_stg_llm__skill_extractions_posting_id.d54ad98118)
+[0m09:10:43.335672 [debug] [Thread-4 (]: Began compiling node test.data_ai_index.unique_stg_llm__skill_extractions_posting_id.d54ad98118
+[0m09:10:43.341126 [debug] [Thread-4 (]: Writing injected SQL for node "test.data_ai_index.unique_stg_llm__skill_extractions_posting_id.d54ad98118"
+[0m09:10:43.343394 [debug] [Thread-4 (]: Began executing node test.data_ai_index.unique_stg_llm__skill_extractions_posting_id.d54ad98118
+[0m09:10:43.347522 [debug] [Thread-4 (]: Writing runtime sql for node "test.data_ai_index.unique_stg_llm__skill_extractions_posting_id.d54ad98118"
+[0m09:10:43.349202 [debug] [Thread-4 (]: Using snowflake connection "test.data_ai_index.unique_stg_llm__skill_extractions_posting_id.d54ad98118"
+[0m09:10:43.349779 [debug] [Thread-4 (]: On test.data_ai_index.unique_stg_llm__skill_extractions_posting_id.d54ad98118: select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+select
+    posting_id as unique_field,
+    count(*) as n_records
+
+from DATAEXPERT_STUDENT.KOUVERK_DATA_INDUSTRY_staging.stg_llm__skill_extractions
+where posting_id is not null
+group by posting_id
+having count(*) > 1
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+/* {"app": "dbt", "dbt_version": "1.11.2", "profile_name": "data_ai_index", "target_name": "dev", "node_id": "test.data_ai_index.unique_stg_llm__skill_extractions_posting_id.d54ad98118"} */
+[0m09:10:43.404624 [debug] [Thread-3 (]: SQL status: SUCCESS 1 in 0.459 seconds
+[0m09:10:43.409316 [info ] [Thread-3 (]: 74 of 77 PASS unique_stg_hn__job_postings_posting_id ........................... [[32mPASS[0m in 0.48s]
+[0m09:10:43.410926 [debug] [Thread-3 (]: Finished running node test.data_ai_index.unique_stg_hn__job_postings_posting_id.7a1f313e5d
+[0m09:10:43.546237 [debug] [Thread-2 (]: SQL status: SUCCESS 1 in 0.408 seconds
+[0m09:10:43.552130 [info ] [Thread-2 (]: 75 of 77 PASS unique_stg_linkedin__postings_posting_id ......................... [[32mPASS[0m in 0.44s]
+[0m09:10:43.553694 [debug] [Thread-2 (]: Finished running node test.data_ai_index.unique_stg_linkedin__postings_posting_id.ce232b5882
+[0m09:10:43.600679 [debug] [Thread-4 (]: SQL status: SUCCESS 1 in 0.250 seconds
+[0m09:10:43.605286 [info ] [Thread-4 (]: 77 of 77 PASS unique_stg_llm__skill_extractions_posting_id ..................... [[32mPASS[0m in 0.27s]
+[0m09:10:43.606728 [debug] [Thread-4 (]: Finished running node test.data_ai_index.unique_stg_llm__skill_extractions_posting_id.d54ad98118
+[0m09:10:44.829788 [debug] [Thread-5 (]: SQL status: SUCCESS 1 in 1.495 seconds
+[0m09:10:44.833973 [info ] [Thread-5 (]: 76 of 77 PASS unique_stg_linkedin__summaries_posting_id ........................ [[32mPASS[0m in 1.53s]
+[0m09:10:44.835772 [debug] [Thread-5 (]: Finished running node test.data_ai_index.unique_stg_linkedin__summaries_posting_id.2f250e809e
+[0m09:10:44.839206 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m09:10:44.839864 [debug] [MainThread]: Connection 'test.data_ai_index.unique_stg_linkedin__postings_posting_id.ce232b5882' was left open.
+[0m09:10:44.841245 [debug] [MainThread]: On test.data_ai_index.unique_stg_linkedin__postings_posting_id.ce232b5882: Close
+[0m09:10:45.039423 [debug] [MainThread]: Connection 'test.data_ai_index.unique_stg_hn__job_postings_posting_id.7a1f313e5d' was left open.
+[0m09:10:45.040521 [debug] [MainThread]: On test.data_ai_index.unique_stg_hn__job_postings_posting_id.7a1f313e5d: Close
+[0m09:10:45.184939 [debug] [MainThread]: Connection 'test.data_ai_index.unique_stg_llm__skill_extractions_posting_id.d54ad98118' was left open.
+[0m09:10:45.186018 [debug] [MainThread]: On test.data_ai_index.unique_stg_llm__skill_extractions_posting_id.d54ad98118: Close
+[0m09:10:45.330160 [debug] [MainThread]: Connection 'test.data_ai_index.unique_stg_linkedin__summaries_posting_id.2f250e809e' was left open.
+[0m09:10:45.331415 [debug] [MainThread]: On test.data_ai_index.unique_stg_linkedin__summaries_posting_id.2f250e809e: Close
+[0m09:10:45.465787 [info ] [MainThread]: 
+[0m09:10:45.468085 [info ] [MainThread]: Finished running 77 data tests in 0 hours 0 minutes and 14.39 seconds (14.39s).
+[0m09:10:45.495450 [debug] [MainThread]: Command end result
+[0m09:10:45.556811 [debug] [MainThread]: Wrote artifact WritableManifest to /Users/kouverbingham/development/data-expert-analytics/ai-intelligence-platform/market-signals/dbt/target/manifest.json
+[0m09:10:45.560525 [debug] [MainThread]: Wrote artifact SemanticManifest to /Users/kouverbingham/development/data-expert-analytics/ai-intelligence-platform/market-signals/dbt/target/semantic_manifest.json
+[0m09:10:45.576842 [debug] [MainThread]: Wrote artifact RunExecutionResult to /Users/kouverbingham/development/data-expert-analytics/ai-intelligence-platform/market-signals/dbt/target/run_results.json
+[0m09:10:45.577422 [info ] [MainThread]: 
+[0m09:10:45.578258 [info ] [MainThread]: [33mCompleted with 3 warnings:[0m
+[0m09:10:45.578969 [info ] [MainThread]: 
+[0m09:10:45.580132 [warn ] [MainThread]: [33mWarning in test accepted_values_stg_linkedin__postings_job_level__Entry_level__Mid_Senior_level__Director__Executive__Associate__Internship__Not_Applicable (models/staging/linkedin/_linkedin__models.yml)[0m
+[0m09:10:45.581139 [warn ] [MainThread]: Got 1 result, configured to warn if != 0
+[0m09:10:45.581798 [info ] [MainThread]: 
+[0m09:10:45.582391 [info ] [MainThread]:   compiled code at target/compiled/data_ai_index/models/staging/linkedin/_linkedin__models.yml/accepted_values_stg_linkedin___717c24c26ef521e50afdd8e98899938c.sql
+[0m09:10:45.583085 [info ] [MainThread]: 
+[0m09:10:45.584781 [warn ] [MainThread]: [33mWarning in test not_null_stg_linkedin__postings_company (models/staging/linkedin/_linkedin__models.yml)[0m
+[0m09:10:45.585585 [warn ] [MainThread]: Got 11 results, configured to warn if != 0
+[0m09:10:45.586189 [info ] [MainThread]: 
+[0m09:10:45.586675 [info ] [MainThread]:   compiled code at target/compiled/data_ai_index/models/staging/linkedin/_linkedin__models.yml/not_null_stg_linkedin__postings_company.sql
+[0m09:10:45.587164 [info ] [MainThread]: 
+[0m09:10:45.587641 [warn ] [MainThread]: [33mWarning in test not_null_stg_llm__skill_extractions_llm_model (models/staging/llm/_llm__models.yml)[0m
+[0m09:10:45.588799 [warn ] [MainThread]: Got 182 results, configured to warn if != 0
+[0m09:10:45.589710 [info ] [MainThread]: 
+[0m09:10:45.590580 [info ] [MainThread]:   compiled code at target/compiled/data_ai_index/models/staging/llm/_llm__models.yml/not_null_stg_llm__skill_extractions_llm_model.sql
+[0m09:10:45.591266 [info ] [MainThread]: 
+[0m09:10:45.591836 [info ] [MainThread]: Done. PASS=74 WARN=3 ERROR=0 SKIP=0 NO-OP=0 TOTAL=77
+[0m09:10:45.597232 [debug] [MainThread]: Resource report: {"command_name": "test", "command_success": true, "command_wall_clock_time": 17.025988, "process_in_blocks": "0", "process_kernel_time": 1.011212, "process_mem_max_rss": "213913600", "process_out_blocks": "0", "process_user_time": 6.52618}
+[0m09:10:45.598466 [debug] [MainThread]: Command `dbt test` succeeded at 09:10:45.598306 after 17.03 seconds
+[0m09:10:45.598975 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x112384050>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x120d37d80>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x120d37cd0>]}
+[0m09:10:45.599469 [debug] [MainThread]: Flushing usage events
+[0m09:10:45.899431 [debug] [MainThread]: An error was encountered while trying to flush usage events

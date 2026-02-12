@@ -1065,6 +1065,7 @@ def render_llm_analysis():
                     # Combine for comparison chart
                     if not llm_single_df.empty or not regex_single_df.empty:
                         combined_df = pd.concat([llm_single_df, regex_single_df], ignore_index=True)
+                        combined_df = combined_df.sort_values('POSTING_MONTH')
 
                         if not combined_df.empty:
                             fig = px.line(

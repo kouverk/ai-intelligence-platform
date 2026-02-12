@@ -283,7 +283,7 @@ Full git history for each module is preserved in their respective original repos
 - [x] Market Signals pipeline complete
 - [x] Policy Signals pipeline complete
 - [x] Unified dashboard
-- [x] Astronomer deployment ready
+- [x] Astronomer deployment: [PR #287](https://github.com/DataExpert-io/airflow-dbt-project/pull/287)
 
 ---
 

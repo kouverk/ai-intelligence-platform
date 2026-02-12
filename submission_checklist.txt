@@ -1,0 +1,63 @@
+Capstone Submission Checklist
+
+=== ASTRONOMER DEPLOYMENT ===
+[x] Clone airflow-dbt-project repo
+[x] Modify Astro project name in .astro/config.yaml (kouverk-ai-intelligence)
+[x] Create branch (kouverk-capstone-dags)
+[x] Push DAGs and create PR
+[x] CI checks pass
+[x] Screenshot of DAGs in Astronomer UI with URL visible
+[x] Added schedules to ALL DAGs (with is_paused_upon_creation=True for LLM/utility DAGs)
+[x] New screenshots taken with updated schedules
+NOTE: First PR was merged by mistake. Created new PR #89 with schedule updates.
+
+=== CRITERIA 1: PROJECT SPEC ===
+[ ] Schemas documented
+[ ] Screenshots: ETL runs, quality checks, dashboards
+[ ] DAG diagrams
+[ ] Data model diagrams
+[ ] Metrics documented
+[ ] Data quality checks documented
+
+=== CRITERIA 2: WRITE UP ===
+[ ] Purpose of project and expected outputs
+[ ] Dataset choices with justifications
+[ ] Technology choices with justifications
+[ ] Steps followed
+[ ] Challenges faced and solutions
+[ ] Future enhancements
+
+=== CRITERIA 3: DATA QUALITY CHECKS ===
+[ ] At least 2 data quality checks per data source (need minimum 4 total)
+
+=== CRITERIA 4: ETL CODE ===
+[ ] Code is linted (PEP8)
+[ ] Code is error-free
+[ ] Uses required tools (Snowflake, Airflow, dbt)
+
+=== CRITERIA 5: PROJECT SCOPING ===
+[ ] Real, non-trivial use case
+[ ] End-to-end implementation
+[ ] At least 2 data sources
+[ ] At least 1 million rows
+
+=== FINAL SUBMISSION ===
+[ ] Zip file of project
+[ ] Link to PR included
+[ ] Group member names/emails in README (if applicable)
+
+=== CURRENT STATUS ===
+Working through checklist item by item.
+Just completed: Astronomer Deployment section (all items checked)
+Next up: Criteria 1 - Project Spec
+
+=== KEY LINKS ===
+- Astronomer UI: https://cloud.astronomer.io/clokmwgau00la01lrz0pfc16s/dags?name=kouverk
+- Streamlit Dashboard: https://ai-intelligence-platform-kouverk.streamlit.app/
+- GitHub PR: https://github.com/DataExpert-io/airflow-dbt-project/pull/287
+
+=== KEY FILES ===
+- Main README: /ai-intelligence-platform/README.md
+- Market Signals DATA_QUALITY.md: /ai-intelligence-platform/market-signals/docs/DATA_QUALITY.md (77 tests)
+- Policy Signals DATA_QUALITY.md: /ai-intelligence-platform/policy-signals/docs/DATA_QUALITY.md (35 tests)
+- Screenshots: /Users/kouverbingham/Desktop/screenshots/
