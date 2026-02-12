@@ -136,7 +136,8 @@ data-ai-industry-index-tracker/
 │   │       └── job_summary.csv
 │   └── processed/
 │       └── hn_with_extractions.parquet # HN with extracted roles/techs
-├── extraction/                         # (empty, for Phase 2)
-├── dbt/                                # (empty, for Phase 2)
-└── airflow/dags/                       # (empty, for Phase 2)
+├── dbt/                                # dbt project
+├── dags/                               # Airflow DAGs (Astronomer)
+└── include/                            # Astronomer include directory
+    └── extraction/                     # Extraction scripts
 ```

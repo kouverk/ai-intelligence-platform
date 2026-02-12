@@ -28,28 +28,28 @@ astro dev stop
 
 ---
 
-## PART 2: Market Signals (Docker Compose)
+## PART 2: Market Signals (Astro)
 
 ### Setup
 ```bash
-cd /Users/kouverbingham/development/data-expert-analytics/ai-intelligence-platform/market-signals/airflow
-docker-compose up -d
-# Wait ~30 seconds
+cd /Users/kouverbingham/development/data-expert-analytics/ai-intelligence-platform/market-signals
+astro dev start
+# Wait for it to spin up (~1-2 min)
 # Open http://localhost:8080
-# Login: admin / admin (or check docker-compose.yml)
+# Login: admin / admin
 ```
 
 ### Screenshots to take
 
 | # | What | How |
 |---|------|-----|
-| 6 | DAG list view | Main page showing all 4 DAGs |
-| 7 | dag_dbt_transform Graph | Click DAG → Graph tab (shows 7-task chain) |
-| 8 | Run dag_dbt_transform | Trigger DAG → wait → screenshot green success |
+| 6 | DAG list view | Main page showing all 5 DAGs |
+| 7 | dbt_transform Graph | Click DAG → Graph tab (shows 7-task chain) |
+| 8 | Run dbt_transform | Trigger DAG → wait → screenshot green success |
 
 ### When done
 ```bash
-docker-compose down
+astro dev stop
 ```
 
 ---

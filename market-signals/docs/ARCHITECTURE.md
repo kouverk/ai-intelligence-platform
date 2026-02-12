@@ -89,7 +89,7 @@ Technical architecture for the Data & AI Industry Index Tracker.
 
 ### Extraction Layer
 
-All extraction scripts live in `extraction/`. The pattern is:
+All extraction scripts live in `include/extraction/`. The pattern is:
 1. **Fetch** - Pull data from external sources → save to `data/raw/`
 2. **Load** - Push raw data to Snowflake raw tables
 3. **Transform** - dbt handles all transformations (ELT pattern)
@@ -97,7 +97,7 @@ All extraction scripts live in `extraction/`. The pattern is:
 ```
 ┌─────────────────────────────────────────────────────────────────┐
 │                      EXTRACTION SCRIPTS                         │
-│                        extraction/                              │
+│                    include/extraction/                          │
 ├─────────────────────────────────────────────────────────────────┤
 │                                                                 │
 │  DATA SOURCE FETCHERS                                           │
@@ -165,19 +165,22 @@ Exploration scripts (prototyping, one-time analysis) remain in exploration/
 └─────────────────────────────────────────────────────────────────┘
 ```
 
-### Orchestration Layer (Airflow)
+### Orchestration Layer (Astronomer/Airflow)
 
 ```
 ┌─────────────────────────────────────────────────────────────────┐
 │                        AIRFLOW DAGS                             │
 ├─────────────────────────────────────────────────────────────────┤
 │                                                                 │
-│  airflow/dags/                                                  │
+│  dags/                                                          │
 │  ├── dag_dbt_transform.py      # Daily dbt run                  │
 │  │   └── dbt run → dbt test                                     │
 │  │                                                              │
-│  ├── dag_github_extract.py     # Weekly GitHub fetch            │
+│  ├── dag_github_daily.py       # Daily GitHub fetch             │
 │  │   └── fetch_github_data.py → Snowflake                       │
+│  │                                                              │
+│  ├── dag_hn_monthly.py         # Monthly HN extract             │
+│  │   └── fetch_hn_data.py → Snowflake                           │
 │  │                                                              │
 │  └── dag_weekly_insights.py    # Weekly LLM insights            │
 │      └── generate_weekly_insights.py                            │
@@ -331,21 +334,21 @@ ANTHROPIC_API_KEY=xxx
 
 ```bash
 # 1. Fetch data from sources
-python extraction/fetch_hn_data.py           # HuggingFace → data/raw/
-python extraction/fetch_github_data.py       # GitHub API → data/raw/
+python include/extraction/fetch_hn_data.py           # HuggingFace → data/raw/
+python include/extraction/fetch_github_data.py       # GitHub API → data/raw/
 # LinkedIn: manually download from Kaggle to data/raw/linkedin/
 
 # 2. Load to Snowflake
-python extraction/load_to_snowflake.py       # All sources
-python extraction/load_to_snowflake.py hn    # Just HN
-python extraction/load_to_snowflake.py github # Just GitHub
+python include/extraction/load_to_snowflake.py       # All sources
+python include/extraction/load_to_snowflake.py hn    # Just HN
+python include/extraction/load_to_snowflake.py github # Just GitHub
 
 # 3. Transform with dbt
 cd dbt && dbt run && dbt test
 
 # 4. LLM enrichment (optional)
-python extraction/llm_skill_extraction.py    # Claude Haiku extraction
-python extraction/generate_weekly_insights.py # Weekly insights
+python include/extraction/llm_skill_extraction.py    # Claude Haiku extraction
+python include/extraction/generate_weekly_insights.py # Weekly insights
 
 # 5. Run dashboard
 cd dashboard && streamlit run app.py

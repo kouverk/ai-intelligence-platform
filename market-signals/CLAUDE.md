@@ -429,11 +429,6 @@ data-ai-interest-index/
 ├── README.md                    # Project overview
 ├── requirements.txt             # Python dependencies
 │
-├── extraction/                  # Python extraction scripts
-│   ├── hn_extract.py           # HN API extraction
-│   ├── linkedin_load.py        # Kaggle download + load
-│   └── reddit_extract.py       # Reddit API extraction (Phase 2)
-│
 ├── dbt/                        # dbt project
 │   ├── dbt_project.yml
 │   ├── profiles.yml
@@ -456,11 +451,19 @@ data-ai-interest-index/
 │   │   └── role_keywords.csv    # Keywords for role classification
 │   └── tests/
 │
-├── airflow/                     # Airflow DAGs
-│   └── dags/
-│       ├── dag_hn_extract.py
-│       ├── dag_linkedin_load.py
-│       └── dag_dbt_transform.py
+├── dags/                        # Airflow DAGs (Astronomer)
+│   ├── dag_hn_monthly.py
+│   ├── dag_github_daily.py
+│   ├── dag_dbt_transform.py
+│   └── dag_weekly_insights.py
+│
+├── include/                     # Astronomer include directory
+│   └── extraction/              # Extraction scripts
+│       ├── fetch_github_data.py
+│       ├── fetch_hn_data.py
+│       ├── generate_weekly_insights.py
+│       ├── llm_skill_extraction.py
+│       └── load_to_snowflake.py
 │
 ├── notebooks/                   # Exploration notebooks
 │   ├── 01_hn_data_exploration.ipynb
@@ -469,8 +472,7 @@ data-ai-interest-index/
 │   └── 04_dashboard_mockup.ipynb
 │
 └── infrastructure/              # IaC (optional)
-    ├── terraform/
-    └── docker-compose.yml
+    └── terraform/
 ```
 
 ---
@@ -520,8 +522,8 @@ data-ai-interest-index/
 - 3 seed files (technology, role, database mappings)
 
 **LLM Components:**
-- `extraction/llm_skill_extraction.py` - Claude Haiku structured extraction
-- `extraction/generate_weekly_insights.py` - Claude Sonnet market analysis
+- `include/extraction/llm_skill_extraction.py` - Claude Haiku structured extraction
+- `include/extraction/generate_weekly_insights.py` - Claude Sonnet market analysis
 - `fct_llm_technology_mentions` - 63K technology mentions from 10K posts
 - `fct_llm_vs_regex_comparison` - Agreement analysis between methods
 
@@ -551,7 +553,7 @@ data-ai-interest-index/
 ### Files Added Beyond Original Plan
 
 ```
-extraction/
+include/extraction/
 ├── llm_skill_extraction.py      # Claude Haiku extraction (10K posts)
 └── generate_weekly_insights.py  # Claude Sonnet weekly reports
 

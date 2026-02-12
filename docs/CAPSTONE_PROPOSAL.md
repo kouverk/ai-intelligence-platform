@@ -534,7 +534,8 @@ ai-industry-intelligence/
 │   │   ├── models/intermediate/
 │   │   ├── models/marts/
 │   │   └── seeds/
-│   ├── airflow/dags/             # Airflow DAGs
+│   ├── dags/                     # Airflow DAGs (Astronomer)
+│   ├── include/                  # Astronomer include directory
 │   └── dashboard/app.py          # Streamlit dashboard
 │
 ├── policy-signals/               # Lobbying & policy module
@@ -546,7 +547,8 @@ ai-industry-intelligence/
 │   │   ├── models/staging/
 │   │   ├── models/intermediate/
 │   │   └── models/marts/
-│   ├── airflow/dags/             # Airflow DAGs
+│   ├── dags/                     # Airflow DAGs (Astronomer)
+│   ├── include/                  # Astronomer include directory
 │   └── dashboard/app.py          # Streamlit dashboard
 │
 ├── shared/                       # Shared infrastructure

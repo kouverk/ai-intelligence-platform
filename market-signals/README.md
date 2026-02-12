@@ -104,10 +104,11 @@ data-ai-industry-index-tracker/
 │   │   ├── intermediate/   # 4 tables (keyword extraction logic)
 │   │   └── marts/          # 11 models (facts & dims)
 │   └── seeds/              # Taxonomy CSVs (technologies, roles, databases)
-├── extraction/             # LLM extraction scripts
-│   ├── llm_skill_extraction.py      # Claude Haiku skill extraction (10K posts)
-│   └── generate_weekly_insights.py  # Claude Sonnet weekly reports
-├── airflow/dags/           # Airflow DAGs
+├── dags/                   # Airflow DAGs
+├── include/                # Astronomer include directory
+│   └── extraction/         # LLM extraction scripts
+│       ├── llm_skill_extraction.py      # Claude Haiku skill extraction
+│       └── generate_weekly_insights.py  # Claude Sonnet weekly reports
 ├── exploration/            # Data exploration scripts
 ├── infrastructure/         # Snowflake setup scripts
 ├── data/raw/               # Raw data files
@@ -201,8 +202,8 @@ This project uses Claude (Anthropic API) for two agentic pipeline tasks:
 - **Output:** `weekly_insights` table + `docs/WEEKLY_INSIGHTS_*.md` files
 
 **Scripts:**
-- `extraction/llm_skill_extraction.py` - LLM-powered skill extraction
-- `extraction/generate_weekly_insights.py` - Automated insights generator
+- `include/extraction/llm_skill_extraction.py` - LLM-powered skill extraction
+- `include/extraction/generate_weekly_insights.py` - Automated insights generator
 
 ---
 

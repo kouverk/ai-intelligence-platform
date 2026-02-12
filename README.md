@@ -185,7 +185,8 @@ ai-intelligence-platform/
 │   ├── dashboard/
 │   ├── dbt/
 │   ├── extraction/
-│   └── airflow/dags/
+│   ├── include/
+│   └── dags/
 │
 ├── policy-signals/              # Pipeline 2: Lobbying/policy analysis
 │   ├── README.md                # Module overview
