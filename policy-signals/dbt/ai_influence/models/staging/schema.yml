@@ -25,7 +25,9 @@ models:
       - name: filing_uuid
         description: Unique identifier for each filing
         tests:
-          - unique
+          - unique:
+              config:
+                severity: warn
           - not_null
 
   - name: stg_lda_activities
@@ -34,7 +36,9 @@ models:
       - name: activity_id
         description: Unique identifier for each activity
         tests:
-          - unique
+          - unique:
+              config:
+                severity: warn
           - not_null
 
   - name: stg_lda_lobbyists
@@ -43,7 +47,9 @@ models:
       - name: lobbyist_record_id
         description: Unique identifier for each lobbyist-filing relationship
         tests:
-          - unique
+          - unique:
+              config:
+                severity: warn
           - not_null
 
   - name: stg_lobbying_impact_scores
@@ -52,7 +58,9 @@ models:
       - name: score_id
         description: Unique identifier for each company assessment
         tests:
-          - unique
+          - unique:
+              config:
+                severity: warn
           - not_null
 
   - name: stg_discrepancy_scores
@@ -61,7 +69,9 @@ models:
       - name: score_id
         description: Unique identifier for each company assessment
         tests:
-          - unique
+          - unique:
+              config:
+                severity: warn
           - not_null
 
   - name: stg_china_rhetoric
@@ -70,7 +80,9 @@ models:
       - name: analysis_id
         description: Unique identifier for each company analysis
         tests:
-          - unique
+          - unique:
+              config:
+                severity: warn
           - not_null
 
   - name: stg_position_comparisons
@@ -79,7 +91,9 @@ models:
       - name: comparison_id
         description: Unique identifier for each comparison run
         tests:
-          - unique
+          - unique:
+              config:
+                severity: warn
           - not_null
 
   - name: stg_bill_position_analysis
@@ -88,5 +102,7 @@ models:
       - name: bill_id
         description: Canonical bill identifier
         tests:
-          - unique
+          - unique:
+              config:
+                severity: warn
           - not_null

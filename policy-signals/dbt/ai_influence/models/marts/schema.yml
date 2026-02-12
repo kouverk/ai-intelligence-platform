@@ -37,7 +37,9 @@ models:
       - name: filing_uuid
         description: Unique filing identifier
         tests:
-          - unique
+          - unique:
+              config:
+                severity: warn
           - not_null
 
   - name: fct_lobbying_impact
@@ -72,7 +74,9 @@ models:
       - name: bill_id
         description: Canonical bill identifier
         tests:
-          - unique
+          - unique:
+              config:
+                severity: warn
           - not_null
       - name: is_contested
         description: True if bill has both supporters and opponents

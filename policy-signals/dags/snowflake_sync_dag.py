@@ -32,7 +32,7 @@ with DAG(
     'snowflake_sync',
     default_args=default_args,
     description='Sync Iceberg to Snowflake and run dbt',
-    schedule_interval='@daily',
+    schedule='@daily',
     start_date=datetime(2025, 1, 1),
     catchup=False,
     tags=['ai-influence', 'snowflake', 'dbt'],

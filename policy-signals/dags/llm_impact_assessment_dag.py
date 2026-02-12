@@ -36,7 +36,7 @@ with DAG(
     'llm_assess_impact',
     default_args=default_args,
     description='Assess lobbying impact using Claude API',
-    schedule_interval=None,  # Manual trigger - costs money
+    schedule='@weekly',
     start_date=datetime(2025, 1, 1),
     catchup=False,
     tags=['ai-influence', 'llm', 'agentic'],

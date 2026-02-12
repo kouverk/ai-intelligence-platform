@@ -25,7 +25,7 @@ with DAG(
     'extract_lda_lobbying',
     default_args=default_args,
     description='Fetch lobbying data from Senate LDA API',
-    schedule_interval='@weekly',
+    schedule='@weekly',
     start_date=datetime(2025, 1, 1),
     catchup=False,
     tags=['ai-influence', 'extract', 'lda'],

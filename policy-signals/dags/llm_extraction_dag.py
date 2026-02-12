@@ -33,7 +33,7 @@ with DAG(
     'llm_extract_positions',
     default_args=default_args,
     description='Extract policy positions using Claude API',
-    schedule_interval=None,  # Manual trigger - costs money
+    schedule='@weekly',
     start_date=datetime(2025, 1, 1),
     catchup=False,
     tags=['ai-influence', 'llm', 'agentic'],

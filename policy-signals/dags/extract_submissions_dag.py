@@ -28,7 +28,7 @@ with DAG(
     'extract_submissions',
     default_args=default_args,
     description='Extract text from AI Action Plan PDF submissions',
-    schedule_interval=None,  # Manual trigger only
+    schedule='@monthly',
     start_date=datetime(2025, 1, 1),
     catchup=False,
     tags=['ai-influence', 'extract'],
