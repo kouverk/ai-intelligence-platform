@@ -1,34 +1,61 @@
 # AI Intelligence Platform
 
-**Comprehensive visibility into the AI industry through two complementary lenses**
+**Comprehensive visibility into the AI industry through two independent data pipelines**
 
-A dual-module analytics platform that combines job market intelligence with policy/lobbying analysis to provide 360-degree visibility into the AI industry.
+This platform contains **two separate analytics pipelines**, each with its own data sources, extraction logic, dbt models, and Airflow DAGs. They share infrastructure (Snowflake, Astronomer, Streamlit) but are architecturally independent.
 
----
-
-## The Two Lenses
-
-| Module | Question | Data Sources | Key Outputs |
-|--------|----------|--------------|-------------|
-| **[Market Signals](market-signals/)** | What's hot, growing, or dying in data/AI? | HN jobs (93K), LinkedIn (1.3M), GitHub (81 repos) | Technology trends, role evolution, skill demand |
-| **[Policy Signals](policy-signals/)** | Do AI companies practice what they preach? | AI RFI submissions (10K PDFs), Senate LDA API | Lobbying analysis, say-vs-do scores, China rhetoric |
+| Pipeline | Question It Answers | Data Scale |
+|----------|---------------------|------------|
+| **Market Signals** | What's hot, growing, or dying in data/AI hiring? | 1.3M+ job posts |
+| **Policy Signals** | Do AI companies practice what they preach? | 10K+ policy documents |
 
 ---
 
-## Combined Platform Metrics
+## Documentation Guide
 
-| Metric | Market Signals | Policy Signals | **Combined** |
-|--------|----------------|----------------|--------------|
-| **Data Sources** | 3 | 2 | **5** |
-| **Total Rows** | 1.3M+ | 5K+ | **1.3M+** |
-| **dbt Models** | 21 | 16 | **37** |
-| **dbt Tests** | 77 | 35 | **112** |
-| **Airflow DAGs** | 4 | 6 | **10** |
-| **LLM Scripts** | 2 | 6 | **8** |
+> **For Graders:** This README provides a platform overview. Each pipeline has its own detailed documentation. Use the table below to find what you need.
+
+| Documentation | Market Signals | Policy Signals |
+|---------------|----------------|----------------|
+| **Architecture & System Design** | [ARCHITECTURE.md](market-signals/docs/ARCHITECTURE.md) | [ARCHITECTURE.md](policy-signals/docs/ARCHITECTURE.md) |
+| **Data Dictionary (all tables)** | [DATA_DICTIONARY.md](market-signals/docs/DATA_DICTIONARY.md) | [DATA_DICTIONARY.md](policy-signals/docs/DATA_DICTIONARY.md) |
+| **Data Quality (dbt tests)** | [DATA_QUALITY.md](market-signals/docs/DATA_QUALITY.md) (77 tests) | [DATA_QUALITY.md](policy-signals/docs/DATA_QUALITY.md) (35 tests) |
+| **Findings & Insights** | [INSIGHTS.md](market-signals/docs/INSIGHTS.md) | [INSIGHTS.md](policy-signals/docs/INSIGHTS.md) |
+| **Module README** | [README.md](market-signals/README.md) | [README.md](policy-signals/README.md) |
 
 ---
 
-## Architecture
+## The Two Pipelines
+
+### Pipeline 1: Market Signals
+
+**Question:** What technologies and roles are trending in the AI/data job market?
+
+| Aspect | Details |
+|--------|---------|
+| **Data Sources** | HN Who Is Hiring (93K posts), LinkedIn Jobs (1.3M snapshot), GitHub Repos (81 tracked) |
+| **LLM Components** | Skill extraction from job posts, weekly trend insights |
+| **Key Outputs** | Technology trends over time, role evolution, LLM vs regex extraction comparison |
+| **dbt Models** | 21 models, 77 tests |
+| **Airflow DAGs** | 4 DAGs |
+
+### Pipeline 2: Policy Signals
+
+**Question:** Do AI companies' public policy positions match their lobbying activity?
+
+| Aspect | Details |
+|--------|---------|
+| **Data Sources** | AI Action Plan RFI submissions (10K PDFs), Senate LDA lobbying filings |
+| **LLM Components** | Position extraction, discrepancy scoring, China rhetoric analysis, lobbying impact assessment |
+| **Key Outputs** | Say-vs-do gap scores, quiet lobbying detection, cross-company comparisons |
+| **dbt Models** | 16 models, 35 tests |
+| **Airflow DAGs** | 6 DAGs |
+
+---
+
+## Architecture Overview
+
+This diagram shows how the two pipelines share infrastructure while remaining independent:
 
 ```
 ┌─────────────────────────────────────────────────────────────────────────────┐
@@ -37,6 +64,7 @@ A dual-module analytics platform that combines job market intelligence with poli
 │                                                                             │
 │  ┌─────────────────────────────┐    ┌─────────────────────────────┐         │
 │  │     MARKET SIGNALS          │    │     POLICY SIGNALS          │         │
+│  │     (Pipeline 1)            │    │     (Pipeline 2)            │         │
 │  │                             │    │                             │         │
 │  │  Sources:                   │    │  Sources:                   │         │
 │  │  • HN Who Is Hiring (93K)   │    │  • AI Policy Submissions    │         │
@@ -48,10 +76,11 @@ A dual-module analytics platform that combines job market intelligence with poli
 │  │  • Weekly insights          │    │  • Discrepancy scoring      │         │
 │  │                             │    │  • China rhetoric analysis  │         │
 │  │                             │    │  • Lobbying impact scores   │         │
-│  │  Outputs:                   │    │                             │         │
-│  │  • Tech trends over time    │    │  Outputs:                   │         │
-│  │  • Role evolution           │    │  • Say-vs-do gap scores     │         │
-│  │  • LLM vs regex comparison  │    │  • Quiet lobbying detection │         │
+│  │                             │    │                             │         │
+│  │  Outputs:                   │    │  Outputs:                   │         │
+│  │  • Tech trends over time    │    │  • Say-vs-do gap scores     │         │
+│  │  • Role evolution           │    │  • Quiet lobbying detection │         │
+│  │  • LLM vs regex comparison  │    │  • Cross-company comparison │         │
 │  └─────────────┬───────────────┘    └───────────────┬─────────────┘         │
 │                │                                    │                       │
 │                └────────────────┬───────────────────┘                       │
@@ -69,6 +98,23 @@ A dual-module analytics platform that combines job market intelligence with poli
 │                                                                             │
 └─────────────────────────────────────────────────────────────────────────────┘
 ```
+
+**For detailed architecture of each pipeline, see:**
+- [Market Signals ARCHITECTURE.md](market-signals/docs/ARCHITECTURE.md)
+- [Policy Signals ARCHITECTURE.md](policy-signals/docs/ARCHITECTURE.md)
+
+---
+
+## Combined Platform Metrics
+
+| Metric | Market Signals | Policy Signals | **Combined** |
+|--------|----------------|----------------|--------------|
+| **Data Sources** | 3 | 2 | **5** |
+| **Total Rows** | 1.3M+ | 5K+ | **1.3M+** |
+| **dbt Models** | 21 | 16 | **37** |
+| **dbt Tests** | 77 | 35 | **112** |
+| **Airflow DAGs** | 4 | 6 | **10** |
+| **LLM Scripts** | 2 | 6 | **8** |
 
 ---
 
@@ -111,34 +157,34 @@ A dual-module analytics platform that combines job market intelligence with poli
 
 ```
 ai-intelligence-platform/
-├── README.md                    # This file
+├── README.md                    # This file (platform overview)
 ├── docs/
 │   ├── CAPSTONE_PROPOSAL.md     # Original combined proposal
 │   └── CAPSTONE_FEEDBACK.md     # Instructor feedback
 │
-├── market-signals/              # Job market intelligence module
-│   ├── README.md
+├── market-signals/              # Pipeline 1: Job market intelligence
+│   ├── README.md                # Module overview
+│   ├── docs/                    # Detailed documentation
+│   │   ├── ARCHITECTURE.md      # System design, DAGs, extraction logic
+│   │   ├── DATA_DICTIONARY.md   # All tables and columns
+│   │   ├── DATA_QUALITY.md      # 77 dbt tests
+│   │   └── INSIGHTS.md          # Findings
 │   ├── dashboard/
 │   ├── dbt/
 │   ├── extraction/
-│   ├── airflow/dags/
-│   └── docs/
-│       ├── ARCHITECTURE.md
-│       ├── DATA_DICTIONARY.md
-│       ├── DATA_QUALITY.md
-│       └── INSIGHTS.md
+│   └── airflow/dags/
 │
-├── policy-signals/              # Lobbying/policy analysis module
-│   ├── README.md
+├── policy-signals/              # Pipeline 2: Lobbying/policy analysis
+│   ├── README.md                # Module overview
+│   ├── docs/                    # Detailed documentation
+│   │   ├── ARCHITECTURE.md      # System design, LLM prompts, scoring
+│   │   ├── DATA_DICTIONARY.md   # All tables and columns
+│   │   ├── DATA_QUALITY.md      # 35 dbt tests
+│   │   └── INSIGHTS.md          # Findings
 │   ├── dashboard/
 │   ├── dbt/ai_influence/
 │   ├── include/scripts/
-│   ├── dags/
-│   └── docs/
-│       ├── ARCHITECTURE.md
-│       ├── DATA_DICTIONARY.md
-│       ├── DATA_QUALITY.md
-│       └── INSIGHTS.md
+│   └── dags/
 │
 └── dashboard/                   # Unified dashboard entry point
     └── app.py
@@ -167,26 +213,6 @@ cd dashboard && streamlit run app.py
 
 ---
 
-## Module Documentation
-
-Each module maintains its own detailed documentation:
-
-### Market Signals
-- [README](market-signals/README.md) - Module overview
-- [ARCHITECTURE](market-signals/docs/ARCHITECTURE.md) - System design
-- [DATA_DICTIONARY](market-signals/docs/DATA_DICTIONARY.md) - Schema reference
-- [DATA_QUALITY](market-signals/docs/DATA_QUALITY.md) - 77 dbt tests
-- [INSIGHTS](market-signals/docs/INSIGHTS.md) - Findings
-
-### Policy Signals
-- [README](policy-signals/README.md) - Module overview
-- [ARCHITECTURE](policy-signals/docs/ARCHITECTURE.md) - System design, scoring methodology
-- [DATA_DICTIONARY](policy-signals/docs/DATA_DICTIONARY.md) - Schema reference
-- [DATA_QUALITY](policy-signals/docs/DATA_QUALITY.md) - 35 dbt tests
-- [INSIGHTS](policy-signals/docs/INSIGHTS.md) - Findings
-
----
-
 ## Live Demos
 
 - **Market Signals:** [data-ai-industry-tracker.streamlit.app](https://data-ai-industry-tracker.streamlit.app/)
@@ -209,8 +235,8 @@ Full git history for each module is preserved in their respective original repos
 
 **Complete** - DataExpert.io Analytics Engineering Capstone
 
-- [x] Market Signals module complete
-- [x] Policy Signals module complete
+- [x] Market Signals pipeline complete
+- [x] Policy Signals pipeline complete
 - [x] Unified dashboard
 - [x] Astronomer deployment ready
 
