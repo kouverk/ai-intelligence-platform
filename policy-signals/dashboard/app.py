@@ -23,31 +23,34 @@ import plotly.express as px
 import plotly.graph_objects as go
 from data_loader import load_all_data, get_canonical_name
 
-# Page config
-st.set_page_config(
-    page_title="AI Influence Tracker",
-    page_icon="🔍",
-    layout="wide",
-    initial_sidebar_state="expanded"
-)
+# Page config - only set when running as main app
+def configure_page():
+    """Configure Streamlit page settings."""
+    st.set_page_config(
+        page_title="AI Influence Tracker",
+        page_icon="🔍",
+        layout="wide",
+        initial_sidebar_state="expanded"
+    )
 
-# Custom CSS
-st.markdown("""
-<style>
-    .metric-card {
-        background-color: #f0f2f6;
-        border-radius: 10px;
-        padding: 20px;
-        margin: 10px 0;
-    }
-    .score-good { color: #28a745; }
-    .score-moderate { color: #ffc107; }
-    .score-bad { color: #dc3545; }
-    .stTabs [data-baseweb="tab-list"] {
-        gap: 24px;
-    }
-</style>
-""", unsafe_allow_html=True)
+def apply_custom_css():
+    """Apply custom CSS styles."""
+    st.markdown("""
+    <style>
+        .metric-card {
+            background-color: #f0f2f6;
+            border-radius: 10px;
+            padding: 20px;
+            margin: 10px 0;
+        }
+        .score-good { color: #28a745; }
+        .score-moderate { color: #ffc107; }
+        .score-bad { color: #dc3545; }
+        .stTabs [data-baseweb="tab-list"] {
+            gap: 24px;
+        }
+    </style>
+    """, unsafe_allow_html=True)
 
 
 @st.cache_data(ttl=3600)
@@ -1369,4 +1372,6 @@ def main():
 
 
 if __name__ == "__main__":
+    configure_page()
+    apply_custom_css()
     main()

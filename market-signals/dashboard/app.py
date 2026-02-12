@@ -16,13 +16,15 @@ from dotenv import load_dotenv
 # Load environment variables
 load_dotenv()
 
-# Page config
-st.set_page_config(
-    page_title="Data & AI Industry Index",
-    page_icon="📊",
-    layout="wide",
-    initial_sidebar_state="expanded"
-)
+# Page config - only set when running as main app
+def configure_page():
+    """Configure Streamlit page settings."""
+    st.set_page_config(
+        page_title="Data & AI Industry Index",
+        page_icon="📊",
+        layout="wide",
+        initial_sidebar_state="expanded"
+    )
 
 # =============================================================================
 # DATABASE CONNECTION
@@ -1479,4 +1481,5 @@ def main():
 
 
 if __name__ == "__main__":
+    configure_page()
     main()

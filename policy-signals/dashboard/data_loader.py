@@ -12,8 +12,9 @@ import pandas as pd
 from dotenv import load_dotenv
 
 # Load environment variables (for local development)
+# Use override=True to ensure we use THIS module's .env even if another was loaded first
 env_path = Path(__file__).parent.parent / ".env"
-load_dotenv(env_path)
+load_dotenv(env_path, override=True)
 
 
 def get_secret(key: str, default: str = None) -> str:
