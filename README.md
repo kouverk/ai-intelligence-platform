@@ -17,7 +17,11 @@ This platform contains **two separate analytics pipelines**, each with its own d
 
 Instead of looking at screenshots, you can see a live demo of the dashboard analytics here. The unified dashboard combines both pipelines with sidebar navigation.
 
+> **Note:** If the dashboard is sleeping due to inactivity, click "Yes, get this app back up!" - it takes ~1 minute to reboot.
+
 For static screenshots, see the [screenshots/](screenshots/) folder.
+
+**GitHub Repository:** [github.com/kouverk/ai-intelligence-platform](https://github.com/kouverk/ai-intelligence-platform)
 
 ---
 
