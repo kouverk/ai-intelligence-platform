@@ -213,10 +213,13 @@ cd dashboard && streamlit run app.py
 
 ---
 
-## Live Demos
+## Live Demo
 
-- **Market Signals:** [data-ai-industry-tracker.streamlit.app](https://data-ai-industry-tracker.streamlit.app/)
-- **Policy Signals:** [ai-influence-tracker.streamlit.app](https://ai-influence-monitor-kouverk.streamlit.app/)
+**[AI Intelligence Platform](https://ai-intelligence-platform-kouverk.streamlit.app/)** - Unified dashboard with both pipelines
+
+Individual module dashboards:
+- [Market Signals](https://data-ai-industry-index-tracker-kouverk.streamlit.app/)
+- [Policy Signals](https://ai-influence-monitor-kouverk.streamlit.app/)
 
 ---
 
