@@ -196,7 +196,7 @@ ai-intelligence-platform/
 │   │   ├── DATA_QUALITY.md      # 35 dbt tests
 │   │   └── INSIGHTS.md          # Findings
 │   ├── dashboard/
-│   ├── dbt/ai_influence/
+│   ├── dbt/
 │   ├── include/scripts/
 │   └── dags/
 │
