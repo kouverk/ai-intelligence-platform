@@ -23,7 +23,7 @@ For static screenshots, see the [screenshots/](screenshots/) folder.
 
 ## Documentation Guide
 
-> **For Graders:** This README provides a platform overview. Each pipeline has its own detailed documentation. Use the table below to find what you need.
+> **For Graders:** This README is an overview of the entire platform. Each pipeline has its own detailed documentation. For detailed technical documentation (architecture, data dictionaries, data quality tests, findings) please refer to these documents below:
 
 | Documentation | Market Signals | Policy Signals |
 |---------------|----------------|----------------|
