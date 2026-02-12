@@ -1,0 +1,11 @@
+# AI Intelligence Platform - Unified Dashboard Dependencies
+# Used by Streamlit Cloud for deployment
+
+# Core
+streamlit>=1.32.0
+pandas>=2.0.0
+plotly>=5.18.0
+python-dotenv>=1.0.0
+
+# Database
+snowflake-connector-python>=3.6.0

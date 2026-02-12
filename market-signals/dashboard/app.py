@@ -13,8 +13,25 @@ import snowflake.connector
 import os
 from dotenv import load_dotenv
 
-# Load environment variables
+# Load environment variables (for local development)
 load_dotenv()
+
+
+def get_secret(key: str, default: str = None) -> str:
+    """Get a secret from Streamlit secrets or environment variables.
+
+    Streamlit Cloud uses st.secrets, local dev uses .env files.
+    """
+    # Try Streamlit secrets first (for cloud deployment)
+    try:
+        if key in st.secrets:
+            return st.secrets[key]
+    except Exception:
+        pass
+
+    # Fall back to environment variables (for local development)
+    return os.getenv(key, default)
+
 
 # Page config - only set when running as main app
 def configure_page():
@@ -30,15 +47,19 @@ def configure_page():
 # DATABASE CONNECTION
 # =============================================================================
 
+# Schema is hardcoded since this module always uses KOUVERK_DATA_INDUSTRY
+SNOWFLAKE_SCHEMA = "KOUVERK_DATA_INDUSTRY"
+
+
 @st.cache_resource
 def get_connection():
     return snowflake.connector.connect(
-        account=os.getenv('SNOWFLAKE_ACCOUNT'),
-        user=os.getenv('SNOWFLAKE_USER'),
-        password=os.getenv('SNOWFLAKE_PASSWORD'),
-        database=os.getenv('SNOWFLAKE_DATABASE'),
-        warehouse=os.getenv('SNOWFLAKE_WAREHOUSE'),
-        schema=os.getenv('SNOWFLAKE_SCHEMA')
+        account=get_secret('SNOWFLAKE_ACCOUNT'),
+        user=get_secret('SNOWFLAKE_USER'),
+        password=get_secret('SNOWFLAKE_PASSWORD'),
+        database=get_secret('SNOWFLAKE_DATABASE'),
+        warehouse=get_secret('SNOWFLAKE_WAREHOUSE'),
+        schema=SNOWFLAKE_SCHEMA
     )
 
 @st.cache_data(ttl=600)

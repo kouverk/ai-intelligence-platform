@@ -83,9 +83,9 @@ def get_snowflake_connection():
 
 
 # dbt schema configuration
-# These must match dbt_project.yml schema settings
+# Hardcoded since this module always uses KOUVERK_AI_INFLUENCE
 SNOWFLAKE_DATABASE = get_secret("SNOWFLAKE_DATABASE", "DATAEXPERT_STUDENT")
-DBT_BASE_SCHEMA = get_secret("SNOWFLAKE_SCHEMA", "KOUVERK_AI_INFLUENCE")
+DBT_BASE_SCHEMA = "KOUVERK_AI_INFLUENCE"
 DBT_STAGING_SCHEMA = f"{DBT_BASE_SCHEMA}_STAGING"
 DBT_MARTS_SCHEMA = f"{DBT_BASE_SCHEMA}_MARTS"
 
