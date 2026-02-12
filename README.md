@@ -239,6 +239,43 @@ Full git history for each module is preserved in their respective original repos
 
 ---
 
+## Challenges & Solutions
+
+### Market Signals
+
+| Challenge | Solution |
+|-----------|----------|
+| **Unstructured job posting text** | Two-pronged extraction: regex taxonomy (152 technologies) for full dataset, LLM (Claude) on 10K sample for validation |
+| **LLM extraction failures** | 1.8% failure rate handled with graceful error handling, `is_successful` flag, severity: warn in dbt tests |
+| **LinkedIn single snapshot** | Used for cross-platform validation only; HN (2011-present) provides time-series |
+| **Taxonomy vs LLM cost tradeoff** | LLM on sample (~$4.50) validates approach; regex on full 93K posts for cost efficiency |
+
+### Policy Signals
+
+| Challenge | Solution |
+|-----------|----------|
+| **Entity matching across datasets** | Built normalization layer with canonical name mappings (`config.py`) to match "Anthropic-AI" to "ANTHROPIC, PBC" |
+| **LLM output consistency** | Pydantic validation + retry logic with structured prompts |
+| **Taxonomy iteration** | Expanded from 12 to 30+ policy_ask codes based on actual document content |
+| **"Quiet lobbying" definition** | Built bill-level coalition analysis matching LDA mentions to RFI positions |
+| **Score clustering** | Updated prompts to request granular scoring (23, 47, 68 vs 25, 50, 75) |
+
+---
+
+## Future Enhancements
+
+| Enhancement | Pipeline | Value |
+|-------------|----------|-------|
+| **Process all 10K+ policy submissions** | Policy | Complete industry coverage beyond priority companies |
+| **Full LLM extraction on 93K posts** | Market | ~$37 for complete LLM-powered skill extraction |
+| **Add FEC campaign finance data** | Policy | Correlate lobbying with political donations |
+| **Temporal position tracking** | Policy | Track how company positions shift as regulations evolve |
+| **Historical LinkedIn data** | Market | Currently single snapshot; would enable trend analysis |
+| **Reddit subreddit tracking** | Market | Community sentiment signals |
+| **Automated discrepancy alerts** | Policy | Notify when new filings contradict stated positions |
+
+---
+
 ## Status
 
 **Complete** - DataExpert.io Analytics Engineering Capstone
