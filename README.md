@@ -9,6 +9,8 @@ This platform contains **two separate analytics pipelines**, each with its own d
 | **Market Signals** | What's hot, growing, or dying in data/AI hiring? | 1.3M+ job posts |
 | **Policy Signals** | Do AI companies practice what they preach? | 10K+ policy documents |
 
+**[Live Demo](https://ai-intelligence-platform-kouverk.streamlit.app/)** - Try the unified dashboard
+
 ---
 
 ## Documentation Guide
@@ -190,6 +192,8 @@ ai-intelligence-platform/
     └── app.py
 ```
 
+> **For detailed documentation**, see the `docs/` folder within each module. Each contains ARCHITECTURE.md, DATA_DICTIONARY.md, DATA_QUALITY.md, and INSIGHTS.md.
+
 ---
 
 ## Quick Start
@@ -210,16 +214,6 @@ pip install -r requirements.txt
 # Run the unified dashboard
 cd dashboard && streamlit run app.py
 ```
-
----
-
-## Live Demo
-
-**[AI Intelligence Platform](https://ai-intelligence-platform-kouverk.streamlit.app/)** - Unified dashboard with both pipelines
-
-Individual module dashboards:
-- [Market Signals](https://data-ai-industry-index-tracker-kouverk.streamlit.app/)
-- [Policy Signals](https://ai-influence-monitor-kouverk.streamlit.app/)
 
 ---
 

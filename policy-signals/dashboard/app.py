@@ -1,5 +1,5 @@
 """
-AI Influence Tracker Dashboard
+AI Influence Monitor Dashboard
 
 What AI Companies Say vs. What They Lobby For
 
@@ -27,7 +27,7 @@ from data_loader import load_all_data, get_canonical_name
 def configure_page():
     """Configure Streamlit page settings."""
     st.set_page_config(
-        page_title="AI Influence Tracker",
+        page_title="AI Influence Monitor",
         page_icon="🔍",
         layout="wide",
         initial_sidebar_state="expanded"
@@ -73,7 +73,7 @@ def score_color(score: int, reverse: bool = False) -> str:
 
 def render_executive_summary(data: dict):
     """Section 1: Executive Summary / Landing Page."""
-    st.title("AI Influence Tracker")
+    st.title("AI Influence Monitor")
     st.markdown("### What AI Companies Say vs. What They Lobby For")
 
     positions_df = data["positions"]

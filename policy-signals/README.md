@@ -1,4 +1,4 @@
-# AI Influence Tracker
+# AI Influence Monitor
 
 **What AI Companies Say vs. What They Lobby For**
 
@@ -275,7 +275,7 @@ A key finding: Companies use "China competition" rhetoric strategically in polic
 
 ## Live Demo
 
-**[AI Influence Tracker Dashboard](https://ai-influence-monitor-kouverk.streamlit.app/)**
+**[AI Influence Monitor Dashboard](https://ai-influence-monitor-kouverk.streamlit.app/)**
 
 ---
 
